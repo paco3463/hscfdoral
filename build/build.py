@@ -494,11 +494,14 @@ def related_cards(lang, cur, ids):
     return '<div class="related">' + "".join(
         f'<a href="{rel(path_for("service", lang, r), cur)}"><strong>{svc_by_id(lang, r)["name"]}</strong><span>{svc_by_id(lang, r)["short"]}</span></a>' for r in ids) + "</div>"
 
+def creds_span(p):
+    return ' <span class="creds">' + p["creds"] + "</span>" if p["creds"] else ""
+
 def staff_cards(lang, cur, ids, cls="team-row"):
     U = C[lang].UI
     return f'<div class="{cls}">' + "".join(
         f'<a class="person" href="{rel(path_for("person", lang, pid), cur)}">{staff_pic(pid, lang, cur, sizes="(max-width: 1100px) 220px, 15vw")}'
-        f'<div><h3>{person_by_id(lang, pid)["name"]}{(" <span class=\"creds\">" + person_by_id(lang, pid)["creds"] + "</span>") if person_by_id(lang, pid)["creds"] else ""}</h3><p>{person_by_id(lang, pid)["title_role"]}</p></div></a>'
+        f'<div><h3>{person_by_id(lang, pid)["name"]}{creds_span(person_by_id(lang, pid))}</h3><p>{person_by_id(lang, pid)["title_role"]}</p></div></a>'
         for pid in ids) + "</div>"
 
 def logo_strip(lang, cur):
@@ -916,7 +919,8 @@ def build_insurance(lang):
     items = [home_crumb(lang), (U["nav_insurance"], cur)]
     packs = "".join(f'<li class="pack"><strong>{a}</strong><span>{b}</span><span>{c}</span></li>' for a, b, c in I["packages"])
     tests = "".join(f'<li><strong>{a}</strong>{f"<span>{b}</span>" if b else ""}</li>' for a, b in I["testing"])
-    plans = "".join(f'<li>{CHECK}<span><strong>{n}</strong>{f" <em class=\"in-net\">{I["in_network"]}</em>" if net else ""}</span></li>' for n, net in I["plans"])
+    badge = ' <em class="in-net">' + I["in_network"] + "</em>"
+    plans = "".join(f'<li>{CHECK}<span><strong>{n}</strong>{badge if net else ""}</span></li>' for n, net in I["plans"])
     body = page_hero(lang, cur, items, I["h1"], I["lead"]) + f"""
 <section class="section section--flush-top"><div class="wrap">
   <div class="section-head"><h2>{I['packages_h2']}</h2><p class="lead">{I['packages_p']}</p></div>
@@ -956,7 +960,7 @@ def build_staff_hub(lang):
         f'<button class="chip" type="button" aria-pressed="false" data-filter="{k}">{v}</button>' for k, v in T["filters"])
     cards = "".join(
         f'<a class="team-card" href="{rel(path_for("person", lang, p["id"]), cur)}" data-tags="{" ".join(p["tags"])}">{staff_pic(p["id"], lang, cur, sizes="(max-width: 520px) 92vw, 300px")}'
-        f'<div><h2>{p["name"]}{(" <span class=\"creds\">" + p["creds"] + "</span>") if p["creds"] else ""}</h2><p class="role">{p["title_role"]}</p></div>'
+        f'<div><h2>{p["name"]}{creds_span(p)}</h2><p class="role">{p["title_role"]}</p></div>'
         f'<p class="short">{p["short"]}</p><span class="text-link">{U["view_profile"]} {p["first"]}</span></a>' for p in M.TEAM)
     body = page_hero(lang, cur, items, T["h1"], T["lead"]) + f"""
 <section class="section section--flush-top"><div class="wrap">
