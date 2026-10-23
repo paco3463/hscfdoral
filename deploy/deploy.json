@@ -1,6 +1,6 @@
 {
   "ssh_agent": "SSH DELUXE",
-  "remote_path": "",
+  "remote_path": "~/public_html/hscfdoral.com",
   "public_url": "https://hscfdoral.com/",
   "backup_dir": "~/backups",
   "first_deploy_done": false,
@@ -20,5 +20,6 @@
   "hosting": "GoDaddy cPanel shared hosting",
   "hosting_ip": "72.167.102.145",
   "old_wordpress_ip": "160.153.0.192",
-  "dns": "GoDaddy (domaincontrol.com); change only the @ A record, keep MX/TXT/www"
+  "dns": "GoDaddy (domaincontrol.com); change only the @ A record, keep MX/TXT/www",
+  "cpanel_note": "Addon domain on a shared cPanel account; the account's primary domain is a different site. The repo clone lives at ~/hscfdoral-repo (outside public_html)."
 }

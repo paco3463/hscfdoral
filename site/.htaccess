@@ -27,6 +27,13 @@ AddDefaultCharset utf-8
   # RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
   # RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
 
+  # The site lives in an addon-domain folder of a shared cPanel account, so the same files can also be
+  # reached through the account's other domain names. Send every other host name to hscfdoral.com.
+  # (Per-folder pattern: $1 is the path inside this folder.) Switch http to https here with the block above.
+  RewriteCond %{HTTP_HOST} !^(www\.)?hscfdoral\.com$ [NC]
+  RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:[0-9]+)?$ [NC]
+  RewriteRule ^(.*)$ http://hscfdoral.com/$1 [L,R=301]
+
   # Old WordPress addresses that moved (most old addresses are unchanged)
   RewriteRule ^contact-us/?$ /contacto/ [L,R=301,NE]
   RewriteRule ^trainings/?$ /cursos-y-talleres/ [L,R=301,NE]

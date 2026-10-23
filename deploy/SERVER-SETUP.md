@@ -27,7 +27,7 @@ The old site still runs on the old host (`160.153.0.192`). Before the domain mov
 
 ## 1. Prepare the shared hosting account
 
-1. In cPanel, make sure `hscfdoral.com` is on the account: it is either the **primary domain** (web root `~/public_html`) or an **addon domain** (cPanel → Domains; web root shown there, often `~/public_html/hscfdoral.com` or `~/hscfdoral.com`). Note the web root path in `deploy/deploy.json` → `remote_path`.
+1. `hscfdoral.com` is an **addon domain** on the account (cPanel → Domains, "Share document root" off). Its web root is **`~/public_html/hscfdoral.com`** (recorded in `deploy/deploy.json` → `remote_path`). The account's primary domain is a different site: never touch anything else in `public_html`.
 2. Turn on **SSH access** (GoDaddy: My Products → Web Hosting → Manage → Settings → SSH Access → On). SSH DELUXE connects with the cPanel username.
 3. If the web root already has a placeholder `index.html` or `default.html` from GoDaddy, move it into `~/backups/`.
 
@@ -39,13 +39,14 @@ ssh-keygen -t ed25519 -N "" -C "hscfdoral server (read-only)" -f ~/.ssh/hscfdora
 cat ~/.ssh/hscfdoral_deploy.pub
 cat >> ~/.ssh/config <<'EOF'
 Host github-hscf
-  HostName github.com
+  HostName ssh.github.com
+  Port 443
   User git
   IdentityFile ~/.ssh/hscfdoral_deploy
   IdentitiesOnly yes
 EOF
 chmod 600 ~/.ssh/config
-ssh -T github-hscf    # after the key is added below; "successfully authenticated" is the good answer
+ssh -o StrictHostKeyChecking=accept-new -T github-hscf    # after the key is added below; "successfully authenticated" is the good answer
 ```
 
 The user adds the printed public key on GitHub: **paco3463/hscfdoral → Settings → Deploy keys → Add deploy key**, title "hscfdoral server", **"Allow write access" off**.
@@ -57,22 +58,21 @@ git clone git@github-hscf:paco3463/hscfdoral.git ~/hscfdoral-repo
 chmod +x ~/hscfdoral-repo/deploy/server-pull.sh
 ```
 
-The clone lives in the home folder, **not** inside `public_html` (the script refuses if it is), so the source files are never public.
+GitHub is reached over port 443 (`ssh.github.com`), which shared hosts rarely block. The clone lives in the home folder, **not** inside `public_html` (the script refuses if it is), so the source files are never public.
 
 ## 4. First publish, then turn on the 15-minute pull
 
-Replace `~/public_html` with the web root from step 1 in both commands.
 
 ```bash
 touch ~/hscfdoral-repo/.git/hscf-deploy-approved
-HSCF_WEB_ROOT=~/public_html ~/hscfdoral-repo/deploy/server-pull.sh
-ls ~/public_html     # index.html, aba/, seguros/, en/, assets/ …
+HSCF_WEB_ROOT=$HOME/public_html/hscfdoral.com ~/hscfdoral-repo/deploy/server-pull.sh
+ls ~/public_html/hscfdoral.com     # index.html, aba/, seguros/, en/, assets/ …
 ```
 
 Then add the cron job in **cPanel → Cron Jobs** (common setting "Once per fifteen minutes"), command:
 
 ```
-HSCF_WEB_ROOT=$HOME/public_html $HOME/hscfdoral-repo/deploy/server-pull.sh >> $HOME/hscfdoral-pull.log 2>&1
+HSCF_WEB_ROOT=$HOME/public_html/hscfdoral.com $HOME/hscfdoral-repo/deploy/server-pull.sh >> $HOME/hscfdoral-pull.log 2>&1
 ```
 
 ## 5. Check the new host before moving the domain
@@ -93,7 +93,7 @@ GoDaddy → Domains → hscfdoral.com → **DNS** → edit the **A** record with
 ## 7. HTTPS
 
 1. Once DNS points to the new host, issue the SSL certificate: cPanel → **SSL/TLS Status** → Run AutoSSL (or GoDaddy's SSL page if the plan uses a GoDaddy certificate). Include `hscfdoral.com` and `www.hscfdoral.com`.
-2. When `https://hscfdoral.com/` loads with a padlock, turn on the redirect: in `build/build.py` → `HTACCESS`, remove the `# ` in front of the four `RewriteCond`/`RewriteRule` lines under "Force HTTPS", rebuild, audit and push. It goes live on the next pull.
+2. When `https://hscfdoral.com/` loads with a padlock, turn on the redirect: in `build/build.py` → `HTACCESS`, remove the `# ` in front of the four `RewriteCond`/`RewriteRule` lines under "Force HTTPS", and change `http://hscfdoral.com/$1` to `https://hscfdoral.com/$1` in the host-name rule just below it. Rebuild, audit and push. It goes live on the next pull.
 3. From the project: `python3 build/audit.py --live` → 0 errors. Submit `https://hscfdoral.com/sitemap.xml` in Search Console and Bing.
 
 ## Day to day
