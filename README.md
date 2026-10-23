@@ -9,7 +9,7 @@ Bilingual website and automatic blog for **Healthy Solutions for Children and Fa
 ## How it stays up to date
 
 - On the **1st and 15th** of every month a scheduled Claude task researches and writes a new post in Spanish and English, publishes it when every safety check passes (risky topics wait as drafts for a clinician), and pushes it here.
-- The web server pulls this repository every **15 minutes** and copies `site/` to the web root. One-time setup: [deploy/SERVER-SETUP.md](deploy/SERVER-SETUP.md).
+- The site runs on **WordPress** with a custom theme. After every push, a GitHub Action builds the pages (`python3 build/build.py --wp`) and sends them to WordPress. One-time setup: [wordpress/INSTALL.md](wordpress/INSTALL.md).
 
 ## Working with Claude
 
@@ -22,11 +22,11 @@ Open Claude Code **in this folder** (first time: `bash claude-agents/install.sh`
 | `/publish-article <id>` | publish a post that was held for review |
 | `/seo-review` | the 6-month SEO review (next: April 1, 2027) |
 | `/site-audit live` | check schema, crawlability and mobile layout |
-| `/deploy` | first-time server setup through SSH DELUXE, then build + push |
+| `/deploy` | first-time WordPress setup through SSH DELUXE, then build + push |
 
 ## First-time setup
 
-1. Server: give `deploy/SERVER-SETUP.md` to SSH DELUXE (backs up WordPress, installs the 15-minute pull).
+1. WordPress: give `wordpress/INSTALL.md` and the files from `python3 build/build.py --wp` to SSH DELUXE (backs up the database, installs the theme, imports every page).
 2. Google: [seo/GOOGLE-SETUP.md](seo/GOOGLE-SETUP.md).
-3. Contact form: replace `YOUR_FORM_ID` in `build/build.py` with a Formspree form ID.
+3. Contact form: set up WP Mail SMTP (INSTALL.md step 7) so the form's emails reach info@hscfdoral.com.
 4. Ask each staff member to confirm their bio.

@@ -15,7 +15,7 @@ If the request starts with `auto`, the mode is **automatic**; otherwise it is **
 4. When it returns, run `python3 build/build.py --check`, `python3 build/build.py` and `python3 build/audit.py`. All must report 0 errors.
 5. **Reply with:** both titles, the final status, the addresses (`/<yyyy>/<mm>/<es-slug>/` and `/en/<yyyy>/<mm>/<en-slug>/`), word counts, the source list and the agent's notes.
    - Review mode: end with "When it has been reviewed, run `/publish-article <id>`."
-   - Automatic mode, published: end with "Commit and push to GitHub to put it online (the server pulls every 15 minutes)."
+   - Automatic mode, published: end with "Commit and push to GitHub to put it online (GitHub then sends it to WordPress within minutes)."
    - Automatic mode, saved as draft: say why (for example, high-risk topic) and that `/publish-article <id>` publishes it after review.
 
 Never fill in `medical_reviewer` here.

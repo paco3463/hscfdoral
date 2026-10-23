@@ -1,6 +1,6 @@
 ---
 name: auto-post
-description: The fully automatic twice-monthly blog post for hscfdoral.com. Picks the next topic from the SEO plan, researches and writes it in Spanish and English, publishes it when every safety gate passes (otherwise saves a draft), rebuilds, audits, and pushes to GitHub so the server picks it up. Used by the scheduled task on the 1st and 15th; can also be run by hand with "/auto-post".
+description: The fully automatic twice-monthly blog post for hscfdoral.com. Picks the next topic from the SEO plan, researches and writes it in Spanish and English, publishes it when every safety gate passes (otherwise saves a draft), rebuilds, audits, and pushes to GitHub, which sends it to WordPress. Used by the scheduled task on the 1st and 15th; can also be run by hand with "/auto-post".
 ---
 
 # /auto-post
@@ -29,13 +29,13 @@ Delegate to the `psych-research-writer` agent in **automatic** mode with the top
 
 1. `python3 build/build.py --check` → 0 errors.
 2. Check `meta.json`: if `risk` is `high`, or the publish gate failed, the post must have `"status": "draft"` and `"review_policy": "clinician"`. A draft is never built into the live site.
-3. `python3 build/build.py` and `python3 build/audit.py` → 0 errors. If the audit fails because of the new post, set it to draft, rebuild and audit again. If the audit fails for another reason, do not push anything; report the errors.
+3. `python3 build/build.py`, `python3 build/audit.py` → 0 errors, and `python3 build/build.py --wp` → no error. If the audit fails because of the new post, set it to draft, rebuild and audit again. If the audit fails for another reason, do not push anything; report the errors.
 
 ## 4. Publish
 
 1. In `seo/plans/current.md`, add "(published YYYY-MM-DD)" or "(draft, needs review)" after the row's id.
 2. Append one line to `deploy/log.md`: date, post id, status, number of sources, audit result.
-3. Commit everything with a message like `Blog: <es title> (<status>)` and push to the default branch. Before pushing, `git fetch` and rebase if needed. The web server pulls from GitHub every 15 minutes and copies `site/` to the web root.
+3. Commit everything with a message like `Blog: <es title> (<status>)` and push to the default branch. Before pushing, `git fetch` and rebase if needed. The GitHub Action **WordPress sync** then builds the WordPress manifest and sends it to https://hscfdoral.com within a few minutes. You don't need to contact the server.
 4. If the push is refused (for example, GitHub access was removed), say so plainly in the final report; the post stays in the commit and is pushed next time.
 
 ## 5. Report

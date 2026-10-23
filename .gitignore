@@ -13,3 +13,6 @@ __pycache__/
 *.pem
 *service-account*.json
 .env
+
+# WordPress export (built by build.py --wp)
+wordpress/dist/

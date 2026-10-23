@@ -22,7 +22,9 @@ C = {"en": content_en, "es": content_es}
 MEDIA = json.load(open(os.path.join(ROOT, "build", "media.json"), encoding="utf-8"))
 ARTICLES = []                       # visible articles for this build (filled in main)
 ARTICLE_PATHS = {"en": {}, "es": {}}
-ABS_LINKS = False                   # True while building 404.html, so links work from any depth
+ABS_LINKS = False                   # True while building 404.html (and in --wp mode), so links work from any depth
+WP_MODE = False                     # --wp: export for the WordPress theme instead of writing site/
+WP_EXPORT = None                    # filled in --wp mode: every page's parts, static files, partials
 LANGS = ("es", "en")
 OTHER = {"es": "en", "en": "es"}
 TEL1, TEL2 = "+13055945658", "+17864239495"
@@ -82,7 +84,9 @@ def path_for(key, lang, ident=None):
 def rel(target, current):
     """Link from the current page to target (both site-relative file paths)."""
     if target.endswith("index.html"): target = target[: -len("index.html")]
-    if ABS_LINKS: return "/" + target
+    if ABS_LINKS:
+        if WP_MODE and target.startswith("assets/"): return "{{theme}}/" + target   # the theme serves the assets
+        return "/" + target
     r = "../" * current.count("/") + target
     return r or "./"
 
@@ -428,6 +432,11 @@ def event_modal(lang, cur):
 
 def page(lang, cur, active, alt_path, title, desc, body, ld=None, splash=None, preload_video=False, extra_script="", og_image=None, robots=None):
     kw = {"robots": robots} if robots else {}
+    if WP_EXPORT is not None:
+        h = head(lang, cur, title, desc, alt_path, ld, og_image=og_image, preload_video=preload_video, **kw)
+        WP_EXPORT["pages"].append({"cur": cur, "lang": lang, "active": active, "alt": alt_path, "title": title,
+                                   "head": h.split("<head>\n", 1)[1].rsplit("</head>", 1)[0], "main": body,
+                                   "splash": splash or "", "extra": extra_script, "robots": robots or ""})
     return (head(lang, cur, title, desc, alt_path, ld, og_image=og_image, preload_video=preload_video, **kw) + "<body>\n" + SVG_DEFS + "\n" + (splash or "")
             + header(lang, cur, active, alt_path) + f'<main id="main">\n{body}\n</main>\n' + footer(lang, cur)
             + event_modal(lang, cur) + extra_script + f'<script src="{rel("assets/js/main.js", cur)}" defer></script>\n</body>\n</html>\n')
@@ -514,6 +523,9 @@ LOGO_NAMES = {"aetna": "Aetna", "bcbs": "Blue Cross Blue Shield", "cigna": "Cign
               "bind": "Bind", "umr": "UMR", "optum": "Optum", "anthem": "Anthem Blue Cross", "avmed": "AvMed", "lucet": "Lucet"}
 
 def write(path, content):
+    if WP_EXPORT is not None:          # --wp: pages are captured in page(); other files become theme-served static files
+        if not path.endswith(".html") and path != ".htaccess": WP_EXPORT["static"][path] = content
+        return
     full = os.path.join(OUT, path)
     os.makedirs(os.path.dirname(full) or OUT, exist_ok=True)
     with open(full, "w", encoding="utf-8") as f:
@@ -1042,7 +1054,7 @@ def build_contact(lang):
   <div class="form-panel">
     <h2>{K['form_h2']}</h2>
     <p class="form-note">{K['form_note']}</p>
-    <form data-contact-form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-email="info@hscfdoral.com" data-msgs="{msgs}" novalidate>
+    <form data-contact-form action="{'/wp-json/hscf/v1/contact' if WP_MODE else 'https://formspree.io/f/YOUR_FORM_ID'}" method="POST" data-email="info@hscfdoral.com" data-msgs="{msgs}" novalidate>
       <div class="form-grid">
         <div class="field full"><label for="f-name">{K['f_name']}</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
         <div class="field"><label for="f-email">{K['f_email']}</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email"></div>
@@ -1123,18 +1135,19 @@ def build_area(lang, a):
 
 def build_404():
     global ABS_LINKS
+    was = ABS_LINKS
     ABS_LINKS = True
     lang = "es"; N = C["es"].NOT_FOUND; NE = C["en"].NOT_FOUND
     cur = "404.html"
     body = f"""<section class="nf"><div class="wrap">
-  <img src="/assets/img/logo.png" alt="" width="312" height="287">
+  <img src="{rel('assets/img/logo.png', cur)}" alt="" width="312" height="287">
   <h1>{N['h1']}</h1>
   <p class="lead nf-lead">{N['p']}</p>
   <p class="lead nf-lead" lang="en">{NE['p']}</p>
   <div class="btn-row btn-row--center"><a class="btn" href="/">{N['home']}</a><a class="btn btn--ghost" href="/en/" lang="en">{NE['home']}</a></div>
 </div></section>"""
     out = page(lang, cur, "", "en/index.html", N["title"], N["description"], body, [], robots="noindex")
-    ABS_LINKS = False
+    ABS_LINKS = was
     write(cur, out)
 
 # ---------------------------------------------------------------- crawl + AI files
@@ -1345,10 +1358,11 @@ def build_llms(cfg, arts):
     write("llms-full.txt", "\n".join(F) + "\n")
 
 def build_static_misc():
+    icon = lambda n: (rel(f"assets/img/icon-{n}.png", "x") if WP_MODE else f"/assets/img/icon-{n}.png")
     write("site.webmanifest", json.dumps({
         "name": "Healthy Solutions for Children and Families", "short_name": "HSCF", "start_url": "/", "display": "standalone",
         "background_color": "#FFFBF7", "theme_color": "#FE4109", "lang": "es",
-        "icons": [{"src": "/assets/img/icon-192.png", "sizes": "192x192", "type": "image/png"}, {"src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png"}]}, indent=2))
+        "icons": [{"src": icon(192), "sizes": "192x192", "type": "image/png"}, {"src": icon(512), "sizes": "512x512", "type": "image/png"}]}, indent=2))
 
 def clean_output():
     """Remove previously generated files so deleted pages and articles do not linger. assets/ is never touched."""
@@ -1365,7 +1379,12 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description="Build hscfdoral.com (Spanish + English) into site/.")
     ap.add_argument("--check", action="store_true", help="validate content only, write nothing")
     ap.add_argument("--drafts", action="store_true", help="also build draft and in-review articles into preview/ (never deploy preview/)")
+    ap.add_argument("--wp", action="store_true", help="export for WordPress into wordpress/dist/ (manifest.json + theme) instead of writing site/")
     args = ap.parse_args(argv)
+    global WP_MODE, WP_EXPORT, ABS_LINKS
+    if args.wp:
+        WP_MODE, ABS_LINKS = True, True
+        WP_EXPORT = {"pages": [], "static": {}}
     svc_ids = {s["id"] for s in C["es"].SERVICES}; team_ids = {p["id"] for p in C["es"].TEAM}
     arts, errors, warnings = ART.load(svc_ids, team_ids, include_drafts=args.drafts or args.check, strict=not (args.drafts or args.check))
     for w in warnings: print("warning:", w)
@@ -1387,7 +1406,7 @@ def main(argv=None):
         OUT = os.path.join(ROOT, "preview")
         if os.path.isdir(OUT): shutil.rmtree(OUT)
         shutil.copytree(os.path.join(ROOT, "site", "assets"), os.path.join(OUT, "assets"))
-    else:
+    elif not args.wp:
         clean_output()
     cfg = _seo_config()
     for lang in LANGS:
@@ -1402,6 +1421,9 @@ def main(argv=None):
     build_crawler_files(cfg, preview=args.drafts)
     build_llms(cfg, arts)
     build_static_misc()
+    if args.wp:
+        import wp_export
+        return wp_export.finalize(sys.modules[__name__])
     live = sum(1 for a in arts if a["meta"]["status"] == "published")
     print(f"built {len(urls) * 2 + 1} pages into {os.path.relpath(OUT, ROOT)}/ ({live} published post(s){', drafts included' if args.drafts else ''})")
     return 0

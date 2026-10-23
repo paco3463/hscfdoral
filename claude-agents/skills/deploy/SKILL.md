@@ -1,46 +1,42 @@
 ---
 name: deploy
-description: Put hscfdoral.com online. The first time, sets up the server through the user's SSH DELUXE agent (backs up WordPress, installs the 15-minute pull from GitHub). After that, builds, audits and pushes to GitHub; the server publishes within 15 minutes. Use when the user says deploy, publish the site, push live or upload.
+description: Put hscfdoral.com online. The first time, installs the site into WordPress on the GoDaddy shared plan through the user's SSH DELUXE agent (wordpress/INSTALL.md). After that, builds, audits and pushes to GitHub; a GitHub Action sends the content to WordPress. Use when the user says deploy, publish the site, push live or upload.
 ---
 
 # /deploy
 
 Notes from the user (may be empty): $ARGUMENTS
 
-The live site is the `site/` folder of the private GitHub repo `paco3463/hscfdoral`. The web server pulls it every 15 minutes (`deploy/server-pull.sh`). The server connection belongs to the user's **SSH DELUXE** agent (see `/agents`, usually `ssh-deluxe`). Never put hosts, usernames, passwords or keys in this project.
+The live site is **WordPress** (theme `hscf`) on the GoDaddy cPanel shared plan, addon domain folder `~/public_html/hscfdoral.com`. Its pages and posts come from this project: `python3 build/build.py --wp` builds `wordpress/dist/manifest.json` and the theme `wordpress/dist/hscf.zip`, and the theme's importer loads them. The server connection belongs to the user's **SSH DELUXE** agent. Never put hosts, usernames, passwords, keys or Application Passwords in this project.
 
 ## 1. Build and gate
 
 1. `python3 build/build.py`, then `python3 build/audit.py`. **If the audit reports any ERROR, stop** and offer `/site-audit`.
-2. Never publish `preview/` (drafts). `.gitignore` keeps it out of the repo.
+2. `python3 build/build.py --wp`. It must print the page and post counts with no error.
+3. Never publish `preview/` (drafts).
 
-## 2. First time only: set up the server
+## 2. First time only: WordPress setup
 
-Read `deploy/deploy.json`. If `first_deploy_done` is `false`, follow `deploy/SERVER-SETUP.md` step by step **through SSH DELUXE**:
+Read `deploy/deploy.json`. If `first_deploy_done` is `false`:
 
-The new host is the GoDaddy cPanel shared plan at `72.167.102.145` (see `deploy/deploy.json`); the old WordPress site is on a different host and is backed up, not moved.
-
-1. Step 0: make sure the old WordPress site has been backed up (files over SFTP + database). Show the user what was saved.
-2. Find the web root on the shared plan; save the path to `deploy/deploy.json` → `remote_path`.
-3. Create the read-only deploy key and ask the user to add it on GitHub (Settings → Deploy keys, write access off).
-4. Clone outside the web root, create the approved marker, run the pull once, add the cPanel cron job.
-5. Check the new host with the `curl --resolve` lines in step 5 of the guide **before** the domain moves.
-6. Tell the user exactly which DNS record to change (only the `@` A record → `72.167.102.145`; never MX or TXT) and **wait for them to do it**. Then help with SSL (step 7) and set `first_deploy_done` to `true`.
-
-If SSH DELUXE isn't reachable, tell the user, and give them `deploy/SERVER-SETUP.md` to hand to it.
+1. Copy `wordpress/dist/hscf.zip`, `wordpress/dist/manifest.json` and `wordpress/INSTALL.md` to the user's computer (the Bigger One drive, `CLAUDE FILES /HSCF DORAL/wordpress/dist/`), so SSH DELUXE can upload them.
+2. Hand `wordpress/INSTALL.md` to SSH DELUXE (or tell the user to). It backs up the database, installs and activates the theme, runs the import (dry run first), checks the addresses, sets up WP Mail SMTP and, once DNS points to `72.167.102.145`, HTTPS.
+3. DNS is the user's job: only the `@` A record → `72.167.102.145`. Never MX, TXT, DKIM CNAMEs or SRV.
+4. After HTTPS works, the user creates an Application Password and adds the GitHub secrets `WP_USER` / `WP_APP_PASSWORD` (INSTALL.md step 9). Then set `first_deploy_done` to `true`.
 
 ## 3. Every deploy
 
-1. Commit the changes with a short message saying what changed, and push to `main` (`git fetch` and rebase first if needed).
-2. Wait about 15 minutes (or ask SSH DELUXE to `touch ~/hscfdoral-repo/.git/hscf-force` and run the pull now).
-3. Verify: `python3 build/audit.py --live`; `/`, `/en/`, `/robots.txt`, `/sitemap.xml`, `/llms.txt` and one service page return 200; a made-up address returns 404.
+- **Content** (copy in `build/content_*.py`, posts, SEO settings): commit and push to `main` (`git fetch` and rebase first). The GitHub Action **WordPress sync** sends it within minutes. Check its run: `gh run list --workflow wordpress-sync.yml -L 3`.
+- **Design or behaviour** (`site/assets/`, `wordpress/theme/`): also rebuild with `--wp`, put the new `hscf.zip` on the drive, and ask SSH DELUXE for INSTALL.md → "Updating the theme".
+- If the Action can't reach WordPress, SSH DELUXE can import by hand: upload `manifest.json` to `~/hscf-import/` and run `wp --path="$HOME/public_html/hscfdoral.com" hscf sync ~/hscf-import/manifest.json`.
+- The import keeps pages someone edited in WordPress and lists them. Tell the user which ones, and only use `--force` if they agree.
 
-## 4. After the first deploy
+## 4. Verify
 
-- Remind the user to submit `https://hscfdoral.com/sitemap.xml` in Search Console and Bing Webmaster Tools.
-- Once SSL is confirmed, turn on the HTTPS/bare-domain redirect in `build/build.py` → `HTACCESS`, rebuild and push.
-- For old WordPress URLs that Search Console still reports, add 301s to `REDIRECTS` in `build/build.py`.
+`python3 build/audit.py --live`; `/`, `/en/`, `/robots.txt`, `/sitemap.xml`, `/llms.txt` and one service page return 200; an old address such as `/karina-la-banca/` returns 301; a made-up address returns 404.
+
+After the first deploy, remind the user to submit `https://hscfdoral.com/sitemap.xml` in Search Console and Bing Webmaster Tools. For old URLs that Search Console still reports, add 301s to `REDIRECTS` in `build/build.py` (they reach WordPress with the next sync).
 
 ## 5. Log
 
-Append a line to `deploy/log.md`: date, what changed, audit result, commit id, and (first time) the backup file names.
+Append a line to `deploy/log.md`: date, what changed, audit result, commit id, and the sync result (created / updated / kept edits).

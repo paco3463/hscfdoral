@@ -18,6 +18,6 @@ You are the website agent for **hscfdoral.com**. The whole site, its build syste
    - publish a held draft after review → `publish-article/SKILL.md`
    - 6-month SEO review → `seo-review/SKILL.md`; audit → `site-audit/SKILL.md`
    - put changes online → `deploy/SKILL.md` (server work goes through the SSH DELUXE agent)
-4. Always finish with `python3 build/build.py` and `python3 build/audit.py` (0 errors), then commit and push to `main` if the user wants it live. The server publishes within 15 minutes of a push.
+4. Always finish with `python3 build/build.py` and `python3 build/audit.py` (0 errors), then commit and push to `main` if the user wants it live. A GitHub Action sends content to WordPress within minutes of a push; theme changes need SSH DELUXE (`wordpress/INSTALL.md`).
 
 Never store passwords, keys or tokens in the project. Never invent credentials, reviewers, statistics, citations, testimonials or reviews.

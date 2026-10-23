@@ -1,0 +1,70 @@
+# Sends the site to WordPress after every push to main (including the automatic blog posts on the 1st and 15th).
+# Builds wordpress/dist/manifest.json and POSTs it to https://hscfdoral.com/wp-json/hscf/v1/sync.
+#
+# Needs two repository secrets (GitHub → Settings → Secrets and variables → Actions):
+#   WP_USER          the WordPress administrator's username
+#   WP_APP_PASSWORD  an Application Password for that user (WordPress → Users → Profile → Application Passwords)
+# Until both exist this workflow only builds and checks; it never fails because of missing secrets.
+# Theme changes (PHP, CSS, JS, photos) are not sent this way: re-upload the theme (wordpress/INSTALL.md, "Updating the theme").
+name: WordPress sync
+
+on:
+  push:
+    branches: [main]
+    paths: ["content/**", "build/**", "seo/config.json", "wordpress/theme/**", ".github/workflows/wordpress-sync.yml"]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Only show what would change"
+        type: boolean
+        default: false
+
+concurrency:
+  group: wordpress-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build and audit the static site (the same checks as every push)
+        run: |
+          python3 build/build.py
+          python3 build/audit.py
+      - name: Build the WordPress manifest
+        run: python3 build/build.py --wp
+      - name: Send to WordPress
+        env:
+          WP_USER: ${{ secrets.WP_USER }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+          WP_URL: https://hscfdoral.com
+          DRY: ${{ inputs.dry_run && '1' || '0' }}
+        run: |
+          if [ -z "$WP_USER" ] || [ -z "$WP_APP_PASSWORD" ]; then
+            echo "::notice::WP_USER / WP_APP_PASSWORD secrets are not set yet, so nothing was sent to WordPress."
+            exit 0
+          fi
+          code=$(curl -sS -o response.json -w '%{http_code}' --max-time 300 \
+            -u "$WP_USER:$WP_APP_PASSWORD" -H 'Content-Type: application/json' \
+            --data-binary @wordpress/dist/manifest.json "$WP_URL/wp-json/hscf/v1/sync?dry=$DRY")
+          python3 - "$code" <<'PY'
+          import json, sys
+          code = sys.argv[1]
+          try: r = json.load(open("response.json"))
+          except Exception: print(open("response.json").read()[:2000]); sys.exit(f"WordPress answered HTTP {code}, not JSON.")
+          if "created" not in r: sys.exit(f"WordPress answered HTTP {code}: {r}")
+          pre = "would be " if r.get("dry_run") else ""
+          print(f"{pre}{len(r['created'])} created, {pre}{len(r['updated'])} updated, {r['unchanged']} unchanged")
+          for k in ("created", "updated"):
+              if r[k]: print(f"  {k}: " + " ".join(r[k][:60]))
+          if r["kept_wp_edits"]: print("::warning::Edited in WordPress, text kept: " + " ".join(r["kept_wp_edits"]))
+          if r["orphans"]: print("::warning::No longer in the project (still live in WordPress): " + " ".join(r["orphans"]))
+          if r["errors"]:
+              for e in r["errors"]: print("::error::" + e)
+              sys.exit(1)
+          PY

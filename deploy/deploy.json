@@ -1,25 +1,25 @@
 {
+  "_help": "Never store hosts, passwords, keys or Application Passwords here. SSH DELUXE holds the server connection; the Application Password lives only in WordPress and in GitHub Actions secrets.",
   "ssh_agent": "SSH DELUXE",
-  "remote_path": "~/public_html/hscfdoral.com",
+  "method": "wordpress",
   "public_url": "https://hscfdoral.com/",
-  "backup_dir": "~/backups",
-  "first_deploy_done": false,
-  "exclude": [
-    ".DS_Store",
-    "._*",
-    ".Spotlight-V100",
-    ".Trashes"
-  ],
-  "_help": "remote_path is filled in on the first /deploy after SSH DELUXE confirms the web root. The server pulls the GitHub repo every 15 minutes (deploy/server-pull.sh, set up with deploy/SERVER-SETUP.md). Never store hosts, passwords or keys here; SSH DELUXE holds the connection.",
-  "method": "git-pull",
-  "repo": "paco3463/hscfdoral",
-  "branch": "main",
-  "pull_interval_minutes": 15,
-  "server_script": "deploy/server-pull.sh",
-  "setup_guide": "deploy/SERVER-SETUP.md",
   "hosting": "GoDaddy cPanel shared hosting",
   "hosting_ip": "72.167.102.145",
   "old_wordpress_ip": "160.153.0.192",
   "dns": "GoDaddy (domaincontrol.com); change only the @ A record, keep MX/TXT/www",
-  "cpanel_note": "Addon domain on a shared cPanel account; the account's primary domain is a different site. The repo clone lives at ~/hscfdoral-repo (outside public_html)."
+  "wordpress_path": "~/public_html/hscfdoral.com",
+  "import_folder": "~/hscf-import",
+  "backup_dir": "~/backups",
+  "theme": "hscf",
+  "setup_guide": "wordpress/INSTALL.md",
+  "sync_workflow": ".github/workflows/wordpress-sync.yml",
+  "sync_endpoint": "https://hscfdoral.com/wp-json/hscf/v1/sync",
+  "github_secrets": [
+    "WP_USER",
+    "WP_APP_PASSWORD"
+  ],
+  "repo": "paco3463/hscfdoral",
+  "branch": "main",
+  "first_deploy_done": false,
+  "cpanel_note": "Addon domain on a shared cPanel account; the account's primary domain and other sites in public_html are never touched. Always run wp with --path."
 }
