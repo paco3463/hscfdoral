@@ -1,35 +1,40 @@
 # One-time server setup (for SSH DELUXE)
 
-This is done once, through the user's **SSH DELUXE** agent, which holds the connection to the hosting server. Afterwards the site updates itself: every push to GitHub (including the automatic blog posts on the 1st and 15th) goes live within 15 minutes.
+The new site goes on the **GoDaddy cPanel shared hosting plan at `72.167.102.145`**. This is done once, through the user's **SSH DELUXE** agent. Afterwards the site updates itself: every push to GitHub (including the automatic blog posts on the 1st and 15th) goes live within 15 minutes.
 
 ```
 Claude (scheduled) ──push──▶ GitHub: paco3463/hscfdoral (private)
                                    │  read-only deploy key
-web server: cron every 15 min ─────┘  git pull  →  copy site/ into the web root
+shared hosting: cron every 15 min ─┘  git pull  →  copy site/ into the web root
 ```
 
-Never paste server passwords, hosts or keys into the project or into GitHub.
+Never paste passwords or private keys into the project or into GitHub.
 
-## 1. Find the web root
+## Where things are today (checked 2026-10-23)
 
-Ask the hosting panel or check which folder serves hscfdoral.com (often `~/public_html` or `~/domains/hscfdoral.com/public_html`). Write the path (not the host) into `deploy/deploy.json` → `remote_path`.
+| | Now | After the move |
+|---|---|---|
+| DNS | GoDaddy (`ns03/ns04.domaincontrol.com`) | unchanged |
+| `hscfdoral.com` A record | `160.153.0.192` (old WordPress host) | **`72.167.102.145`** |
+| `www` | CNAME → `hscfdoral.com` | unchanged (follows the A record) |
+| Email (MX) | `smtp.secureserver.net`, `mailstore1.secureserver.net` (GoDaddy email) | **unchanged — do not touch** |
 
-## 2. Back up and move WordPress aside (nothing is deleted)
+Only the one A record changes. Leave the nameservers, MX, TXT (SPF/DKIM) and CNAME records alone, or info@hscfdoral.com email stops working.
+
+## 0. Back up the old WordPress site first
+
+The old site still runs on the old host (`160.153.0.192`). Before the domain moves, download a copy of it over SFTP (all files in its web root) and export its database (WP-CLI `wp db export`, or phpMyAdmin / the hosting panel). Keep both in `~/backups/` or on the Bigger One drive. Nothing on the old host needs to be deleted.
+
+## 1. Prepare the shared hosting account
+
+1. In cPanel, make sure `hscfdoral.com` is on the account: it is either the **primary domain** (web root `~/public_html`) or an **addon domain** (cPanel → Domains; web root shown there, often `~/public_html/hscfdoral.com` or `~/hscfdoral.com`). Note the web root path in `deploy/deploy.json` → `remote_path`.
+2. Turn on **SSH access** (GoDaddy: My Products → Web Hosting → Manage → Settings → SSH Access → On). SSH DELUXE connects with the cPanel username.
+3. If the web root already has a placeholder `index.html` or `default.html` from GoDaddy, move it into `~/backups/`.
+
+## 2. Read-only deploy key for the private repo
 
 ```bash
-WEB_ROOT=~/public_html                       # the folder from step 1
-STAMP=$(date +%Y%m%d-%H%M)
-mkdir -p ~/backups
-tar -czf ~/backups/hscfdoral-wordpress-$STAMP.tar.gz -C "$WEB_ROOT" .
-command -v wp >/dev/null && wp --path="$WEB_ROOT" db export ~/backups/hscfdoral-db-$STAMP.sql   # or export the database from the hosting panel
-ls -la ~/backups                              # confirm both files exist and are not empty
-```
-
-After the user confirms, move the WordPress files (`wp-*`, `index.php`, `.htaccess`, `xmlrpc.php`, `license.txt`, `readme.html`) into `~/backups/wordpress-$STAMP/`. Leave `.well-known/`, `cgi-bin/` and any mail or host files in place.
-
-## 3. Read-only deploy key for the private repo
-
-```bash
+mkdir -p ~/.ssh && chmod 700 ~/.ssh
 ssh-keygen -t ed25519 -N "" -C "hscfdoral server (read-only)" -f ~/.ssh/hscfdoral_deploy
 cat ~/.ssh/hscfdoral_deploy.pub
 cat >> ~/.ssh/config <<'EOF'
@@ -40,44 +45,61 @@ Host github-hscf
   IdentitiesOnly yes
 EOF
 chmod 600 ~/.ssh/config
+ssh -T github-hscf    # after the key is added below; "successfully authenticated" is the good answer
 ```
 
-The user adds the printed public key on GitHub: **paco3463/hscfdoral → Settings → Deploy keys → Add deploy key**, title "hscfdoral server", **leave "Allow write access" off**.
+The user adds the printed public key on GitHub: **paco3463/hscfdoral → Settings → Deploy keys → Add deploy key**, title "hscfdoral server", **"Allow write access" off**.
 
-## 4. Clone outside the web root
+## 3. Clone outside the web root
 
 ```bash
 git clone git@github-hscf:paco3463/hscfdoral.git ~/hscfdoral-repo
 chmod +x ~/hscfdoral-repo/deploy/server-pull.sh
 ```
 
-The clone must **not** be inside the web root (the script refuses if it is), so the source files are never public.
+The clone lives in the home folder, **not** inside `public_html` (the script refuses if it is), so the source files are never public.
 
-## 5. First publish, then turn on the 15-minute pull
+## 4. First publish, then turn on the 15-minute pull
+
+Replace `~/public_html` with the web root from step 1 in both commands.
 
 ```bash
-touch ~/hscfdoral-repo/.git/hscf-deploy-approved          # only after step 2's backup is confirmed
+touch ~/hscfdoral-repo/.git/hscf-deploy-approved
 HSCF_WEB_ROOT=~/public_html ~/hscfdoral-repo/deploy/server-pull.sh
-( crontab -l 2>/dev/null; echo '*/15 * * * * HSCF_WEB_ROOT=$HOME/public_html $HOME/hscfdoral-repo/deploy/server-pull.sh >> $HOME/hscfdoral-pull.log 2>&1' ) | crontab -
-crontab -l
+ls ~/public_html     # index.html, aba/, seguros/, en/, assets/ …
 ```
 
-Use the real web root in both lines. If the server has no cron, the hosting panel's "Cron jobs" page takes the same line.
+Then add the cron job in **cPanel → Cron Jobs** (common setting "Once per fifteen minutes"), command:
 
-## 6. Check it
+```
+HSCF_WEB_ROOT=$HOME/public_html $HOME/hscfdoral-repo/deploy/server-pull.sh >> $HOME/hscfdoral-pull.log 2>&1
+```
 
-- `https://hscfdoral.com/`, `/en/`, `/aba/`, `/seguros/`, `/2022/07/como-manejar-los-ataques-de-ansiedad/` return 200.
-- `https://hscfdoral.com/karina-la-banca/` redirects to `/jorge-garcia/`.
-- A made-up address shows the 404 page.
-- From the project: `python3 build/audit.py --live` reports 0 errors.
-- `tail ~/hscfdoral-pull.log` shows "published …".
+## 5. Check the new host before moving the domain
 
-If the server is not Apache (LiteSpeed reads `.htaccess` too; nginx does not), apply the 404 page, redirects and caching from `site/.htaccess` in the server config.
+From any computer, ask the new server for the site directly, without DNS:
+
+```bash
+curl -sI --resolve hscfdoral.com:80:72.167.102.145 http://hscfdoral.com/            # 200
+curl -sI --resolve hscfdoral.com:80:72.167.102.145 http://hscfdoral.com/aba/        # 200
+curl -sI --resolve hscfdoral.com:80:72.167.102.145 http://hscfdoral.com/karina-la-banca/   # 301 → /jorge-garcia/
+curl -sI --resolve hscfdoral.com:80:72.167.102.145 http://hscfdoral.com/no-existe/   # 404
+```
+
+## 6. Move the domain
+
+GoDaddy → Domains → hscfdoral.com → **DNS** → edit the **A** record with name **@**: value `72.167.102.145`, TTL 600 (or 1/2 hour). Save. Change nothing else. Most visitors see the new site within an hour.
+
+## 7. HTTPS
+
+1. Once DNS points to the new host, issue the SSL certificate: cPanel → **SSL/TLS Status** → Run AutoSSL (or GoDaddy's SSL page if the plan uses a GoDaddy certificate). Include `hscfdoral.com` and `www.hscfdoral.com`.
+2. When `https://hscfdoral.com/` loads with a padlock, turn on the redirect: in `build/build.py` → `HTACCESS`, remove the `# ` in front of the four `RewriteCond`/`RewriteRule` lines under "Force HTTPS", rebuild, audit and push. It goes live on the next pull.
+3. From the project: `python3 build/audit.py --live` → 0 errors. Submit `https://hscfdoral.com/sitemap.xml` in Search Console and Bing.
 
 ## Day to day
 
-- **Publish changes:** commit and push to `main`. Live within 15 minutes.
-- **Force a re-copy:** `touch ~/hscfdoral-repo/.git/hscf-force`.
+- **Publish changes:** commit and push to `main`. Live within 15 minutes. `tail ~/hscfdoral-pull.log` shows each publish.
+- **Force a re-copy now:** `touch ~/hscfdoral-repo/.git/hscf-force` and run the script once.
 - **Pause publishing:** `rm ~/hscfdoral-repo/.git/hscf-deploy-approved` (the cron stays, but does nothing).
-- **Remove deleted pages too:** add `HSCF_DELETE=1` to the cron line once the old WordPress files have been moved out.
-- **Turn on HTTPS redirect:** once SSL works, uncomment the 4 lines in `HTACCESS` in `build/build.py`, rebuild, push.
+- **Also remove pages deleted from the site:** add `HSCF_DELETE=1` at the start of the cron command.
+- The host is Apache/LiteSpeed (cPanel), so `site/.htaccess` handles the 404 page, redirects, caching and compression.

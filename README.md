@@ -13,7 +13,7 @@ Bilingual website and automatic blog for **Healthy Solutions for Children and Fa
 
 ## Working with Claude
 
-Open Claude Code in this folder (first time: `bash claude-agents/install.sh`).
+Open Claude Code **in this folder** (first time: `bash claude-agents/install.sh`); the agents and commands only show up there. To reach the site from any folder, run `bash claude-agents/install-global.sh` once: it adds an `hscf-doral` agent next to SSH DELUXE.
 
 | Command | Use it to |
 |---|---|

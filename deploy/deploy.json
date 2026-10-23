@@ -16,5 +16,9 @@
   "branch": "main",
   "pull_interval_minutes": 15,
   "server_script": "deploy/server-pull.sh",
-  "setup_guide": "deploy/SERVER-SETUP.md"
+  "setup_guide": "deploy/SERVER-SETUP.md",
+  "hosting": "GoDaddy cPanel shared hosting",
+  "hosting_ip": "72.167.102.145",
+  "old_wordpress_ip": "160.153.0.192",
+  "dns": "GoDaddy (domaincontrol.com); change only the @ A record, keep MX/TXT/www"
 }

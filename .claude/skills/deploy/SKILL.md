@@ -18,11 +18,14 @@ The live site is the `site/` folder of the private GitHub repo `paco3463/hscfdor
 
 Read `deploy/deploy.json`. If `first_deploy_done` is `false`, follow `deploy/SERVER-SETUP.md` step by step **through SSH DELUXE**:
 
-1. Find the web root; save the path to `deploy/deploy.json` → `remote_path`.
-2. Back up WordPress (files + database), show the user the backup files, and **wait for a clear yes** before moving the WordPress files aside. Nothing is deleted.
+The new host is the GoDaddy cPanel shared plan at `72.167.102.145` (see `deploy/deploy.json`); the old WordPress site is on a different host and is backed up, not moved.
+
+1. Step 0: make sure the old WordPress site has been backed up (files over SFTP + database). Show the user what was saved.
+2. Find the web root on the shared plan; save the path to `deploy/deploy.json` → `remote_path`.
 3. Create the read-only deploy key and ask the user to add it on GitHub (Settings → Deploy keys, write access off).
-4. Clone outside the web root, create the approved marker, run the pull once, install the cron line.
-5. Check the addresses in section 6 of the setup guide, then set `first_deploy_done` to `true`.
+4. Clone outside the web root, create the approved marker, run the pull once, add the cPanel cron job.
+5. Check the new host with the `curl --resolve` lines in step 5 of the guide **before** the domain moves.
+6. Tell the user exactly which DNS record to change (only the `@` A record → `72.167.102.145`; never MX or TXT) and **wait for them to do it**. Then help with SSL (step 7) and set `first_deploy_done` to `true`.
 
 If SSH DELUXE isn't reachable, tell the user, and give them `deploy/SERVER-SETUP.md` to hand to it.
 

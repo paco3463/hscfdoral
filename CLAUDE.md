@@ -45,7 +45,7 @@ Python 3.10+ and the standard library build the site (Pillow is needed only to r
 | `/site-audit [live]` | Schema, crawlability, AI files, hreflang, links, mobile |
 | `/deploy` | First time: server setup through **SSH DELUXE**. Afterwards: build, audit, push to GitHub |
 
-Agents: `psych-research-writer` (research + writing, review or automatic mode), `seo-strategist`, `technical-seo-auditor`.
+Agents: `psych-research-writer` (research + writing, review or automatic mode), `seo-strategist`, `technical-seo-auditor`. These are project agents: Claude Code shows them only when it is started in this folder. To use the site from any folder (like SSH DELUXE), run `bash claude-agents/install-global.sh` once; it adds the `hscf-doral` agent to `~/.claude/agents/`.
 
 ## How publishing works
 
@@ -55,7 +55,7 @@ Agents: `psych-research-writer` (research + writing, review or automatic mode), 
 web server: cron every 15 min ── git pull (read-only deploy key) ── copy site/ → web root
 ```
 
-Any push to `main` goes live within 15 minutes. Server setup: `deploy/SERVER-SETUP.md`; the pull script: `deploy/server-pull.sh`. Settings: `seo/config.json` → `auto_blog` (set `enabled` to false to pause automatic posts).
+Any push to `main` goes live within 15 minutes. Hosting: GoDaddy cPanel shared plan at `72.167.102.145` (DNS at GoDaddy; only the `@` A record points there, email MX stays on GoDaddy email). Server setup: `deploy/SERVER-SETUP.md`; the pull script: `deploy/server-pull.sh`. Settings: `seo/config.json` → `auto_blog` (set `enabled` to false to pause automatic posts).
 
 ## Folder map
 
