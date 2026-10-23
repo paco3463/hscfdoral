@@ -70,10 +70,11 @@ def slugify(text):
 def _schema_validate(meta, path, errors):
     try:
         import jsonschema
-    except ImportError:
-        return False
+        Validator = jsonschema.Draft202012Validator   # jsonschema 4.0+
+    except (ImportError, AttributeError):
+        return False                                  # older or missing jsonschema: use the built-in checks
     schema = json.load(open(SCHEMA, encoding="utf-8"))
-    for e in sorted(jsonschema.Draft202012Validator(schema).iter_errors(meta), key=lambda e: list(e.path)):
+    for e in sorted(Validator(schema).iter_errors(meta), key=lambda e: [str(x) for x in e.path]):
         errors.append(f"{path}: {'/'.join(str(x) for x in e.path) or '(root)'}: {e.message}")
     return True
 
