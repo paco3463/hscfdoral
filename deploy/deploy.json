@@ -1,0 +1,20 @@
+{
+  "ssh_agent": "SSH DELUXE",
+  "remote_path": "",
+  "public_url": "https://hscfdoral.com/",
+  "backup_dir": "~/backups",
+  "first_deploy_done": false,
+  "exclude": [
+    ".DS_Store",
+    "._*",
+    ".Spotlight-V100",
+    ".Trashes"
+  ],
+  "_help": "remote_path is filled in on the first /deploy after SSH DELUXE confirms the web root. The server pulls the GitHub repo every 15 minutes (deploy/server-pull.sh, set up with deploy/SERVER-SETUP.md). Never store hosts, passwords or keys here; SSH DELUXE holds the connection.",
+  "method": "git-pull",
+  "repo": "paco3463/hscfdoral",
+  "branch": "main",
+  "pull_interval_minutes": 15,
+  "server_script": "deploy/server-pull.sh",
+  "setup_guide": "deploy/SERVER-SETUP.md"
+}

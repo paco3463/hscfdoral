@@ -1,0 +1,61 @@
+{
+  "id": "teen-groups",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "teens",
+  "audience": "parents",
+  "services": [
+    "psychotherapy"
+  ],
+  "condition": {
+    "name_en": "Group therapy for teens",
+    "name_es": "Terapia de grupo para adolescentes",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "teen-groups",
+    "title": "Teen Groups!",
+    "seo_title": "Teen Therapy Groups in Doral | HSCF",
+    "description": "Our small teen group of 3 to 5 teens works on self-esteem, anxiety, depression and relationships in a safe space where teens can truly connect.",
+    "primary_keyword": "teen therapy group",
+    "secondary_keywords": [
+      "group therapy for teens",
+      "teen self-esteem group",
+      "teen anxiety support group",
+      "teen group Doral"
+    ],
+    "summary": "A small therapy group for 3 to 5 teens focused on self-esteem, anxiety, depression and relationships, in a safe space where teens can connect."
+  },
+  "es": {
+    "slug": "teen-groups",
+    "title": "¡Grupos para adolescentes!",
+    "seo_title": "Grupos de terapia para adolescentes en Doral | HSCF",
+    "description": "Nuestro grupo de 3 a 5 adolescentes trabaja la autoestima, la ansiedad, la depresión y las relaciones en un espacio seguro para conectar de verdad.",
+    "primary_keyword": "grupo de terapia para adolescentes",
+    "secondary_keywords": [
+      "terapia de grupo para adolescentes",
+      "autoestima en adolescentes",
+      "ansiedad en adolescentes",
+      "grupo para adolescentes en Doral"
+    ],
+    "summary": "Un grupo pequeño de terapia para 3 a 5 adolescentes enfocado en la autoestima, la ansiedad, la depresión y las relaciones, en un espacio seguro para conectar."
+  },
+  "author": {
+    "type": "Person",
+    "name": "Adriana Bevilacqua",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2022-02-01",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2022/02/teen-groups/",
+  "hero_image": {
+    "src": "assets/img/blog/teen-groups.webp",
+    "alt_en": "A smiling man in a blue shirt sits at a laptop at a dark wooden desk in an office, with a framed diploma on the wall behind him.",
+    "alt_es": "Un hombre sonriente con camisa azul, sentado frente a una laptop en un escritorio de madera oscura en una oficina, con un diploma enmarcado en la pared.",
+    "width": 768,
+    "height": 1024
+  },
+  "sources": []
+}

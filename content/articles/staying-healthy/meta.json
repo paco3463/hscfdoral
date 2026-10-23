@@ -1,0 +1,62 @@
+{
+  "id": "staying-healthy",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "mind-body",
+  "audience": "adults",
+  "services": [
+    "yoga",
+    "psychotherapy"
+  ],
+  "condition": {
+    "name_en": "Mind-body wellness",
+    "name_es": "Bienestar de cuerpo y mente",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "staying-healthy-is-up-to-you",
+    "title": "Staying Healthy Is Up to You!",
+    "seo_title": "Staying Healthy Is Up to You: Mind and Body Tips | HSCF",
+    "description": "Simple ways to care for your body and mind: stay positive, accept hard emotions, practice gratitude, connect with others, move, sleep and eat well.",
+    "primary_keyword": "tips for a healthy mind and body",
+    "secondary_keywords": [
+      "mind body connection",
+      "practice gratitude",
+      "sleep and mood",
+      "exercise and mental health"
+    ],
+    "summary": "Everyday habits that support both body and mind, from a positive outlook and gratitude to social connection, exercise, sleep and good nutrition."
+  },
+  "es": {
+    "slug": "estar-sano-depende-de-ti",
+    "title": "¡Estar sano depende de ti!",
+    "seo_title": "¡Estar sano depende de ti! Cuerpo y mente | HSCF",
+    "description": "Formas sencillas de cuidar tu cuerpo y tu mente: actitud positiva, gratitud, conexión con los demás, actividad física, buen descanso y buena comida.",
+    "primary_keyword": "consejos para cuidar cuerpo y mente",
+    "secondary_keywords": [
+      "salud física y mental",
+      "practicar la gratitud",
+      "sueño y estado de ánimo",
+      "ejercicio y salud mental"
+    ],
+    "summary": "Hábitos cotidianos que cuidan el cuerpo y la mente, desde una actitud positiva y la gratitud hasta la conexión social, el ejercicio, el sueño y una buena alimentación."
+  },
+  "author": {
+    "type": "Person",
+    "name": "Adriana Bevilacqua",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2022-01-01",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2022/01/estar-sano-depende-de-ti/",
+  "hero_image": {
+    "src": "assets/img/blog/staying-healthy.webp",
+    "alt_en": "A smiling woman with curly hair, wearing yellow headphones and a gray sports top, flexes her arm against a white background.",
+    "alt_es": "Una mujer sonriente de pelo rizado, con auriculares amarillos y top deportivo gris, flexiona el brazo sobre un fondo blanco.",
+    "width": 1200,
+    "height": 800
+  },
+  "sources": []
+}

@@ -1,0 +1,11 @@
+La comunicación asertiva o asertividad se refiere a la habilidad de defender nuestros derechos de una manera empática, educada y, sobre todo, sin violar los derechos del otro.
+
+La comunicación asertiva le permite a la pareja mantener un mejor ambiente para la convivencia, alinear sus intereses, incrementar el respeto, tener espacios productivos de comunicación y, en definitiva, mantener la relación saludable.
+
+Llegar a ese punto puede ser un poco difícil, mayormente si ya se han originado conflictos y no hay una buena estrategia para la comunicación. Por ello, tenemos una serie de recomendaciones especiales:
+
+- **Elegir el momento oportuno para hablar:** Escoger el momento oportuno para decir las cosas es el primer paso para practicar la comunicación asertiva en pareja. No solo debes tener en cuenta tus emociones, sino también el estado emocional en el que se encuentre tu pareja al momento de hablar.
+- **Usar las palabras correctas:** Emplea palabras, frases y expresiones claras y concretas, y siempre con un tono amable, que puedan promover la cercanía y la buena voluntad durante la conversación.
+- **Siempre apela a la sinceridad:** Puedes emplear palabras amables y hablar en el momento adecuado, y al mismo tiempo mantener tu sinceridad y ser transparente en tu comunicación. Es así como podrás solucionar malentendidos, e incluso evitar que se repitan situaciones que causen molestia y conflicto en la relación.
+- **Sé consciente de tu lenguaje no verbal:** La comunicación asertiva se logra cuando te comunicas de tal forma que se pueda entender con exactitud lo que quieres decir. De esta manera, se transmite un mensaje de forma coherente, y tu pareja podrá entenderte bien, e incluso la estimularás a hacer lo mismo y a expresarse de forma correcta, lo que mejorará notablemente la comunicación entre ambos.
+- **No dejes de lado tus emociones:** Reconocernos en nuestras emociones nos ayuda a tener coherencia en lo que vamos a comunicar. Si hay enojo, tristeza o disgusto, por ejemplo, compártelo de forma proactiva. No se trata de buscar quién está en lo correcto, sino de poder abrirnos a un diálogo genuino, en el cual nuestro sentir y nuestro pensar se comuniquen con coherencia.

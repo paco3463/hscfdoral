@@ -1,0 +1,835 @@
+{
+ "staff": {
+  "jorge-garcia": {
+   "src": "assets/img/staff/jorge-garcia.webp",
+   "w": 320,
+   "h": 400,
+   "sm": "assets/img/staff/jorge-garcia-sm.webp",
+   "sm_w": 320,
+   "jpg": "assets/img/staff/jorge-garcia.jpg"
+  },
+  "armando-matiz-reyes": {
+   "src": "assets/img/staff/armando-matiz-reyes.webp",
+   "w": 768,
+   "h": 960,
+   "sm": "assets/img/staff/armando-matiz-reyes-sm.webp",
+   "sm_w": 420,
+   "jpg": "assets/img/staff/armando-matiz-reyes.jpg"
+  },
+  "maria-cecilia-mauricio": {
+   "src": "assets/img/staff/maria-cecilia-mauricio.webp",
+   "w": 320,
+   "h": 400,
+   "sm": "assets/img/staff/maria-cecilia-mauricio-sm.webp",
+   "sm_w": 320,
+   "jpg": "assets/img/staff/maria-cecilia-mauricio.jpg"
+  },
+  "jose-mesa": {
+   "src": "assets/img/staff/jose-mesa.webp",
+   "w": 500,
+   "h": 625,
+   "sm": "assets/img/staff/jose-mesa-sm.webp",
+   "sm_w": 420,
+   "jpg": "assets/img/staff/jose-mesa.jpg"
+  },
+  "juan-felipe-diaz": {
+   "src": "assets/img/staff/juan-felipe-diaz.webp",
+   "w": 302,
+   "h": 377,
+   "sm": "assets/img/staff/juan-felipe-diaz-sm.webp",
+   "sm_w": 302,
+   "jpg": "assets/img/staff/juan-felipe-diaz.jpg"
+  },
+  "paula-callegari": {
+   "src": "assets/img/staff/paula-callegari.webp",
+   "w": 640,
+   "h": 800,
+   "sm": "assets/img/staff/paula-callegari-sm.webp",
+   "sm_w": 420,
+   "jpg": "assets/img/staff/paula-callegari.jpg"
+  },
+  "silvia-lugo": {
+   "src": "assets/img/staff/silvia-lugo.webp",
+   "w": 900,
+   "h": 1125,
+   "sm": "assets/img/staff/silvia-lugo-sm.webp",
+   "sm_w": 420,
+   "jpg": "assets/img/staff/silvia-lugo.jpg"
+  },
+  "alibel-osorio": {
+   "src": "assets/img/staff/alibel-osorio.webp",
+   "w": 900,
+   "h": 1125,
+   "sm": "assets/img/staff/alibel-osorio-sm.webp",
+   "sm_w": 420,
+   "jpg": "assets/img/staff/alibel-osorio.jpg"
+  },
+  "beatriz-pedreira": {
+   "src": "assets/img/staff/beatriz-pedreira.webp",
+   "w": 900,
+   "h": 1125,
+   "sm": "assets/img/staff/beatriz-pedreira-sm.webp",
+   "sm_w": 420,
+   "jpg": "assets/img/staff/beatriz-pedreira.jpg"
+  }
+ },
+ "gallery": [
+  {
+   "src": "assets/img/galeria/img-2049.webp",
+   "w": 1400,
+   "h": 681,
+   "sm": "assets/img/galeria/img-2049-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2050.webp",
+   "w": 768,
+   "h": 768,
+   "sm": "assets/img/galeria/img-2050-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2051.webp",
+   "w": 872,
+   "h": 960,
+   "sm": "assets/img/galeria/img-2051-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2052.webp",
+   "w": 720,
+   "h": 960,
+   "sm": "assets/img/galeria/img-2052-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2053.webp",
+   "w": 960,
+   "h": 720,
+   "sm": "assets/img/galeria/img-2053-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2054.webp",
+   "w": 960,
+   "h": 720,
+   "sm": "assets/img/galeria/img-2054-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2055.webp",
+   "w": 768,
+   "h": 1024,
+   "sm": "assets/img/galeria/img-2055-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2056.webp",
+   "w": 960,
+   "h": 720,
+   "sm": "assets/img/galeria/img-2056-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2057.webp",
+   "w": 720,
+   "h": 960,
+   "sm": "assets/img/galeria/img-2057-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2058.webp",
+   "w": 1080,
+   "h": 810,
+   "sm": "assets/img/galeria/img-2058-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2059.webp",
+   "w": 592,
+   "h": 960,
+   "sm": "assets/img/galeria/img-2059-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2060.webp",
+   "w": 960,
+   "h": 960,
+   "sm": "assets/img/galeria/img-2060-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2061.webp",
+   "w": 960,
+   "h": 720,
+   "sm": "assets/img/galeria/img-2061-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2062.webp",
+   "w": 960,
+   "h": 721,
+   "sm": "assets/img/galeria/img-2062-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2063.webp",
+   "w": 765,
+   "h": 956,
+   "sm": "assets/img/galeria/img-2063-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2064.webp",
+   "w": 720,
+   "h": 960,
+   "sm": "assets/img/galeria/img-2064-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2065.webp",
+   "w": 720,
+   "h": 960,
+   "sm": "assets/img/galeria/img-2065-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2066.webp",
+   "w": 720,
+   "h": 960,
+   "sm": "assets/img/galeria/img-2066-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2068.webp",
+   "w": 540,
+   "h": 960,
+   "sm": "assets/img/galeria/img-2068-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2069.webp",
+   "w": 960,
+   "h": 720,
+   "sm": "assets/img/galeria/img-2069-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2071.webp",
+   "w": 960,
+   "h": 528,
+   "sm": "assets/img/galeria/img-2071-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2072.webp",
+   "w": 720,
+   "h": 960,
+   "sm": "assets/img/galeria/img-2072-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2073.webp",
+   "w": 960,
+   "h": 720,
+   "sm": "assets/img/galeria/img-2073-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2074.webp",
+   "w": 720,
+   "h": 960,
+   "sm": "assets/img/galeria/img-2074-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2075.webp",
+   "w": 1080,
+   "h": 1350,
+   "sm": "assets/img/galeria/img-2075-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2076.webp",
+   "w": 720,
+   "h": 405,
+   "sm": "assets/img/galeria/img-2076-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2079.webp",
+   "w": 960,
+   "h": 1280,
+   "sm": "assets/img/galeria/img-2079-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2080.webp",
+   "w": 720,
+   "h": 1280,
+   "sm": "assets/img/galeria/img-2080-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2081.webp",
+   "w": 720,
+   "h": 1280,
+   "sm": "assets/img/galeria/img-2081-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2082.webp",
+   "w": 960,
+   "h": 1280,
+   "sm": "assets/img/galeria/img-2082-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2083.webp",
+   "w": 1032,
+   "h": 774,
+   "sm": "assets/img/galeria/img-2083-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2084.webp",
+   "w": 1032,
+   "h": 774,
+   "sm": "assets/img/galeria/img-2084-sm.webp",
+   "sm_w": 520
+  },
+  {
+   "src": "assets/img/galeria/img-2085.webp",
+   "w": 720,
+   "h": 1280,
+   "sm": "assets/img/galeria/img-2085-sm.webp",
+   "sm_w": 520
+  }
+ ],
+ "events": {
+  "arte-una-herramienta": {
+   "src": "assets/img/eventos/arte-una-herramienta.webp",
+   "w": 1200,
+   "h": 1200,
+   "sm": "assets/img/eventos/arte-una-herramienta-sm.webp",
+   "sm_w": 520
+  },
+  "sindrome-de-asperger": {
+   "src": "assets/img/eventos/sindrome-de-asperger.webp",
+   "w": 1200,
+   "h": 1200,
+   "sm": "assets/img/eventos/sindrome-de-asperger-sm.webp",
+   "sm_w": 520
+  },
+  "la-vida-sin-limites": {
+   "src": "assets/img/eventos/la-vida-sin-limites.webp",
+   "w": 1200,
+   "h": 1200,
+   "sm": "assets/img/eventos/la-vida-sin-limites-sm.webp",
+   "sm_w": 520
+  },
+  "la-vida-sin-limites-2": {
+   "src": "assets/img/eventos/la-vida-sin-limites-2.webp",
+   "w": 1200,
+   "h": 1200,
+   "sm": "assets/img/eventos/la-vida-sin-limites-2-sm.webp",
+   "sm_w": 520
+  },
+  "embellecerte": {
+   "src": "assets/img/eventos/embellecerte.webp",
+   "w": 1200,
+   "h": 1203,
+   "sm": "assets/img/eventos/embellecerte-sm.webp",
+   "sm_w": 520
+  },
+  "neurofeedback-en": {
+   "src": "assets/img/eventos/neurofeedback-en.webp",
+   "w": 1200,
+   "h": 1558,
+   "sm": "assets/img/eventos/neurofeedback-en-sm.webp",
+   "sm_w": 520
+  },
+  "neurofeedback-es": {
+   "src": "assets/img/eventos/neurofeedback-es.webp",
+   "w": 1200,
+   "h": 1558,
+   "sm": "assets/img/eventos/neurofeedback-es-sm.webp",
+   "sm_w": 520
+  },
+  "lo-que-no-mata-fortalece": {
+   "src": "assets/img/eventos/lo-que-no-mata-fortalece.webp",
+   "w": 1200,
+   "h": 1200,
+   "sm": "assets/img/eventos/lo-que-no-mata-fortalece-sm.webp",
+   "sm_w": 520
+  },
+  "la-conciencia-los-sentimientos": {
+   "src": "assets/img/eventos/la-conciencia-los-sentimientos.webp",
+   "w": 1200,
+   "h": 1204,
+   "sm": "assets/img/eventos/la-conciencia-los-sentimientos-sm.webp",
+   "sm_w": 520
+  },
+  "habia-una-vez-edipo-rey": {
+   "src": "assets/img/eventos/habia-una-vez-edipo-rey.webp",
+   "w": 1200,
+   "h": 1445,
+   "sm": "assets/img/eventos/habia-una-vez-edipo-rey-sm.webp",
+   "sm_w": 520
+  },
+  "el-arte-del-reencuentro": {
+   "src": "assets/img/eventos/el-arte-del-reencuentro.webp",
+   "w": 481,
+   "h": 602,
+   "sm": "assets/img/eventos/el-arte-del-reencuentro-sm.webp",
+   "sm_w": 481
+  }
+ },
+ "talleres": {
+  "sos-adolescencia": {
+   "src": "assets/img/talleres/sos-adolescencia.webp",
+   "w": 1200,
+   "h": 802,
+   "sm": "assets/img/talleres/sos-adolescencia-sm.webp",
+   "sm_w": 560
+  },
+  "bailando-con-los-miedos": {
+   "src": "assets/img/talleres/bailando-con-los-miedos.webp",
+   "w": 1200,
+   "h": 1799,
+   "sm": "assets/img/talleres/bailando-con-los-miedos-sm.webp",
+   "sm_w": 560
+  },
+  "bulimia-y-anorexia": {
+   "src": "assets/img/talleres/bulimia-y-anorexia.webp",
+   "w": 1200,
+   "h": 1800,
+   "sm": "assets/img/talleres/bulimia-y-anorexia-sm.webp",
+   "sm_w": 560
+  },
+  "inteligencia-emocional": {
+   "src": "assets/img/talleres/inteligencia-emocional.webp",
+   "w": 1200,
+   "h": 801,
+   "sm": "assets/img/talleres/inteligencia-emocional-sm.webp",
+   "sm_w": 560
+  },
+  "por-que-me-enfermo": {
+   "src": "assets/img/talleres/por-que-me-enfermo.webp",
+   "w": 1200,
+   "h": 1856,
+   "sm": "assets/img/talleres/por-que-me-enfermo-sm.webp",
+   "sm_w": 560
+  },
+  "cuando-la-adolescencia-toca-la-puerta": {
+   "src": "assets/img/talleres/cuando-la-adolescencia-toca-la-puerta.webp",
+   "w": 450,
+   "h": 450,
+   "sm": "assets/img/talleres/cuando-la-adolescencia-toca-la-puerta-sm.webp",
+   "sm_w": 450
+  },
+  "el-arte-del-reencuentro": {
+   "src": "assets/img/talleres/el-arte-del-reencuentro.webp",
+   "w": 1200,
+   "h": 799,
+   "sm": "assets/img/talleres/el-arte-del-reencuentro-sm.webp",
+   "sm_w": 560
+  },
+  "mi-paz-no-es-negociable": {
+   "src": "assets/img/talleres/mi-paz-no-es-negociable.webp",
+   "w": 1200,
+   "h": 1804,
+   "sm": "assets/img/talleres/mi-paz-no-es-negociable-sm.webp",
+   "sm_w": 560
+  },
+  "mujeres-de-nuestra-edad": {
+   "src": "assets/img/talleres/mujeres-de-nuestra-edad.webp",
+   "w": 1200,
+   "h": 800,
+   "sm": "assets/img/talleres/mujeres-de-nuestra-edad-sm.webp",
+   "sm_w": 560
+  },
+  "amor-y-ego": {
+   "src": "assets/img/talleres/amor-y-ego.webp",
+   "w": 1200,
+   "h": 1801,
+   "sm": "assets/img/talleres/amor-y-ego-sm.webp",
+   "sm_w": 560
+  },
+  "bullying": {
+   "src": "assets/img/talleres/bullying.webp",
+   "w": 1200,
+   "h": 1200,
+   "sm": "assets/img/talleres/bullying-sm.webp",
+   "sm_w": 560
+  },
+  "promoviendo-relaciones-saludables": {
+   "src": "assets/img/talleres/promoviendo-relaciones-saludables.webp",
+   "w": 1200,
+   "h": 800,
+   "sm": "assets/img/talleres/promoviendo-relaciones-saludables-sm.webp",
+   "sm_w": 560
+  },
+  "descubriendo-el-oro": {
+   "src": "assets/img/talleres/descubriendo-el-oro.webp",
+   "w": 1200,
+   "h": 2132,
+   "sm": "assets/img/talleres/descubriendo-el-oro-sm.webp",
+   "sm_w": 560
+  }
+ },
+ "cursos": {
+  "sindrome-de-la-cabana": {
+   "src": "assets/img/cursos/sindrome-de-la-cabana.webp",
+   "w": 646,
+   "h": 900,
+   "sm": "assets/img/cursos/sindrome-de-la-cabana-sm.webp",
+   "sm_w": 560
+  },
+  "resistencia-al-mejoramiento": {
+   "src": "assets/img/cursos/resistencia-al-mejoramiento.webp",
+   "w": 960,
+   "h": 540,
+   "sm": "assets/img/cursos/resistencia-al-mejoramiento-sm.webp",
+   "sm_w": 560
+  },
+  "taller-lenguaje": {
+   "src": "assets/img/cursos/taller-lenguaje.webp",
+   "w": 960,
+   "h": 540,
+   "sm": "assets/img/cursos/taller-lenguaje-sm.webp",
+   "sm_w": 560
+  },
+  "taller-neuroplasticidad": {
+   "src": "assets/img/cursos/taller-neuroplasticidad.webp",
+   "w": 960,
+   "h": 540,
+   "sm": "assets/img/cursos/taller-neuroplasticidad-sm.webp",
+   "sm_w": 560
+  }
+ },
+ "news": {
+  "biodecodificacion-neuroemocional": {
+   "src": "assets/img/novedades/biodecodificacion-neuroemocional.webp",
+   "w": 1200,
+   "h": 1200,
+   "sm": "assets/img/novedades/biodecodificacion-neuroemocional-sm.webp",
+   "sm_w": 560
+  },
+  "cuando-la-adolescencia-curso": {
+   "src": "assets/img/novedades/cuando-la-adolescencia-curso.webp",
+   "w": 1200,
+   "h": 1200,
+   "sm": "assets/img/novedades/cuando-la-adolescencia-curso-sm.webp",
+   "sm_w": 560
+  },
+  "ansiedad-en-tiempos-de-pandemia": {
+   "src": "assets/img/novedades/ansiedad-en-tiempos-de-pandemia.webp",
+   "w": 1200,
+   "h": 1200,
+   "sm": "assets/img/novedades/ansiedad-en-tiempos-de-pandemia-sm.webp",
+   "sm_w": 560
+  }
+ },
+ "services": {
+  "psicoterapia": {
+   "src": "assets/img/servicios/psicoterapia.webp",
+   "w": 1600,
+   "h": 1067,
+   "sm": "assets/img/servicios/psicoterapia-sm.webp",
+   "sm_w": 640
+  },
+  "yoga": {
+   "src": "assets/img/servicios/yoga.webp",
+   "w": 1600,
+   "h": 900,
+   "sm": "assets/img/servicios/yoga-sm.webp",
+   "sm_w": 640
+  },
+  "coaching": {
+   "src": "assets/img/servicios/coaching.webp",
+   "w": 1600,
+   "h": 1078,
+   "sm": "assets/img/servicios/coaching-sm.webp",
+   "sm_w": 640
+  },
+  "hipnoterapia": {
+   "src": "assets/img/servicios/hipnoterapia.webp",
+   "w": 1600,
+   "h": 1067,
+   "sm": "assets/img/servicios/hipnoterapia-sm.webp",
+   "sm_w": 640
+  },
+  "consulta": {
+   "src": "assets/img/servicios/consulta.webp",
+   "w": 1600,
+   "h": 1069,
+   "sm": "assets/img/servicios/consulta-sm.webp",
+   "sm_w": 640
+  },
+  "talleres": {
+   "src": "assets/img/servicios/talleres.webp",
+   "w": 1600,
+   "h": 1068,
+   "sm": "assets/img/servicios/talleres-sm.webp",
+   "sm_w": 640
+  },
+  "familia-atardecer": {
+   "src": "assets/img/servicios/familia-atardecer.webp",
+   "w": 1600,
+   "h": 1065,
+   "sm": "assets/img/servicios/familia-atardecer-sm.webp",
+   "sm_w": 640
+  },
+  "aprendizaje": {
+   "src": "assets/img/servicios/aprendizaje.webp",
+   "w": 1600,
+   "h": 958,
+   "sm": "assets/img/servicios/aprendizaje-sm.webp",
+   "sm_w": 640
+  },
+  "equipo-trabajo": {
+   "src": "assets/img/servicios/equipo-trabajo.webp",
+   "w": 1600,
+   "h": 1068,
+   "sm": "assets/img/servicios/equipo-trabajo-sm.webp",
+   "sm_w": 640
+  },
+  "aba": {
+   "src": "assets/img/servicios/aba.webp",
+   "w": 1600,
+   "h": 1067,
+   "sm": "assets/img/servicios/aba-sm.webp",
+   "sm_w": 640
+  }
+ },
+ "blog": {
+  "prioritize-mental-health": [
+   {
+    "src": "assets/img/blog/prioritize-mental-health.webp",
+    "w": 1080,
+    "h": 1080,
+    "sm": "assets/img/blog/prioritize-mental-health-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "anxiety-attacks": [
+   {
+    "src": "assets/img/blog/anxiety-attacks.webp",
+    "w": 1200,
+    "h": 1200,
+    "sm": "assets/img/blog/anxiety-attacks-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "why-see-a-psychologist": [
+   {
+    "src": "assets/img/blog/why-see-a-psychologist.webp",
+    "w": 1200,
+    "h": 675,
+    "sm": "assets/img/blog/why-see-a-psychologist-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "teen-groups": [
+   {
+    "src": "assets/img/blog/teen-groups.webp",
+    "w": 768,
+    "h": 1024,
+    "sm": "assets/img/blog/teen-groups-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "staying-healthy": [
+   {
+    "src": "assets/img/blog/staying-healthy.webp",
+    "w": 1200,
+    "h": 800,
+    "sm": "assets/img/blog/staying-healthy-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "mind-body-health": [
+   {
+    "src": "assets/img/blog/mind-body-health.webp",
+    "w": 626,
+    "h": 417,
+    "sm": "assets/img/blog/mind-body-health-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "attention-and-focus": [
+   {
+    "src": "assets/img/blog/attention-and-focus.webp",
+    "w": 1200,
+    "h": 1200,
+    "sm": "assets/img/blog/attention-and-focus-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "what-is-memory": [
+   {
+    "src": "assets/img/blog/what-is-memory.webp",
+    "w": 1200,
+    "h": 1029,
+    "sm": "assets/img/blog/what-is-memory-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "what-is-cogmed": [
+   {
+    "src": "assets/img/blog/what-is-cogmed.webp",
+    "w": 1000,
+    "h": 1000,
+    "sm": "assets/img/blog/what-is-cogmed-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "helping-children-through-separation": [
+   {
+    "src": "assets/img/blog/helping-children-through-separation.webp",
+    "w": 640,
+    "h": 480,
+    "sm": "assets/img/blog/helping-children-through-separation-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "family-wellbeing": [
+   {
+    "src": "assets/img/blog/family-wellbeing.webp",
+    "w": 640,
+    "h": 427,
+    "sm": "assets/img/blog/family-wellbeing-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "covid-19-emotional-balance": [
+   {
+    "src": "assets/img/blog/covid-19-emotional-balance.webp",
+    "w": 640,
+    "h": 423,
+    "sm": "assets/img/blog/covid-19-emotional-balance-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "improve-your-mental-health": [
+   {
+    "src": "assets/img/blog/improve-your-mental-health.webp",
+    "w": 1200,
+    "h": 800,
+    "sm": "assets/img/blog/improve-your-mental-health-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "assertive-communication": [
+   {
+    "src": "assets/img/blog/assertive-communication.webp",
+    "w": 640,
+    "h": 427,
+    "sm": "assets/img/blog/assertive-communication-sm.webp",
+    "sm_w": 560
+   }
+  ],
+  "play-therapy-training-2021": [
+   {
+    "src": "assets/img/blog/play-therapy-training-2021.webp",
+    "w": 1200,
+    "h": 1178,
+    "sm": "assets/img/blog/play-therapy-training-2021-sm.webp",
+    "sm_w": 560
+   },
+   {
+    "src": "assets/img/blog/play-therapy-training-2021-2.webp",
+    "w": 1200,
+    "h": 1190,
+    "sm": "assets/img/blog/play-therapy-training-2021-2-sm.webp",
+    "sm_w": 560
+   },
+   {
+    "src": "assets/img/blog/play-therapy-training-2021-3.webp",
+    "w": 1200,
+    "h": 1185,
+    "sm": "assets/img/blog/play-therapy-training-2021-3-sm.webp",
+    "sm_w": 560
+   },
+   {
+    "src": "assets/img/blog/play-therapy-training-2021-4.webp",
+    "w": 1200,
+    "h": 1178,
+    "sm": "assets/img/blog/play-therapy-training-2021-4-sm.webp",
+    "sm_w": 560
+   },
+   {
+    "src": "assets/img/blog/play-therapy-training-2021-5.webp",
+    "w": 1200,
+    "h": 1180,
+    "sm": "assets/img/blog/play-therapy-training-2021-5-sm.webp",
+    "sm_w": 560
+   },
+   {
+    "src": "assets/img/blog/play-therapy-training-2021-6.webp",
+    "w": 768,
+    "h": 1024,
+    "sm": "assets/img/blog/play-therapy-training-2021-6-sm.webp",
+    "sm_w": 560
+   }
+  ]
+ },
+ "logos": {
+  "aetna": {
+   "src": "assets/img/seguros/aetna.webp",
+   "w": 360,
+   "h": 160
+  },
+  "bcbs": {
+   "src": "assets/img/seguros/bcbs.webp",
+   "w": 360,
+   "h": 160
+  },
+  "cigna": {
+   "src": "assets/img/seguros/cigna.webp",
+   "w": 360,
+   "h": 160
+  },
+  "unitedhealthcare": {
+   "src": "assets/img/seguros/unitedhealthcare.webp",
+   "w": 360,
+   "h": 160
+  },
+  "oscar": {
+   "src": "assets/img/seguros/oscar.webp",
+   "w": 360,
+   "h": 160
+  },
+  "bind": {
+   "src": "assets/img/seguros/bind.webp",
+   "w": 360,
+   "h": 160
+  },
+  "optum": {
+   "src": "assets/img/seguros/optum.webp",
+   "w": 360,
+   "h": 160
+  },
+  "avmed": {
+   "src": "assets/img/seguros/avmed.webp",
+   "w": 360,
+   "h": 160
+  },
+  "lucet": {
+   "src": "assets/img/seguros/lucet.webp",
+   "w": 360,
+   "h": 160
+  },
+  "umr": {
+   "src": "assets/img/seguros/umr.webp",
+   "w": 360,
+   "h": 160
+  },
+  "anthem": {
+   "src": "assets/img/seguros/anthem.webp",
+   "w": 360,
+   "h": 160
+  }
+ }
+}

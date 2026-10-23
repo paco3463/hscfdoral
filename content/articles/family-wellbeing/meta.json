@@ -1,0 +1,62 @@
+{
+  "id": "family-wellbeing",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "couples-family",
+  "audience": "families",
+  "services": [
+    "parent-workshops",
+    "psychotherapy"
+  ],
+  "condition": {
+    "name_en": "Family well-being",
+    "name_es": "Bienestar familiar",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "well-being-in-the-family",
+    "title": "Well-Being in the Family",
+    "seo_title": "Family Well-Being: Healthy Habits at Home | HSCF",
+    "description": "Simple ways to boost family well-being: healthier meals, more movement, less screen time and real conversation with your kids every day.",
+    "primary_keyword": "family well-being",
+    "secondary_keywords": [
+      "healthy family habits",
+      "family time",
+      "less screen time for kids",
+      "family dinner"
+    ],
+    "summary": "Why family matters and four simple areas to work on at home: nutrition, movement, time outdoors with less screen time, and quality time together."
+  },
+  "es": {
+    "slug": "el-bienestar-en-la-familia",
+    "title": "El bienestar en la familia",
+    "seo_title": "El bienestar en la familia: hábitos sanos | HSCF",
+    "description": "Ideas sencillas para el bienestar familiar: mejor alimentación, más movimiento, menos pantallas y conversaciones de calidad con tus hijos.",
+    "primary_keyword": "bienestar familiar",
+    "secondary_keywords": [
+      "hábitos familiares saludables",
+      "tiempo en familia",
+      "menos pantallas para niños",
+      "cenar en familia"
+    ],
+    "summary": "Por qué la familia importa y cuatro áreas sencillas para trabajar en casa: alimentación, movimiento, aire libre con menos pantallas y tiempo de calidad juntos."
+  },
+  "author": {
+    "type": "Organization",
+    "name": "Healthy Solutions for Children and Families",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2021-06-20",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2021/06/el-bienestar-en-la-familia/",
+  "hero_image": {
+    "src": "assets/img/blog/family-wellbeing.webp",
+    "alt_en": "A family of six kneels on the grass in a sunny backyard, petting a wet golden retriever.",
+    "alt_es": "Una familia de seis personas, arrodillada en el césped de un jardín soleado, acaricia a un golden retriever mojado.",
+    "width": 640,
+    "height": 427
+  },
+  "sources": []
+}

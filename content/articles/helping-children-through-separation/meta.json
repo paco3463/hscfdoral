@@ -1,0 +1,62 @@
+{
+  "id": "helping-children-through-separation",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "couples-family",
+  "audience": "parents",
+  "services": [
+    "psychotherapy",
+    "parent-workshops"
+  ],
+  "condition": {
+    "name_en": "Parental separation and divorce",
+    "name_es": "Separación y divorcio de los padres",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "how-to-help-your-child-cope-with-parents-separation",
+    "title": "How to Help Your Child Cope With Their Parents' Separation",
+    "seo_title": "Helping Your Child Cope With Separation | HSCF",
+    "description": "Children can feel shock, sadness, anger or even relief when parents separate. Simple tips to help your child cope with separation or divorce.",
+    "primary_keyword": "how to help a child cope with separation",
+    "secondary_keywords": [
+      "children and divorce",
+      "helping kids through divorce",
+      "parental separation",
+      "co-parenting tips"
+    ],
+    "summary": "Children can feel many mixed emotions when their parents separate. These simple tips can help you support your child through separation or divorce."
+  },
+  "es": {
+    "slug": "como-ayudar-al-nino-a-afrontar-la-situacion-de-separacion-de-sus-padres",
+    "title": "Cómo ayudar al niño a afrontar la situación de separación de sus padres",
+    "seo_title": "Cómo ayudar a tu hijo con la separación | HSCF",
+    "description": "Los niños pueden sentir tristeza, ira o incluso alivio cuando sus padres se separan. Tips sencillos para ayudar a tu hijo a afrontar la separación.",
+    "primary_keyword": "cómo ayudar a un niño con la separación de sus padres",
+    "secondary_keywords": [
+      "niños y divorcio",
+      "separación de los padres",
+      "divorcio e hijos",
+      "cómo hablar del divorcio con los niños"
+    ],
+    "summary": "Los niños pueden sentir muchas emociones encontradas cuando sus padres se separan. Estos tips sencillos te ayudan a acompañar a tu hijo en este proceso."
+  },
+  "author": {
+    "type": "Organization",
+    "name": "Healthy Solutions for Children and Families",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2021-07-01",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2021/07/como-ayudar-al-nino-a-afrontar-la-situacion-de-separacion-de-sus-padres/",
+  "hero_image": {
+    "src": "assets/img/blog/helping-children-through-separation.webp",
+    "alt_en": "Sad young boy looking out between the wooden bars of a railing",
+    "alt_es": "Niño pequeño con expresión triste mirando entre los barrotes de madera de una baranda",
+    "width": 640,
+    "height": 480
+  },
+  "sources": []
+}

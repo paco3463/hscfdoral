@@ -1,0 +1,61 @@
+{
+  "id": "anxiety-attacks",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "anxiety",
+  "audience": "adults",
+  "services": [
+    "psychotherapy"
+  ],
+  "condition": {
+    "name_en": "Anxiety attacks",
+    "name_es": "Ataques de ansiedad",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "how-to-manage-anxiety-attacks",
+    "title": "How to Manage Anxiety Attacks",
+    "seo_title": "How to Manage Anxiety Attacks | HSCF",
+    "description": "Common signs of an anxiety attack and simple steps to get through one: find a calm spot, slow your breathing and reconnect with your senses.",
+    "primary_keyword": "how to manage an anxiety attack",
+    "secondary_keywords": [
+      "anxiety attack symptoms",
+      "breathing for anxiety",
+      "grounding techniques",
+      "therapy for anxiety"
+    ],
+    "summary": "The common signs of an anxiety attack and practical steps to calm one, from slowing your breathing to grounding your senses, plus when to get help."
+  },
+  "es": {
+    "slug": "como-manejar-los-ataques-de-ansiedad",
+    "title": "¿Cómo manejar los ataques de ansiedad?",
+    "seo_title": "¿Cómo manejar los ataques de ansiedad? | HSCF",
+    "description": "Síntomas comunes de un ataque de ansiedad y pasos sencillos para atravesarlo: buscar calma, regular la respiración y conectar con tus sentidos.",
+    "primary_keyword": "cómo manejar un ataque de ansiedad",
+    "secondary_keywords": [
+      "síntomas de un ataque de ansiedad",
+      "respiración para la ansiedad",
+      "cómo calmar la ansiedad",
+      "terapia para la ansiedad"
+    ],
+    "summary": "Los síntomas más comunes de un ataque de ansiedad y pasos prácticos para calmarlo, desde regular la respiración hasta conectar con tus sentidos, y cuándo pedir ayuda."
+  },
+  "author": {
+    "type": "Person",
+    "name": "Adriana Bevilacqua",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2022-07-01",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2022/07/como-manejar-los-ataques-de-ansiedad/",
+  "hero_image": {
+    "src": "assets/img/blog/anxiety-attacks.webp",
+    "alt_en": "A young woman with long dark hair and a green sweater sits with her head down and both hands pressed to her head, looking distressed.",
+    "alt_es": "Una joven de pelo largo oscuro y suéter verde, sentada con la cabeza baja y ambas manos en la cabeza, con expresión de angustia.",
+    "width": 1200,
+    "height": 1200
+  },
+  "sources": []
+}

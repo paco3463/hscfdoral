@@ -1,0 +1,15 @@
+# generated drafts preview: never publish
+preview/
+# Google pulls can contain query data; keep them local
+seo/data/
+# Python and OS clutter
+__pycache__/
+*.pyc
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+# never commit keys
+*.pem
+*service-account*.json
+.env

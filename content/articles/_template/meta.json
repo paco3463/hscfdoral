@@ -1,0 +1,103 @@
+{
+  "id": "replace-with-article-id",
+  "kind": "article",
+  "status": "draft",
+  "review_policy": "automatic",
+  "risk": "standard",
+  "topic_cluster": "anxiety",
+  "audience": "parents",
+  "services": [
+    "psychotherapy"
+  ],
+  "condition": {
+    "name_en": "Condition name in English",
+    "name_es": "Nombre de la condición en español",
+    "same_as": [
+      "https://medlineplus.gov/"
+    ],
+    "is_medical_condition": true
+  },
+  "en": {
+    "slug": "english-url-slug",
+    "title": "On-page title in English",
+    "seo_title": "Title tag with the keyword near the start | HSCF",
+    "description": "Meta description between 110 and 158 characters, including the primary keyword and a plain reason to read the article. Edit me.",
+    "primary_keyword": "primary keyword in english",
+    "secondary_keywords": [
+      "secondary keyword"
+    ],
+    "summary": "One or two sentences used on cards and in llms.txt.",
+    "faq": [
+      [
+        "A real question parents ask?",
+        "A short, sourced answer in two to four sentences."
+      ]
+    ]
+  },
+  "es": {
+    "slug": "slug-en-espanol",
+    "title": "Título en español",
+    "seo_title": "Título SEO con la palabra clave al inicio | HSCF",
+    "description": "Meta descripción de 110 a 158 caracteres con la palabra clave principal y una razón clara para leer el artículo. Edítame por favor.",
+    "primary_keyword": "palabra clave en español",
+    "secondary_keywords": [
+      "palabra clave secundaria"
+    ],
+    "summary": "Una o dos oraciones para tarjetas y llms.txt.",
+    "faq": [
+      [
+        "¿Una pregunta real de los padres?",
+        "Una respuesta breve y con fuentes, de dos a cuatro oraciones."
+      ]
+    ]
+  },
+  "author": {
+    "type": "Organization",
+    "name": "Healthy Solutions for Children and Families",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": null,
+  "date_modified": "2026-10-22",
+  "next_review_due": null,
+  "hero_image": null,
+  "sources": [
+    {
+      "id": 1,
+      "kind": "systematic_review",
+      "authors": "Last AB, Last CD",
+      "title": "Exact title of the source",
+      "publisher": "Journal or agency",
+      "year": 2024,
+      "url": "https://doi.org/10.xxxx/xxxxx",
+      "doi": "10.xxxx/xxxxx",
+      "pmid": null,
+      "verified_on": "2026-10-22"
+    },
+    {
+      "id": 2,
+      "kind": "clinical_guideline",
+      "authors": "Organization",
+      "title": "Guideline title",
+      "publisher": "AACAP",
+      "year": 2020,
+      "url": "https://example.org",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-10-22"
+    },
+    {
+      "id": 3,
+      "kind": "government",
+      "authors": "NIMH",
+      "title": "Page title",
+      "publisher": "National Institute of Mental Health",
+      "year": 2024,
+      "url": "https://www.nimh.nih.gov/",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-10-22"
+    }
+  ],
+  "research_notes": "Private notes for the reviewing clinician. Never published."
+}

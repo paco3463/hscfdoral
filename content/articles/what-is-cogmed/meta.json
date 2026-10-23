@@ -1,0 +1,61 @@
+{
+  "id": "what-is-cogmed",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "adhd-attention",
+  "audience": "parents",
+  "services": [
+    "neurofeedback"
+  ],
+  "condition": {
+    "name_en": "Working memory training",
+    "name_es": "Entrenamiento de la memoria de trabajo",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "what-is-cogmed",
+    "title": "What Is Cogmed?",
+    "seo_title": "What Is Cogmed? Working Memory Training | HSCF",
+    "description": "Cogmed is an online working memory training program. Learn what it aims to improve, how the program works and how long it lasts at HSCF in Doral.",
+    "primary_keyword": "what is Cogmed",
+    "secondary_keywords": [
+      "Cogmed working memory training",
+      "working memory training",
+      "attention training program",
+      "Cogmed Doral"
+    ],
+    "summary": "Cogmed is an online working memory training program that aims to improve attention, school and work performance. See how it works and how long it lasts."
+  },
+  "es": {
+    "slug": "que-es-cogmed",
+    "title": "¿Qué es Cogmed?",
+    "seo_title": "¿Qué es Cogmed? Entrenamiento de la memoria | HSCF",
+    "description": "Cogmed es un programa virtual de entrenamiento de la memoria de trabajo. Conoce qué busca mejorar, cómo funciona y cuánto dura el programa en HSCF.",
+    "primary_keyword": "qué es Cogmed",
+    "secondary_keywords": [
+      "Cogmed memoria de trabajo",
+      "entrenamiento de la memoria de trabajo",
+      "programa de entrenamiento de la atención",
+      "Cogmed Doral"
+    ],
+    "summary": "Cogmed es un programa virtual de entrenamiento de la memoria de trabajo que busca mejorar la atención y el rendimiento académico y profesional."
+  },
+  "author": {
+    "type": "Organization",
+    "name": "Healthy Solutions for Children and Families",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2021-08-01",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2021/08/que-es-cogmed/",
+  "hero_image": {
+    "src": "assets/img/blog/what-is-cogmed.webp",
+    "alt_en": "3D illustration of a translucent blue human head with glowing orange spots on the brain, against a dark network of connected dots",
+    "alt_es": "Ilustración 3D de una cabeza humana azul translúcida con puntos naranjas brillantes en el cerebro, sobre una red oscura de puntos conectados",
+    "width": 1000,
+    "height": 1000
+  },
+  "sources": []
+}

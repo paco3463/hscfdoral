@@ -1,0 +1,62 @@
+{
+  "id": "improve-your-mental-health",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "adult-wellbeing",
+  "audience": "adults",
+  "services": [
+    "psychotherapy",
+    "yoga"
+  ],
+  "condition": {
+    "name_en": "Mental health",
+    "name_es": "Salud mental",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "how-can-i-improve-my-mental-health",
+    "title": "How Can I Improve My Mental Health?",
+    "seo_title": "How Can I Improve My Mental Health? | HSCF",
+    "description": "Practical ways to improve your mental health: a positive outlook, gratitude, sleep, exercise, connection, meditation and relaxation techniques.",
+    "primary_keyword": "how to improve mental health",
+    "secondary_keywords": [
+      "mental health tips",
+      "practice gratitude",
+      "relaxation techniques",
+      "meditation for stress"
+    ],
+    "summary": "Why mental health matters and everyday ways to care for it, from gratitude, sleep and exercise to connection, meditation and relaxation techniques."
+  },
+  "es": {
+    "slug": "como-puedo-mejorar-mi-salud-mental",
+    "title": "¿Cómo puedo mejorar mi salud mental?",
+    "seo_title": "¿Cómo puedo mejorar mi salud mental? | HSCF",
+    "description": "Formas prácticas de mejorar tu salud mental: actitud positiva, gratitud, sueño, ejercicio, conexión con otros, meditación y relajación.",
+    "primary_keyword": "cómo mejorar la salud mental",
+    "secondary_keywords": [
+      "consejos de salud mental",
+      "practicar la gratitud",
+      "técnicas de relajación",
+      "meditación para el estrés"
+    ],
+    "summary": "Por qué la salud mental importa y formas cotidianas de cuidarla, desde la gratitud, el sueño y el ejercicio hasta la conexión con otros, la meditación y la relajación."
+  },
+  "author": {
+    "type": "Organization",
+    "name": "Healthy Solutions for Children and Families",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2021-05-01",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2021/05/como-puedo-mejorar-mi-salud-mental/",
+  "hero_image": {
+    "src": "assets/img/blog/improve-your-mental-health.webp",
+    "alt_en": "Illustration of a smiling woman with closed eyes and long dark hair, with flowers, leaves and a rainbow growing out of the top of her head.",
+    "alt_es": "Ilustración de una mujer sonriente con los ojos cerrados y el cabello largo y oscuro, de cuya cabeza brotan flores, hojas y un arcoíris.",
+    "width": 1200,
+    "height": 800
+  },
+  "sources": []
+}

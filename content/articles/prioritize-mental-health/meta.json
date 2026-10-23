@@ -1,0 +1,61 @@
+{
+  "id": "prioritize-mental-health",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "adult-wellbeing",
+  "audience": "adults",
+  "services": [
+    "psychotherapy"
+  ],
+  "condition": {
+    "name_en": "Mental health",
+    "name_es": "Salud mental",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "beyond-the-body-why-prioritizing-mental-health-matters",
+    "title": "Beyond the Body: Why Prioritizing Mental Health Matters",
+    "seo_title": "Beyond the Body: Why Mental Health Matters | HSCF",
+    "description": "Mental health matters as much as physical health. Learn how stigma keeps people from therapy and why asking for help is a sign of strength.",
+    "primary_keyword": "importance of mental health",
+    "secondary_keywords": [
+      "mental health stigma",
+      "myths about therapy",
+      "is therapy only for serious problems",
+      "affordable therapy options"
+    ],
+    "summary": "Why mental health deserves the same care as physical health, how stigma keeps people from seeking help, and common myths about therapy."
+  },
+  "es": {
+    "slug": "mas-alla-del-cuerpo-la-importancia-de-priorizar-la-salud-mental",
+    "title": "Más allá del cuerpo: la importancia de priorizar la salud mental",
+    "seo_title": "Más allá del cuerpo: priorizar la salud mental | HSCF",
+    "description": "La salud mental es tan importante como la física. Descubre cómo el estigma aleja a las personas de la terapia y por qué pedir ayuda es valentía.",
+    "primary_keyword": "importancia de la salud mental",
+    "secondary_keywords": [
+      "estigma de la salud mental",
+      "mitos sobre la terapia",
+      "la terapia no es solo para problemas graves",
+      "terapia accesible"
+    ],
+    "summary": "Por qué la salud mental merece el mismo cuidado que la salud física, cómo el estigma impide buscar ayuda y cuáles son los mitos más comunes sobre la terapia."
+  },
+  "author": {
+    "type": "Organization",
+    "name": "Healthy Solutions for Children and Families",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2023-05-01",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2023/05/mas-alla-del-cuerpo-la-importancia-de-priorizar-la-salud-mental/",
+  "hero_image": {
+    "src": "assets/img/blog/prioritize-mental-health.webp",
+    "alt_en": "A cream paper cutout of a head in profile on a sage green background, with colorful flowers spilling out of the top of the head.",
+    "alt_es": "Silueta de una cabeza de perfil recortada en papel color crema sobre un fondo verde salvia, con flores de colores que brotan de la parte superior.",
+    "width": 1080,
+    "height": 1080
+  },
+  "sources": []
+}

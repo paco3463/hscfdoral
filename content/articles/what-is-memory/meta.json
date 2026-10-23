@@ -1,0 +1,61 @@
+{
+  "id": "what-is-memory",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "adhd-attention",
+  "audience": "adults",
+  "services": [
+    "neurofeedback"
+  ],
+  "condition": {
+    "name_en": "Memory",
+    "name_es": "Memoria",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "what-is-memory",
+    "title": "What Is Memory?",
+    "seo_title": "What Is Memory? Tips to Improve Your Memory | HSCF",
+    "description": "What memory is and how it lets us recall facts, ideas and feelings, plus simple everyday tips to improve it, from sleep and less stress to exercise.",
+    "primary_keyword": "what is memory",
+    "secondary_keywords": [
+      "tips to improve memory",
+      "how to improve memory",
+      "memory and stress",
+      "brain training"
+    ],
+    "summary": "Memory lets us keep and recall facts, ideas and experiences. Here are simple everyday habits, like good sleep, less stress and exercise, that support it."
+  },
+  "es": {
+    "slug": "que-es-la-memoria",
+    "title": "¿Qué es la memoria?",
+    "seo_title": "¿Qué es la memoria? Tips para mejorarla | HSCF",
+    "description": "Qué es la memoria y cómo nos permite recordar hechos, ideas y sensaciones, más tips sencillos para mejorarla: dormir bien, controlar el estrés y más.",
+    "primary_keyword": "qué es la memoria",
+    "secondary_keywords": [
+      "tips para mejorar la memoria",
+      "cómo mejorar la memoria",
+      "memoria y estrés",
+      "entrenamiento cerebral"
+    ],
+    "summary": "La memoria nos permite retener y recordar hechos, ideas y experiencias. Te compartimos hábitos sencillos, como dormir bien, reducir el estrés y hacer ejercicio."
+  },
+  "author": {
+    "type": "Person",
+    "name": "Adriana Bevilacqua",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2021-09-01",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2021/09/que-es-la-memoria/",
+  "hero_image": {
+    "src": "assets/img/blog/what-is-memory.webp",
+    "alt_en": "Illustration of a magenta head in profile, open at the top to reveal rows of filing drawers, with one drawer of folders pulled out",
+    "alt_es": "Ilustración de una cabeza magenta de perfil, abierta por arriba, con filas de cajones de archivo y un cajón con carpetas abierto",
+    "width": 1200,
+    "height": 1029
+  },
+  "sources": []
+}

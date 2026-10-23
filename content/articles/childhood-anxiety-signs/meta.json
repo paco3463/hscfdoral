@@ -1,0 +1,214 @@
+{
+  "id": "childhood-anxiety-signs",
+  "kind": "article",
+  "status": "published",
+  "review_policy": "automatic",
+  "risk": "standard",
+  "topic_cluster": "anxiety",
+  "audience": "parents",
+  "services": [
+    "psychotherapy",
+    "parent-workshops"
+  ],
+  "condition": {
+    "name_en": "Anxiety disorders in children",
+    "name_es": "Trastornos de ansiedad en niños",
+    "same_as": [
+      "https://www.nimh.nih.gov/health/topics/anxiety-disorders",
+      "https://medlineplus.gov/anxiety.html",
+      "https://medlineplus.gov/spanish/anxiety.html",
+      "https://www.cdc.gov/children-mental-health/about/about-anxiety-and-depression-in-children.html"
+    ],
+    "is_medical_condition": true
+  },
+  "en": {
+    "slug": "signs-of-anxiety-in-children",
+    "title": "Signs of Anxiety in Children and How Parents Can Help",
+    "seo_title": "Signs of Anxiety in Children: How Parents Can Help | HSCF",
+    "description": "Learn the signs of anxiety in children, from stomachaches to avoidance, what research says helps, and simple steps parents can take at home.",
+    "primary_keyword": "signs of anxiety in children",
+    "secondary_keywords": [
+      "childhood anxiety",
+      "anxiety in children",
+      "how to help a child with anxiety",
+      "child anxiety symptoms",
+      "child therapist for anxiety"
+    ],
+    "summary": "How to tell everyday worry from an anxiety disorder in children, which treatments research supports, and practical ways parents can help at home.",
+    "faq": [
+      [
+        "What are the first signs of anxiety in a child?",
+        "Common early signs include worry that does not go away, frequent stomachaches or headaches, trouble sleeping, irritability and avoiding places like school. Some anxious children are quiet and eager to please, so their anxiety can be easy to miss."
+      ],
+      [
+        "Is it normal for my child to have fears?",
+        "Yes. Short-lived fears of the dark, storms, animals or strangers are expected at certain ages. It becomes a concern when the fear does not go away, shows up in many situations and gets in the way of school, sleep, friendships or family life."
+      ],
+      [
+        "What is the best treatment for anxiety in children?",
+        "Cognitive behavioral therapy (CBT) is the best-studied treatment, and the American Academy of Child and Adolescent Psychiatry recommends it for children and teens ages 6 to 18. Some children also benefit from medicine. A health care provider who knows your child can help decide what fits."
+      ],
+      [
+        "How can parents help a child with anxiety?",
+        "Listen, name the feeling and show confidence that your child can cope. Try to reduce family accommodation, the ways routines change to help a child avoid fears, and encourage small brave steps instead. In one study, a parent-only program worked as well as CBT delivered to the child."
+      ],
+      [
+        "When should I get help for my child's anxiety?",
+        "Reach out if worries are strong, last more than a few weeks, or get in the way of school, sleep, friendships or family life. Your child's pediatrician is a good first stop, and anxiety screening is recommended for children ages 8 to 18."
+      ]
+    ]
+  },
+  "es": {
+    "slug": "sintomas-de-ansiedad-en-ninos",
+    "title": "Síntomas de ansiedad en niños y cómo puedes ayudar a tu hijo",
+    "seo_title": "Síntomas de ansiedad en niños: cómo ayudar | HSCF",
+    "description": "Conoce los síntomas de ansiedad en niños, qué dice la investigación sobre cómo ayudarlos y pasos sencillos que puedes dar en casa con tu hijo.",
+    "primary_keyword": "síntomas de ansiedad en niños",
+    "secondary_keywords": [
+      "ansiedad en niños",
+      "ansiedad infantil",
+      "cómo ayudar a un niño con ansiedad",
+      "niño con ansiedad",
+      "psicólogo infantil en español"
+    ],
+    "summary": "Cómo distinguir la preocupación normal de un trastorno de ansiedad en niños, qué tratamientos tienen respaldo científico y cómo puedes ayudar a tu hijo en casa.",
+    "faq": [
+      [
+        "¿Cuáles son los primeros síntomas de ansiedad en un niño?",
+        "Algunas señales comunes son preocupaciones que no se van, dolores de estómago o de cabeza frecuentes, problemas para dormir, irritabilidad y evitar lugares como la escuela. Algunos niños ansiosos son callados y quieren complacer a todos, así que su ansiedad puede pasar desapercibida."
+      ],
+      [
+        "¿Es normal que mi hijo tenga miedos?",
+        "Sí. Los miedos pasajeros a la oscuridad, las tormentas, los animales o los desconocidos son esperables a ciertas edades. Se vuelve preocupante cuando el miedo no se va, aparece en muchas situaciones y afecta la escuela, el sueño, las amistades o la vida familiar."
+      ],
+      [
+        "¿Cuál es el mejor tratamiento para la ansiedad en niños?",
+        "La terapia cognitivo-conductual (TCC) es el tratamiento más estudiado, y la Academia Americana de Psiquiatría del Niño y del Adolescente la recomienda para niños y adolescentes de 6 a 18 años. Algunos niños también se benefician de medicamentos. Un profesional de la salud que conozca a tu hijo puede ayudarte a decidir qué le conviene."
+      ],
+      [
+        "¿Cómo puedo ayudar a mi hijo con ansiedad?",
+        "Escúchalo, ponle nombre a lo que siente y muéstrale que confías en que puede con ello. Intenta reducir la acomodación familiar, es decir, los cambios en la rutina para que evite sus miedos, y anímalo a dar pasos valientes pequeños. En un estudio, un programa solo para padres funcionó tan bien como la TCC hecha con el niño."
+      ],
+      [
+        "¿Cuándo debo buscar ayuda para la ansiedad de mi hijo?",
+        "Busca ayuda si las preocupaciones son fuertes, duran más de unas semanas o afectan la escuela, el sueño, las amistades o la vida familiar. El pediatra es un buen primer paso, y se recomienda evaluar la ansiedad en niños de 8 a 18 años."
+      ]
+    ]
+  },
+  "author": {
+    "type": "Organization",
+    "name": "Healthy Solutions for Children and Families",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2026-10-22",
+  "date_modified": "2026-10-22",
+  "next_review_due": "2027-10-22",
+  "hero_image": {
+    "src": "assets/img/talleres/bullying.webp",
+    "alt_en": "Black-and-white portrait of a boy looking down with a worried expression",
+    "alt_es": "Retrato en blanco y negro de un niño mirando hacia abajo con expresión preocupada",
+    "width": 1200,
+    "height": 1200
+  },
+  "sources": [
+    {
+      "id": 1,
+      "kind": "government",
+      "authors": "Centers for Disease Control and Prevention",
+      "title": "Data and Statistics on Children's Mental Health",
+      "publisher": "Centers for Disease Control and Prevention (CDC)",
+      "year": 2026,
+      "url": "https://www.cdc.gov/children-mental-health/data-research/index.html",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-10-22"
+    },
+    {
+      "id": 2,
+      "kind": "government",
+      "authors": "Centers for Disease Control and Prevention",
+      "title": "Anxiety and Depression in Children",
+      "publisher": "Centers for Disease Control and Prevention (CDC)",
+      "year": 2026,
+      "url": "https://www.cdc.gov/children-mental-health/about/about-anxiety-and-depression-in-children.html",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-10-22"
+    },
+    {
+      "id": 3,
+      "kind": "government",
+      "authors": "National Institute of Mental Health",
+      "title": "Anxiety Disorders",
+      "publisher": "National Institute of Mental Health (NIMH)",
+      "year": 2024,
+      "url": "https://www.nimh.nih.gov/health/topics/anxiety-disorders",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-10-22"
+    },
+    {
+      "id": 4,
+      "kind": "government",
+      "authors": "National Library of Medicine",
+      "title": "Anxiety (MedlinePlus)",
+      "publisher": "MedlinePlus, U.S. National Library of Medicine",
+      "year": 2023,
+      "url": "https://medlineplus.gov/anxiety.html",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-10-22"
+    },
+    {
+      "id": 5,
+      "kind": "professional_body",
+      "authors": "American Academy of Child and Adolescent Psychiatry",
+      "title": "Anxiety and Children (Facts for Families No. 47)",
+      "publisher": "American Academy of Child and Adolescent Psychiatry (AACAP)",
+      "year": 2023,
+      "url": "https://www.aacap.org/AACAP/Families_and_Youth/Facts_for_Families/FFF-Guide/The-Anxious-Child-047.aspx",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-10-22"
+    },
+    {
+      "id": 6,
+      "kind": "clinical_guideline",
+      "authors": "Walter HJ, Bukstein OG, Abright AR, Keable H, Ramtekkar U, Ripperger-Suhler J, Rockhill C",
+      "title": "Clinical Practice Guideline for the Assessment and Treatment of Children and Adolescents With Anxiety Disorders",
+      "publisher": "Journal of the American Academy of Child & Adolescent Psychiatry",
+      "year": 2020,
+      "url": "https://doi.org/10.1016/j.jaac.2020.05.005",
+      "doi": "10.1016/j.jaac.2020.05.005",
+      "pmid": "32439401",
+      "verified_on": "2026-10-22"
+    },
+    {
+      "id": 7,
+      "kind": "systematic_review",
+      "authors": "James AC, Reardon T, Soler A, James G, Creswell C",
+      "title": "Cognitive behavioural therapy for anxiety disorders in children and adolescents",
+      "publisher": "Cochrane Database of Systematic Reviews",
+      "year": 2020,
+      "url": "https://doi.org/10.1002/14651858.CD013162.pub2",
+      "doi": "10.1002/14651858.CD013162.pub2",
+      "pmid": null,
+      "verified_on": "2026-10-22"
+    },
+    {
+      "id": 8,
+      "kind": "peer_reviewed",
+      "authors": "Lebowitz ER, Marin C, Martino A, Shimshoni Y, Silverman WK",
+      "title": "Parent-Based Treatment as Efficacious as Cognitive-Behavioral Therapy for Childhood Anxiety: A Randomized Noninferiority Study of Supportive Parenting for Anxious Childhood Emotions",
+      "publisher": "Journal of the American Academy of Child & Adolescent Psychiatry",
+      "year": 2020,
+      "url": "https://doi.org/10.1016/j.jaac.2019.02.014",
+      "doi": "10.1016/j.jaac.2019.02.014",
+      "pmid": "30851397",
+      "verified_on": "2026-10-22"
+    }
+  ],
+  "research_notes": "CLAIMS NEEDING CLINICAL JUDGMENT\n- \"Lasting more than a few weeks\" (When to get help, both languages and FAQ): this is practical guidance, not a sourced threshold. AACAP FFF #47 [5] uses \"severe and interfering with usual activities\". Please confirm or adjust.\n- Three items in the signs list have no citation: worry out of proportion to the situation, repeated reassurance-seeking / \"what if\" questions, and \"a pattern can point to worry\" in the stomachache tip. These are standard clinical descriptions, but no opened source stated them. Keep, cite, or cut.\n- Combination treatment (CBT + SSRI) [6]: AACAP rates this 2C and bases it on only two trials with conflicting results plus expert consensus. The article says \"research is still limited\". No doses or drug names beyond \"SSRIs\" are given.\n- Cochrane [7]: CBT beats waitlist (49.4% vs 17.8% remission, moderate-quality evidence), but there is little to no evidence it beats usual care or other active treatments. The article states this so it does not overclaim.\n- SPACE [8] is a single RCT (N=124, ages 7-14, 83% white sample). Generalizability to Hispanic and bilingual families is untested. The article says \"one study\" and does not call it the standard of care. Home tip 3 (reduce accommodation) draws on SPACE. Tips 1, 2, 5 and 6 are general supportive-parenting advice with no specific citation.\n- The CDC prevalence figure [1] is 11% of ages 3-17 with a current diagnosed anxiety disorder (NSCH 2023-2024, parent-reported diagnosis). Older CDC/Bitsko figures were about 9.4%, so do not mix the two.\n- The USPSTF anxiety screening recommendation for ages 8-18 comes from the CDC page [2], not from the USPSTF directly.\n\nHSCF-SPECIFIC ITEMS TO CONFIRM\n- \"Hablemos sobre Ansiedad\" is described as a free Spanish-language workshop for families in Doral and Miami-Dade, and readers are pointed to the contact page. Confirm the format, the audience (parents only, or parents and children) and whether it should link to a dedicated page.\n- Confirm that the child-therapy clinicians use CBT/exposure, and that parent coaching addresses family accommodation (SPACE-style). Confirm whether any clinician is SPACE-trained before stronger wording is used.\n- Confirm that services are offered in both English and Spanish for both linked services.\n- teen-therapy was not added because the article focuses on children. The guideline and Cochrane data include teens.\n\nSOURCE VERIFICATION NOTES\n- [6] Walter et al. 2020: I opened the PubMed record for PMID 32439401 (title, journal, DOI) and the full-text PDF hosted by UAB (authors and recommendations). The jaacap.org page did not load. The URL is the DOI link.\n- [7] James et al. 2020 Cochrane: verified from the official Cochrane abstract PDF on cochranelibrary.com. PubMed and the full Cochrane page did not load, so pmid is left null rather than guessed. A Spanish abstract PDF also exists on cochranelibrary.com.\n- [8] Lebowitz et al. 2020: abstract and bibliographic details verified on em-consulte.com (Elsevier) and on the NIH Research Matters summary, which gives PMID 30851397. Epub 2019, print 2020;59(3):362-372.\n- [4] MedlinePlus: the English page was last updated 2023. es.md also links directly to MedlinePlus en español (updated March 2026, same definitions).\n\nSOURCES CONSIDERED AND REJECTED\n- CDC Spanish version of Anxiety and Depression in Children: the URL failed to load twice, so it is not used. es.md cites the English CDC page under the same number.\n- PMC copy of SPACE (PMC6732048): blocked by a CAPTCHA. Verified via the publisher abstract instead.\n- ADAA-hosted SPACE PDF: failed to load.\n- A systematic review of parent-led CBT: the search found no clearly authoritative, openable meta-analysis, so none was added. A review of parental involvement in digital CBT (Griffith repository) was off-topic.\n- NIMH Anxiety Disorders topic page [3] has no child-specific symptom detail, so it is used only for the normal-worry vs disorder distinction.\n- AACAP FFF #47 has no Spanish version linked on the page.",
+  "generated_by": "claude (researched and verified 2026-10); published under review_policy automatic"
+}

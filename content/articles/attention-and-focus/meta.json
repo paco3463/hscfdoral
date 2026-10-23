@@ -1,0 +1,62 @@
+{
+  "id": "attention-and-focus",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "adhd-attention",
+  "audience": "adults",
+  "services": [
+    "neurofeedback",
+    "psychotherapy"
+  ],
+  "condition": {
+    "name_en": "Attention and concentration",
+    "name_es": "Atención y concentración",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "attention-and-focus",
+    "title": "Attention and Focus",
+    "seo_title": "Attention and Focus: Tips to Concentrate Better | HSCF",
+    "description": "Why attention comes before memory, what can reduce it, like stress, tiredness or ADHD, and practical tips to improve your focus at work and at school.",
+    "primary_keyword": "how to improve attention and focus",
+    "secondary_keywords": [
+      "tips to concentrate better",
+      "attention and concentration",
+      "sleep hygiene",
+      "ADHD and attention"
+    ],
+    "summary": "Attention is the step before memory. Learn what can reduce it and get practical tips, from fewer distractions to breaks and sleep hygiene, to focus better."
+  },
+  "es": {
+    "slug": "la-atencion-y-la-concentracion",
+    "title": "La atención y la concentración",
+    "seo_title": "La atención y la concentración: tips para mejorar | HSCF",
+    "description": "Por qué la atención es el paso previo a la memoria, qué la reduce, como el estrés, el cansancio o el TDAH, y tips prácticos para concentrarte mejor.",
+    "primary_keyword": "cómo mejorar la atención y la concentración",
+    "secondary_keywords": [
+      "tips para concentrarse",
+      "atención y concentración",
+      "higiene del sueño",
+      "TDAH y atención"
+    ],
+    "summary": "La atención es el paso previo a la memoria. Conoce qué puede reducirla y algunos tips prácticos, desde evitar distracciones hasta hacer pausas y cuidar el sueño."
+  },
+  "author": {
+    "type": "Person",
+    "name": "Adriana Bevilacqua",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2021-10-01",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2021/10/la-atencion-y-la-concentracion/",
+  "hero_image": {
+    "src": "assets/img/blog/attention-and-focus.webp",
+    "alt_en": "Illustration of a woman on a ladder and a man fitting puzzle pieces into a large brain inside a profile of a head",
+    "alt_es": "Ilustración de una mujer sobre una escalera y un hombre colocando piezas de rompecabezas en un gran cerebro dentro del perfil de una cabeza",
+    "width": 1200,
+    "height": 1200
+  },
+  "sources": []
+}

@@ -1,0 +1,61 @@
+{
+  "id": "covid-19-emotional-balance",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "adult-wellbeing",
+  "audience": "adults",
+  "services": [
+    "psychotherapy"
+  ],
+  "condition": {
+    "name_en": "Emotional health after COVID-19",
+    "name_es": "Salud emocional después del COVID-19",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "balance-and-harmony-coping-with-covid-19-after-the-vaccine",
+    "title": "Balance and Harmony: Coping with COVID-19 After the Vaccine",
+    "seo_title": "Balance and Harmony After the COVID-19 Vaccine | HSCF",
+    "description": "How the COVID-19 pandemic affected emotional health, what early research reported, and the kinds of support that can help build resilience.",
+    "primary_keyword": "emotional health after COVID-19",
+    "secondary_keywords": [
+      "COVID-19 mental health",
+      "pandemic anxiety",
+      "psychological effects of COVID-19",
+      "resilience after the pandemic"
+    ],
+    "summary": "A look at how COVID-19 affected emotional health, what early studies reported about fear, anxiety and depression, and the kinds of support that build resilience."
+  },
+  "es": {
+    "slug": "balance-y-armonia-confrontacion-del-covid-19-despues-de-la-vacuna",
+    "title": "Balance y armonía: confrontación del COVID-19 después de la vacuna",
+    "seo_title": "Balance y armonía después de la vacuna COVID | HSCF",
+    "description": "Cómo afectó la pandemia del COVID-19 la salud emocional, qué reportaron los primeros estudios y qué tipos de apoyo ayudan a la resiliencia.",
+    "primary_keyword": "salud emocional y COVID-19",
+    "secondary_keywords": [
+      "salud mental y pandemia",
+      "ansiedad por COVID-19",
+      "efectos psicológicos del COVID-19",
+      "resiliencia después de la pandemia"
+    ],
+    "summary": "Una mirada a cómo el COVID-19 afectó la salud emocional, qué reportaron los primeros estudios sobre miedo, ansiedad y depresión, y qué apoyos fortalecen la resiliencia."
+  },
+  "author": {
+    "type": "Organization",
+    "name": "Healthy Solutions for Children and Families",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2021-04-01",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2021/04/balance-y-armonia-confrontacion-del-covid-19-despues-de-la-vacuna/",
+  "hero_image": {
+    "src": "assets/img/blog/covid-19-emotional-balance.webp",
+    "alt_en": "A health care worker in a white coat gives an injection in the upper arm of a smiling woman in a pink top.",
+    "alt_es": "Una profesional de la salud con bata blanca pone una inyección en el brazo a una mujer sonriente con blusa rosada.",
+    "width": 640,
+    "height": 423
+  },
+  "sources": []
+}

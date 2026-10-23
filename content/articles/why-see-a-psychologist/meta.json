@@ -1,0 +1,61 @@
+{
+  "id": "why-see-a-psychologist",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "adult-wellbeing",
+  "audience": "adults",
+  "services": [
+    "psychotherapy"
+  ],
+  "condition": {
+    "name_en": "Psychotherapy",
+    "name_es": "Psicoterapia",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "why-a-psychology-professional-matters",
+    "title": "Why a Psychology Professional Matters",
+    "seo_title": "Why See a Psychologist? What Therapy Involves | HSCF",
+    "description": "Why people see a psychologist, the myths that keep others away, and what a psychologist actually does in therapy with adults, teens and children.",
+    "primary_keyword": "why see a psychologist",
+    "secondary_keywords": [
+      "what does a psychologist do",
+      "benefits of therapy",
+      "stigma of seeing a psychologist",
+      "psychologist in Doral"
+    ],
+    "summary": "Why seeing a psychologist is as ordinary as seeing any other health professional, and what a psychologist does in therapy to help people change."
+  },
+  "es": {
+    "slug": "la-importancia-del-profesional-en-psicologia",
+    "title": "La importancia del profesional en psicología",
+    "seo_title": "¿Por qué ir al psicólogo? Lo que hace en terapia | HSCF",
+    "description": "Por qué las personas van al psicólogo, los prejuicios que todavía alejan a otras y qué hace un psicólogo en terapia con adultos, jóvenes y niños.",
+    "primary_keyword": "por qué ir al psicólogo",
+    "secondary_keywords": [
+      "qué hace un psicólogo",
+      "beneficios de la terapia",
+      "prejuicios sobre ir al psicólogo",
+      "psicólogo en Doral"
+    ],
+    "summary": "Por qué ir al psicólogo es tan normal como visitar a cualquier profesional de la salud y qué hace un psicólogo en terapia para ayudar a las personas a cambiar."
+  },
+  "author": {
+    "type": "Person",
+    "name": "Adriana Bevilacqua",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2022-04-01",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2022/04/la-importancia-del-profesional-en-psicologia/",
+  "hero_image": {
+    "src": "assets/img/blog/why-see-a-psychologist.webp",
+    "alt_en": "Over the shoulder of a therapist taking notes on a clipboard while a smiling woman on a sofa talks in a bright room with plants.",
+    "alt_es": "Vista sobre el hombro de una terapeuta que toma notas en un portapapeles mientras una mujer sonriente habla sentada en un sofá, en una sala luminosa con plantas.",
+    "width": 1200,
+    "height": 675
+  },
+  "sources": []
+}

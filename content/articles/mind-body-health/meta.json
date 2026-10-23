@@ -1,0 +1,62 @@
+{
+  "id": "mind-body-health",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "mind-body",
+  "audience": "adults",
+  "services": [
+    "yoga",
+    "hypnotherapy"
+  ],
+  "condition": {
+    "name_en": "Mind-body health",
+    "name_es": "Salud mente-cuerpo",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "mind-body-health",
+    "title": "Mind-Body Health",
+    "seo_title": "Mind-Body Health: How Mind and Body Connect | HSCF",
+    "description": "How psychoneuroimmunoendocrinology sees the mind and body as one unit, and how stress and emotions can affect the immune system and overall health.",
+    "primary_keyword": "mind-body health",
+    "secondary_keywords": [
+      "mind-body connection",
+      "psychoneuroimmunology",
+      "stress and the immune system",
+      "holistic health"
+    ],
+    "summary": "An introduction to psychoneuroimmunoendocrinology, the field that studies the mind and body as one unit, and to how stress can affect the body's defenses."
+  },
+  "es": {
+    "slug": "salud-mente-cuerpo",
+    "title": "Salud mente-cuerpo",
+    "seo_title": "Salud mente-cuerpo: la conexión mente y cuerpo | HSCF",
+    "description": "Cómo la psiconeuroinmunoendocrinología entiende la mente y el cuerpo como una unidad, y cómo el estrés y las emociones pueden afectar las defensas.",
+    "primary_keyword": "salud mente cuerpo",
+    "secondary_keywords": [
+      "conexión mente cuerpo",
+      "psiconeuroinmunoendocrinología",
+      "estrés y sistema inmunológico",
+      "salud integral"
+    ],
+    "summary": "Una introducción a la psiconeuroinmunoendocrinología, que estudia la mente y el cuerpo como una sola unidad, y a cómo el estrés puede afectar las defensas del organismo."
+  },
+  "author": {
+    "type": "Person",
+    "name": "Adriana Bevilacqua",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2021-11-01",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2021/11/salud-mente-cuerpo/",
+  "hero_image": {
+    "src": "assets/img/blog/mind-body-health.webp",
+    "alt_en": "Young woman meditating in a cross-legged yoga pose with her eyes closed, in a bright studio with brick walls and tall windows",
+    "alt_es": "Mujer joven meditando en postura de yoga con las piernas cruzadas y los ojos cerrados, en un estudio luminoso con paredes de ladrillo y ventanales",
+    "width": 626,
+    "height": 417
+  },
+  "sources": []
+}

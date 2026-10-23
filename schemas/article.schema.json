@@ -1,0 +1,455 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hscfdoral.com/schemas/article.schema.json",
+  "title": "HSCF article metadata",
+  "description": "meta.json for one bilingual blog post in content/articles/<id>/. The Spanish body is es.md and the English body is en.md. The post lives at /<yyyy>/<mm>/<es.slug>/ and /en/<yyyy>/<mm>/<en.slug>/ using date_published.",
+  "type": "object",
+  "required": [
+    "id",
+    "status",
+    "topic_cluster",
+    "audience",
+    "services",
+    "condition",
+    "en",
+    "es",
+    "author",
+    "date_modified"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "description": "Folder name. Lowercase English words joined by hyphens.",
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "status": {
+      "description": "draft: being written. in_review: waiting for a person. published: live (see review_policy). archived: removed from the site.",
+      "enum": [
+        "draft",
+        "in_review",
+        "published",
+        "archived"
+      ]
+    },
+    "topic_cluster": {
+      "description": "SEO topic cluster this article belongs to. Must match a cluster id in seo/config.json.",
+      "type": "string"
+    },
+    "audience": {
+      "enum": [
+        "parents",
+        "teens",
+        "adults",
+        "couples",
+        "families",
+        "educators"
+      ]
+    },
+    "services": {
+      "description": "Service ids from build/content_es.py SERVICES that this post links to and supports.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "aba",
+          "psychotherapy",
+          "parent-workshops",
+          "neurofeedback",
+          "yoga",
+          "coaching",
+          "hypnotherapy",
+          "courses"
+        ]
+      }
+    },
+    "condition": {
+      "description": "The main condition or topic, used for schema.org MedicalCondition / Thing.",
+      "type": "object",
+      "required": [
+        "name_en",
+        "name_es"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "name_en": {
+          "type": "string"
+        },
+        "name_es": {
+          "type": "string"
+        },
+        "same_as": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": "Authoritative reference pages, e.g. MedlinePlus or NIMH."
+        },
+        "is_medical_condition": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "en": {
+      "$ref": "#/$defs/locale"
+    },
+    "es": {
+      "$ref": "#/$defs/locale"
+    },
+    "author": {
+      "type": "object",
+      "required": [
+        "type",
+        "name"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": [
+            "Organization",
+            "Person"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "team_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Staff id from build/content_es.py TEAM when the author is on the staff."
+        }
+      }
+    },
+    "medical_reviewer": {
+      "description": "A licensed clinician who approved the post. Null unless a real person signed off. Never invent one.",
+      "type": [
+        "object",
+        "null"
+      ],
+      "required": [
+        "name",
+        "credentials",
+        "reviewed_on"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "team_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "name": {
+          "type": "string"
+        },
+        "credentials": {
+          "type": "string",
+          "examples": [
+            "PsyD",
+            "PhD",
+            "LMHC",
+            "LCSW",
+            "LMFT"
+          ]
+        },
+        "license": {
+          "type": "string",
+          "description": "e.g. Florida PY1234. Optional but strengthens trust."
+        },
+        "reviewed_on": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    },
+    "date_published": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "date_modified": {
+      "type": "string",
+      "format": "date"
+    },
+    "next_review_due": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "Health content should be re-checked at least every 12 months."
+    },
+    "hero_image": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "src",
+        "alt_en",
+        "alt_es",
+        "width",
+        "height"
+      ],
+      "properties": {
+        "src": {
+          "type": "string",
+          "description": "Absolute https URL or a path under site/assets/."
+        },
+        "alt_en": {
+          "type": "string"
+        },
+        "alt_es": {
+          "type": "string"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        }
+      }
+    },
+    "sources": {
+      "description": "Numbered references. The body cites them as [1] or [1, 3]. Every source must be opened and checked (verified_on) before it is added. Articles need 3+ (5+ when automatic); legacy posts may have none.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "authors",
+          "title",
+          "publisher",
+          "year",
+          "url",
+          "verified_on"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "kind": {
+            "enum": [
+              "peer_reviewed",
+              "systematic_review",
+              "clinical_guideline",
+              "government",
+              "professional_body",
+              "book"
+            ]
+          },
+          "authors": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "publisher": {
+            "type": "string",
+            "description": "Journal name, agency or organization."
+          },
+          "year": {
+            "type": "integer",
+            "minimum": 1950
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "doi": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "pmid": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "verified_on": {
+            "type": "string",
+            "format": "date",
+            "description": "Date the agent opened the source and confirmed it supports the claims cited."
+          }
+        }
+      }
+    },
+    "research_notes": {
+      "type": "string",
+      "description": "Private notes for the reviewer. Never published."
+    },
+    "kind": {
+      "description": "article: a researched post with numbered sources. legacy: a post migrated from the old WordPress blog at its original address.",
+      "enum": [
+        "article",
+        "legacy"
+      ],
+      "default": "article"
+    },
+    "review_policy": {
+      "description": "clinician: a licensed clinician signs off (medical_reviewer required). automatic: published without individual review once the automatic gates pass (5+ verified sources, 2+ peer-reviewed/systematic review/guideline, risk not high). legacy: old posts.",
+      "enum": [
+        "clinician",
+        "automatic",
+        "legacy"
+      ]
+    },
+    "risk": {
+      "description": "high = suicide, self-harm, eating disorders, abuse, medication, crisis or similar. High-risk posts are never published automatically.",
+      "enum": [
+        "standard",
+        "high"
+      ],
+      "default": "standard"
+    },
+    "legacy_url": {
+      "description": "Old WordPress address of a legacy post, e.g. /2022/07/como-manejar-los-ataques-de-ansiedad/. Must equal the new address.",
+      "type": "string",
+      "pattern": "^/[0-9]{4}/[0-9]{2}/[a-z0-9-]+/$"
+    },
+    "gallery": {
+      "type": "array",
+      "description": "Extra images shown in a gallery at the end of the post.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "src",
+          "alt_en",
+          "alt_es",
+          "width",
+          "height"
+        ],
+        "properties": {
+          "src": {
+            "type": "string",
+            "description": "Absolute https URL or a path under site/assets/."
+          },
+          "alt_en": {
+            "type": "string"
+          },
+          "alt_es": {
+            "type": "string"
+          },
+          "width": {
+            "type": "integer"
+          },
+          "height": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "generated_by": {
+      "type": "string",
+      "description": "Who wrote the post, e.g. 'claude-auto-blog 2026-11-01'. Not published."
+    }
+  },
+  "$defs": {
+    "locale": {
+      "type": "object",
+      "required": [
+        "slug",
+        "title",
+        "seo_title",
+        "description",
+        "primary_keyword",
+        "summary"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "slug": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "URL slug in this language."
+        },
+        "title": {
+          "type": "string",
+          "maxLength": 90,
+          "description": "On-page H1."
+        },
+        "seo_title": {
+          "type": "string",
+          "maxLength": 62,
+          "description": "Title tag. End with | HSCF."
+        },
+        "description": {
+          "type": "string",
+          "minLength": 110,
+          "maxLength": 158,
+          "description": "Meta description."
+        },
+        "primary_keyword": {
+          "type": "string"
+        },
+        "secondary_keywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 300,
+          "description": "One or two sentences for cards and llms.txt."
+        },
+        "faq": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string"
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "legacy"
+          }
+        },
+        "required": [
+          "kind"
+        ]
+      },
+      "then": {},
+      "else": {
+        "properties": {
+          "sources": {
+            "minItems": 3
+          }
+        },
+        "required": [
+          "sources"
+        ]
+      }
+    }
+  ]
+}

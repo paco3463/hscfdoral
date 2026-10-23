@@ -1,0 +1,8 @@
+# ai.txt for hscfdoral.com (Spawning ai.txt format)
+# Says whether this site's text and media may be used to train AI models.
+# Generated from seo/config.json -> ai_crawlers.training. Per-crawler rules live in robots.txt.
+# Contact: info@hscfdoral.com
+
+User-Agent: *
+Allow: /
+Disallow: /404.html

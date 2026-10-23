@@ -1,0 +1,99 @@
+{
+  "id": "play-therapy-training-2021",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "practice-news",
+  "audience": "educators",
+  "services": [
+    "psychotherapy",
+    "courses"
+  ],
+  "condition": {
+    "name_en": "Play therapy",
+    "name_es": "Terapia de juego",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "play-therapy-training-with-lisa-saldana-2021",
+    "title": "Play Therapy Training with Lisa Saldana (2021)",
+    "seo_title": "Play Therapy Training with Lisa Saldana, 2021 | HSCF",
+    "description": "In 2021, therapist Lisa Saldana led a play therapy training series at HSCF in Doral: module topics, dates, times and a photo from the team training.",
+    "primary_keyword": "play therapy training",
+    "secondary_keywords": [
+      "play therapy",
+      "play therapy with families",
+      "therapist training Doral",
+      "Lisa Saldana"
+    ],
+    "summary": "In June and July 2021, therapist Lisa Saldana gave a play therapy training series at HSCF for our team of therapists and the community."
+  },
+  "es": {
+    "slug": "lisa-saldana-presents-play-therapy-training",
+    "title": "Capacitación en terapia de juego con Lisa Saldana (2021)",
+    "seo_title": "Capacitación en terapia de juego, 2021 | HSCF",
+    "description": "En 2021, la terapeuta Lisa Saldana dio en HSCF una serie de capacitaciones en terapia de juego: temas, fechas, horarios y una foto del equipo.",
+    "primary_keyword": "capacitación en terapia de juego",
+    "secondary_keywords": [
+      "terapia de juego",
+      "play therapy",
+      "terapia de juego con familias",
+      "Lisa Saldana"
+    ],
+    "summary": "En junio y julio de 2021, la terapeuta Lisa Saldana ofreció en HSCF una serie de capacitaciones en terapia de juego para nuestro equipo de terapeutas y la comunidad."
+  },
+  "author": {
+    "type": "Organization",
+    "name": "Healthy Solutions for Children and Families",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2021-06-15",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2021/06/lisa-saldana-presents-play-therapy-training/",
+  "hero_image": {
+    "src": "assets/img/blog/play-therapy-training-2021.webp",
+    "alt_en": "Blue HSCF flyer that reads: Lisa Saldana presents Play Therapy Training, June 26th 2021, July 10th 2021.",
+    "alt_es": "Volante azul de HSCF que dice: Lisa Saldana presents Play Therapy Training, June 26th 2021, July 10th 2021.",
+    "width": 1200,
+    "height": 1178
+  },
+  "gallery": [
+    {
+      "src": "assets/img/blog/play-therapy-training-2021-2.webp",
+      "alt_en": "Flyer for Play Therapy Training Module 1: what play therapy is and is not, relationship issues when working with children, the use of metaphor, and art and game strategies; June 26th 2021, 2:30 to 5:30 pm, $50 per session.",
+      "alt_es": "Volante del Módulo 1 de la capacitación en terapia de juego: qué es y qué no es, aspectos de la relación al trabajar con niños, la metáfora y estrategias de arte y juego; 26 de junio de 2021, 2:30 a 5:30 p. m., $50 por sesión.",
+      "width": 1200,
+      "height": 1190
+    },
+    {
+      "src": "assets/img/blog/play-therapy-training-2021-3.webp",
+      "alt_en": "Flyer for Play Therapy Training Module 2, working with families with play therapy; July 10th 2021, 2:30 to 5:30 pm, $50 per session.",
+      "alt_es": "Volante del Módulo 2 de la capacitación en terapia de juego, sobre el trabajo con familias; 10 de julio de 2021, 2:30 a 5:30 p. m., $50 por sesión.",
+      "width": 1200,
+      "height": 1185
+    },
+    {
+      "src": "assets/img/blog/play-therapy-training-2021-4.webp",
+      "alt_en": "Flyer for Play Therapy Training, working with families with play therapy; July 31th 2021, 2:30 to 5:30 pm, $50 per session.",
+      "alt_es": "Volante de la capacitación en terapia de juego sobre el trabajo con familias; 31 de julio de 2021, 2:30 a 5:30 p. m., $50 por sesión.",
+      "width": 1200,
+      "height": 1178
+    },
+    {
+      "src": "assets/img/blog/play-therapy-training-2021-5.webp",
+      "alt_en": "Blue HSCF flyer that reads: Lisa Saldana presents Play Therapy Training with families, July 31th 2021.",
+      "alt_es": "Volante azul de HSCF que dice: Lisa Saldana presents Play Therapy Training with families, July 31th 2021.",
+      "width": 1200,
+      "height": 1180
+    },
+    {
+      "src": "assets/img/blog/play-therapy-training-2021-6.webp",
+      "alt_en": "Therapists sit on folding chairs in a large room during the play therapy training while a woman in a teal top stands and speaks; a screen shows a slide and a long table holds small toy figures.",
+      "alt_es": "Terapeutas sentados en sillas plegables en un salón amplio durante la capacitación en terapia de juego, mientras una mujer con blusa turquesa habla de pie; una pantalla muestra una diapositiva y una mesa larga tiene figuras de juguete.",
+      "width": 768,
+      "height": 1024
+    }
+  ],
+  "sources": []
+}

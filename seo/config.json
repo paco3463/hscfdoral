@@ -1,0 +1,137 @@
+{
+  "site_url": "https://hscfdoral.com/",
+  "google": {
+    "ga4_measurement_id": "",
+    "ga4_property_id": "",
+    "search_console_site": "sc-domain:hscfdoral.com",
+    "service_account_key_path": "~/.config/hscf/ga-service-account.json",
+    "_help": "ga4_measurement_id (G-XXXXXXX) turns on the analytics tag in every page; ga4_property_id (numbers only) is used by seo/scripts/fetch_google_data.py. The key file lives OUTSIDE the project and is never shared. See seo/GOOGLE-SETUP.md."
+  },
+  "review_cadence_months": 6,
+  "next_review": "2027-04-01",
+  "markets": {
+    "primary": [
+      "Doral",
+      "Miami-Dade County"
+    ],
+    "secondary": [
+      "Hialeah",
+      "Miami Lakes",
+      "Coral Gables",
+      "Kendall",
+      "Miami",
+      "Miami Springs",
+      "Sweetwater"
+    ],
+    "telehealth": "Florida"
+  },
+  "topic_clusters": [
+    {
+      "id": "anxiety",
+      "en": "Anxiety and stress",
+      "es": "Ansiedad y estrés",
+      "pillar_service": "psychotherapy"
+    },
+    {
+      "id": "adhd-attention",
+      "en": "Attention, memory and ADHD",
+      "es": "Atención, memoria y TDAH",
+      "pillar_service": "neurofeedback"
+    },
+    {
+      "id": "autism-aba",
+      "en": "Autism and ABA",
+      "es": "Autismo y ABA",
+      "pillar_service": "aba"
+    },
+    {
+      "id": "behavior-parenting",
+      "en": "Behavior and parenting",
+      "es": "Conducta y crianza",
+      "pillar_service": "parent-workshops"
+    },
+    {
+      "id": "teens",
+      "en": "Teens",
+      "es": "Adolescentes",
+      "pillar_service": "psychotherapy"
+    },
+    {
+      "id": "trauma-grief",
+      "en": "Trauma and grief",
+      "es": "Trauma y duelo",
+      "pillar_service": "psychotherapy"
+    },
+    {
+      "id": "couples-family",
+      "en": "Couples and family",
+      "es": "Pareja y familia",
+      "pillar_service": "psychotherapy"
+    },
+    {
+      "id": "adult-wellbeing",
+      "en": "Adult mental health",
+      "es": "Salud mental adulta",
+      "pillar_service": "psychotherapy"
+    },
+    {
+      "id": "mind-body",
+      "en": "Mind and body",
+      "es": "Mente y cuerpo",
+      "pillar_service": "yoga"
+    },
+    {
+      "id": "bicultural-families",
+      "en": "Bicultural families",
+      "es": "Familias biculturales",
+      "pillar_service": "psychotherapy"
+    },
+    {
+      "id": "practice-news",
+      "en": "News from HSCF",
+      "es": "Noticias de HSCF",
+      "pillar_service": "courses"
+    }
+  ],
+  "ai_crawlers": {
+    "_help": "allow = may crawl. search_and_answer bots let AI assistants find and cite the site; training bots decide whether page text can be used to train models. Change a value, then rebuild.",
+    "search_and_answer": {
+      "OAI-SearchBot": "allow",
+      "ChatGPT-User": "allow",
+      "Claude-SearchBot": "allow",
+      "Claude-User": "allow",
+      "PerplexityBot": "allow",
+      "Perplexity-User": "allow",
+      "Applebot": "allow",
+      "DuckAssistBot": "allow"
+    },
+    "training": {
+      "GPTBot": "allow",
+      "ClaudeBot": "allow",
+      "Google-Extended": "allow",
+      "Applebot-Extended": "allow",
+      "CCBot": "allow",
+      "Meta-ExternalAgent": "allow",
+      "Bytespider": "disallow"
+    }
+  },
+  "languages": [
+    "es",
+    "en"
+  ],
+  "primary_language": "es",
+  "auto_blog": {
+    "_help": "Fully automatic posts. The scheduled task writes one bilingual post on each day listed, publishes it if every gate in build/articles.py publish_gate() passes, and otherwise saves it as a draft for a person.",
+    "enabled": true,
+    "days_of_month": [
+      1,
+      15
+    ],
+    "review_policy": "automatic",
+    "high_risk_to_draft": true,
+    "min_sources": 5,
+    "min_strong_sources": 2,
+    "repo": "paco3463/hscfdoral",
+    "branch": "main"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "assertive-communication",
+  "kind": "legacy",
+  "status": "published",
+  "review_policy": "legacy",
+  "topic_cluster": "couples-family",
+  "audience": "couples",
+  "services": [
+    "psychotherapy"
+  ],
+  "condition": {
+    "name_en": "Assertive communication",
+    "name_es": "Comunicación asertiva",
+    "is_medical_condition": false
+  },
+  "en": {
+    "slug": "effective-or-assertive-communication",
+    "title": "Effective or Assertive Communication",
+    "seo_title": "Assertive Communication for Couples | HSCF",
+    "description": "What assertive communication is and five tips for couples: pick the right moment, choose clear words, be honest and share your emotions.",
+    "primary_keyword": "assertive communication for couples",
+    "secondary_keywords": [
+      "assertive communication",
+      "communication in relationships",
+      "how to talk to your partner",
+      "healthy relationship tips"
+    ],
+    "summary": "What assertive communication means for a couple and five practical tips, from choosing the right moment to talk to sharing your emotions honestly."
+  },
+  "es": {
+    "slug": "la-comunicacion-efectiva-o-asertiva",
+    "title": "La comunicación efectiva o asertiva",
+    "seo_title": "Comunicación asertiva en pareja: 5 consejos | HSCF",
+    "description": "Qué es la comunicación asertiva y cinco consejos para la pareja: elegir el momento, usar palabras claras, ser sincero y compartir emociones.",
+    "primary_keyword": "comunicación asertiva en pareja",
+    "secondary_keywords": [
+      "comunicación asertiva",
+      "asertividad",
+      "comunicación en la pareja",
+      "consejos para una relación sana"
+    ],
+    "summary": "Qué significa la comunicación asertiva en la pareja y cinco consejos prácticos, desde elegir el momento oportuno para hablar hasta compartir tus emociones con sinceridad."
+  },
+  "author": {
+    "type": "Organization",
+    "name": "Healthy Solutions for Children and Families",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2021-06-10",
+  "date_modified": "2026-10-23",
+  "legacy_url": "/2021/06/la-comunicacion-efectiva-o-asertiva/",
+  "hero_image": {
+    "src": "assets/img/blog/assertive-communication.webp",
+    "alt_en": "Two young women in headscarves laugh together across a small table by a lake, with a potted flower and a lantern between them.",
+    "alt_es": "Dos jóvenes con velo ríen juntas en una mesita junto a un lago, con una maceta de flores y un farol entre ellas.",
+    "width": 640,
+    "height": 427
+  },
+  "sources": []
+}
