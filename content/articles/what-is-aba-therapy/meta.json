@@ -1,0 +1,211 @@
+{
+  "id": "what-is-aba-therapy",
+  "kind": "article",
+  "status": "published",
+  "review_policy": "automatic",
+  "risk": "standard",
+  "topic_cluster": "autism-aba",
+  "audience": "parents",
+  "services": [
+    "aba"
+  ],
+  "condition": {
+    "name_en": "Autism spectrum disorder",
+    "name_es": "Trastorno del espectro autista",
+    "same_as": [
+      "https://www.cdc.gov/autism/treatment/index.html",
+      "https://www.cdc.gov/autism/es/treatment/tratamientos-e-intervenciones-para-los-trastornos-del-espectro-autista.html"
+    ],
+    "is_medical_condition": true
+  },
+  "en": {
+    "slug": "what-is-aba-therapy",
+    "title": "What Is ABA Therapy? A Clear Guide for Parents",
+    "seo_title": "What Is ABA Therapy? A Clear Guide for Parents | HSCF",
+    "description": "What is ABA therapy? How it works, what research says, the concerns of autistic adults, and how to choose a good program for your child with autism.",
+    "primary_keyword": "what is ABA therapy",
+    "secondary_keywords": [
+      "applied behavior analysis",
+      "ABA therapy for autism",
+      "naturalistic developmental behavioral intervention",
+      "how to choose an ABA provider",
+      "ABA therapy criticism"
+    ],
+    "summary": "A plain-language guide to ABA therapy for children with autism: what it is, the different styles, what research shows and doesn't, the concerns of autistic adults, and the signs of a good, family-centred program.",
+    "faq": [
+      [
+        "What is ABA therapy in simple words?",
+        "ABA (Applied Behavior Analysis) uses the science of learning to teach useful skills, like communication, play and self-care, and to reduce behaviors that get in the way of daily life. It assesses first, sets specific goals and tracks progress with data. Most evidence-based autism treatments are based on its principles."
+      ],
+      [
+        "Does ABA therapy work?",
+        "Research suggests ABA-based programs can help children with autism build skills, and the CDC says behavioral approaches have the most evidence. But reviews rate much of the evidence as low quality, and possible harms have rarely been measured well. Results vary from child to child, so progress should be tracked and the plan adjusted."
+      ],
+      [
+        "Why do some autistic adults criticize ABA?",
+        "Some autistic adults and advocates object to the punishment used in older programs, very rigid schedules of about 40 hours a week, efforts to stop harmless behaviors like hand-flapping, and goals chosen without their input. Even researchers who support ABA agree some of these concerns are valid and recommend positive reinforcement, individualized hours and goals chosen with the person and family."
+      ],
+      [
+        "Is ABA the same as naturalistic or play-based therapy?",
+        "Not exactly. Older ABA styles are very structured, with step-by-step instructions at a table. Naturalistic developmental behavioral interventions (NDBIs), like the Early Start Denver Model, use ABA strategies during play and daily routines, follow the child's interests and share control between the child and adult."
+      ],
+      [
+        "Do I need an autism diagnosis to start services?",
+        "According to the American Academy of Pediatrics, a definite diagnosis is not needed to start services for a documented developmental delay. Children under 3 can be assessed and get help through their state's early intervention program. Insurance coverage for ABA usually depends on your plan, so check with your insurer or provider."
+      ]
+    ]
+  },
+  "es": {
+    "slug": "que-es-la-terapia-aba",
+    "title": "¿Qué es la terapia ABA? Guía clara para padres",
+    "seo_title": "Qué es la terapia ABA: guía clara para padres | HSCF",
+    "description": "Qué es la terapia ABA, cómo funciona, qué dice la investigación y las críticas, y cómo elegir un buen programa para tu hijo con autismo.",
+    "primary_keyword": "qué es la terapia ABA",
+    "secondary_keywords": [
+      "terapia ABA para autismo",
+      "análisis conductual aplicado",
+      "terapia ABA en español",
+      "cómo elegir terapia ABA",
+      "terapia ABA críticas"
+    ],
+    "summary": "Una guía en lenguaje sencillo sobre la terapia ABA para niños con autismo: qué es, sus distintos estilos, qué muestra la investigación y qué no, las críticas de adultos autistas y las señales de un buen programa centrado en la familia.",
+    "faq": [
+      [
+        "¿Qué es la terapia ABA en palabras sencillas?",
+        "El ABA (Análisis Conductual Aplicado) usa la ciencia del aprendizaje para enseñar habilidades útiles, como comunicarse, jugar o cuidarse, y para reducir conductas que dificultan la vida diaria. Primero evalúa, luego fija metas concretas y mide el progreso con datos. La mayoría de los tratamientos para el autismo con respaldo científico se basan en sus principios."
+      ],
+      [
+        "¿La terapia ABA funciona?",
+        "La investigación sugiere que los programas basados en ABA pueden ayudar a los niños con autismo a desarrollar habilidades, y los CDC dicen que los enfoques conductuales son los que tienen más evidencia. Pero las revisiones califican buena parte de esa evidencia como de baja calidad, y los posibles efectos negativos casi no se han medido. Los resultados varían de un niño a otro, por eso hay que medir el progreso y ajustar el plan."
+      ],
+      [
+        "¿Por qué algunos adultos autistas critican el ABA?",
+        "Algunos adultos autistas y activistas rechazan los castigos que usaban programas antiguos, los horarios rígidos de unas 40 horas por semana, el intento de eliminar conductas inofensivas como aletear las manos y las metas elegidas sin consultarles. Incluso investigadores que defienden el ABA reconocen que algunas críticas son válidas y recomiendan el refuerzo positivo, horas según cada niño y metas elegidas con la persona y su familia."
+      ],
+      [
+        "¿El ABA es lo mismo que una terapia naturalista o basada en el juego?",
+        "No exactamente. Los estilos más antiguos de ABA son muy estructurados, con instrucciones paso a paso en una mesa. Las intervenciones conductuales naturalistas y del desarrollo (NDBI), como el Modelo Denver de Inicio Temprano, usan estrategias del ABA durante el juego y las rutinas, siguen los intereses del niño y comparten el control entre el niño y el adulto."
+      ],
+      [
+        "¿Necesito un diagnóstico de autismo para empezar?",
+        "Según la Academia Americana de Pediatría, no hace falta un diagnóstico definitivo para empezar servicios por un retraso del desarrollo documentado. Los niños menores de 3 años pueden recibir evaluación y apoyo a través del programa de intervención temprana de su estado. La cobertura del seguro para ABA suele depender de tu plan, así que consulta con tu aseguradora o con el proveedor."
+      ]
+    ]
+  },
+  "author": {
+    "type": "Organization",
+    "name": "Healthy Solutions for Children and Families",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2026-11-01",
+  "date_modified": "2026-11-01",
+  "next_review_due": "2027-11-01",
+  "hero_image": {
+    "src": "assets/img/servicios/aba.webp",
+    "alt_en": "Smiling woman with a short bob haircut and an embroidered red-and-yellow top, leaning on a wall outdoors",
+    "alt_es": "Mujer sonriente con el cabello corto y una blusa bordada en rojo y amarillo, apoyada en una pared al aire libre",
+    "width": 1600,
+    "height": 1067
+  },
+  "sources": [
+    {
+      "id": 1,
+      "kind": "clinical_guideline",
+      "authors": "Hyman SL, Levy SE, Myers SM; AAP Council on Children With Disabilities, Section on Developmental and Behavioral Pediatrics",
+      "title": "Identification, Evaluation, and Management of Children With Autism Spectrum Disorder",
+      "publisher": "Pediatrics (American Academy of Pediatrics)",
+      "year": 2020,
+      "url": "https://doi.org/10.1542/peds.2019-3447",
+      "doi": "10.1542/peds.2019-3447",
+      "pmid": null,
+      "verified_on": "2026-11-01"
+    },
+    {
+      "id": 2,
+      "kind": "government",
+      "authors": "Centers for Disease Control and Prevention",
+      "title": "Treatment and Intervention for Autism Spectrum Disorder (Tratamientos e intervenciones para los trastornos del espectro autista)",
+      "publisher": "CDC",
+      "year": 2024,
+      "url": "https://www.cdc.gov/autism/treatment/index.html",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-11-01"
+    },
+    {
+      "id": 3,
+      "kind": "professional_body",
+      "authors": "Behavior Analyst Certification Board",
+      "title": "BACB Fact Sheet",
+      "publisher": "Behavior Analyst Certification Board (BACB)",
+      "year": 2026,
+      "url": "https://www.bacb.com/wp-content/uploads/2022/01/BACB-Fact-Sheet-260402-a.pdf",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-11-01"
+    },
+    {
+      "id": 4,
+      "kind": "systematic_review",
+      "authors": "Reichow B, Hume K, Barton EE, Boyd BA",
+      "title": "Early intensive behavioral intervention (EIBI) for young children with autism spectrum disorders (ASD)",
+      "publisher": "Cochrane Database of Systematic Reviews",
+      "year": 2018,
+      "url": "https://doi.org/10.1002/14651858.CD009260.pub3",
+      "doi": "10.1002/14651858.CD009260.pub3",
+      "pmid": null,
+      "verified_on": "2026-11-01"
+    },
+    {
+      "id": 5,
+      "kind": "systematic_review",
+      "authors": "Sandbank M, Bottema-Beutel K, Crowley LaPoint S, Feldman JI, Barrett DJ, Caldwell N, Dunham K, Crank J, Albarran S, Woynaroski T",
+      "title": "Autism intervention meta-analysis of early childhood studies (Project AIM): updated systematic review and secondary analysis",
+      "publisher": "BMJ",
+      "year": 2023,
+      "url": "https://doi.org/10.1136/bmj-2023-076733",
+      "doi": "10.1136/bmj-2023-076733",
+      "pmid": "37963634",
+      "verified_on": "2026-11-01"
+    },
+    {
+      "id": 6,
+      "kind": "peer_reviewed",
+      "authors": "Schreibman L, Dawson G, Stahmer AC, Landa R, Rogers SJ, McGee GG, Kasari C, Ingersoll B, Kaiser AP, Bruinsma Y, McNerney E, Wetherby A, Halladay A",
+      "title": "Naturalistic Developmental Behavioral Interventions: Empirically Validated Treatments for Autism Spectrum Disorder",
+      "publisher": "Journal of Autism and Developmental Disorders",
+      "year": 2015,
+      "url": "https://doi.org/10.1007/s10803-015-2407-8",
+      "doi": "10.1007/s10803-015-2407-8",
+      "pmid": null,
+      "verified_on": "2026-11-01"
+    },
+    {
+      "id": 7,
+      "kind": "peer_reviewed",
+      "authors": "Leaf JB, Cihon JH, Leaf R, McEachin J, Liu N, Russell N, Unumb L, Shapiro S, Khosrowshahi D",
+      "title": "Concerns About ABA-Based Intervention: An Evaluation and Recommendations",
+      "publisher": "Journal of Autism and Developmental Disorders",
+      "year": 2022,
+      "url": "https://doi.org/10.1007/s10803-021-05137-y",
+      "doi": "10.1007/s10803-021-05137-y",
+      "pmid": null,
+      "verified_on": "2026-11-01"
+    },
+    {
+      "id": 8,
+      "kind": "peer_reviewed",
+      "authors": "McGill O, Robinson A",
+      "title": "'Recalling hidden harms': autistic experiences of childhood applied behavioural analysis (ABA)",
+      "publisher": "Advances in Autism",
+      "year": 2020,
+      "url": "https://doi.org/10.1108/AIA-04-2020-0025",
+      "doi": "10.1108/AIA-04-2020-0025",
+      "pmid": null,
+      "verified_on": "2026-11-01"
+    }
+  ],
+  "research_notes": "CLAIMS WHERE THE EVIDENCE IS MIXED OR NEEDS CLINICAL JUDGMENT\n- Evidence quality: Cochrane [4] found only 5 studies (1 RCT, 4 controlled clinical trials); adaptive behavior gain rated low certainty (n=202), autism symptom severity very low certainty (n=81). The article says this plainly.\n- Project AIM [5]: 252 studies (13,304 participants). Behavioral interventions improved social-emotional/challenging-behavior outcomes but not social communication; NDBIs linked to adaptive behavior, language, play and social communication gains, but one summary (ASHA) notes that when restricted to RCTs only diagnostic characteristics stayed significant for NDBIs. The article does not claim NDBIs are proven superior. Adverse events poorly monitored.\n- Leaf et al. [7] is a commentary by authors who are ABA practitioners/advocates (Autism Partnership; Autism Speaks' Unumb). It is used for the list of concerns raised by self-advocates and for the recommendations (positive reinforcement, individualized hours, client/family input in goals, quality-of-life outcomes). It also defends reducing stereotypy, which the article does not repeat. A clinician may want to add a source written by autistic researchers.\n- McGill & Robinson [8] is a small qualitative study (n=10, self-selected). The article states it cannot support broad conclusions.\n- Uncited practical guidance: the early warning signs in 'Cuándo buscar ayuda' (not talking, pointing or responding to name) are common developmental red flags but no opened source in this post states them; the second-opinion thresholds and home tips 2, 3, 5 and 6 are practical advice, not sourced. The next calendar post (early-signs-of-autism) should cover signs with citations; consider linking it once published.\n- 'Tu hijo se ve cómodo con sus terapeutas' (signs of a good program) is practical guidance, not sourced.\n- Self-injurious behavior was deliberately not discussed, to keep the post standard-risk.\n\nHSCF-SPECIFIC ITEMS TO CONFIRM\n- The HSCF paragraph uses only what build/content_es.py/content_en.py say about the ABA service (detailed assessment, individual plan, family goals, home/school/community, regular progress review with the family). It does not name a BCBA or any staff member.\n- IMPORTANT INCONSISTENCY ON THE SERVICE PAGE: the ABA service copy says 'A Board Certified Behavior Analyst (BCBA) designs and oversees the program', but the two staff listed on the ABA service are José Mesa (BCaBA, preparing for the BCBA exam per his bio) and Juan Felipe Díaz (M.Ed., counselor/behavior therapist). No BCBA appears on the staff pages. Please confirm who the supervising BCBA is (BACB rules require BCaBAs to be supervised) or correct the service page.\n- Confirm that ABA sessions are offered in Spanish and English, and whether ABA is billed to insurance (the post only points readers to the insurance page and the contact page, with no coverage claim).\n- Hero image: reused assets/img/servicios/aba.webp (the ABA service page photo of a smiling woman). No photo of a child or of therapy exists in build/media.json; the puzzle-piece illustration (attention-and-focus) was avoided because many autistic people object to puzzle-piece imagery. A better ABA-relevant photo (with consent) would help.\n\nSOURCE VERIFICATION NOTES\n- [1] AAP clinical report: opened the full PDF hosted by the University of Washington Developmental-Behavioral Pediatrics division (title, authors, Pediatrics 2020;145(1):e20193447, DOI). Quoted statements verified: most evidence-based models based on ABA principles; ABA programs typically designed/supervised by professionals certified in behavior analysis; families involved in selecting interventions; CTMs should include parents; treatment individualized and adjusted with performance data; clinician works with family and child to choose target skills; PRT and naturalistic approaches; a definitive diagnosis is not necessary to institute services for documented delays; IDEA Part C early intervention for children under 3. PubMed (PMID 31843864) did not load, so pmid is null.\n- [2] CDC: English page (updated May 16, 2024) and Spanish page (updated May 2024) both opened; es.md links the Spanish page directly.\n- [3] BACB Fact Sheet PDF (page states updated 10/2026): definition of ABA, three credential levels, BCaBA ongoing supervision.\n- [4] Cochrane: opened the cochranelibrary.com information page (title, authors, 2018, DOI, Summary of Findings table with GRADE). Also opened the ASHA Evidence Maps summary. PubMed (29742275) failed to load, so pmid is null.\n- [5] Project AIM BMJ 2023: the BMJ page and PMC copy could not be opened (permission timeout / CAPTCHA). Bibliographic details (authors, title, BMJ 2023;383:e076733, DOI 10.1136/bmj-2023-076733, PMID 37963634) and findings were confirmed on two independent records: ASHA Evidence Maps article summary and the UMH (Universidad Miguel Hernández) research summary, plus the UNC Health press release. A person may want to open the DOI once to confirm.\n- [6] Schreibman et al. 2015: verified on eScholarship (University of California repository): full author list, JADD 45(8):2411-2428, DOI.\n- [7] Leaf et al.: verified on the BSL/Springer Nature page: authors, JADD, published online June 2021, issue 6/2022, DOI. A correction exists (10.1007/s10803-021-05200-8).\n- [8] McGill & Robinson: verified on the University of Strathclyde repository (Advances in Autism vol 7 no 4, pp 269-282; repository lists 2020; the print issue may be dated 2021).\n\nSOURCES CONSIDERED AND REJECTED\n- AHRQ 'Tratamientos para los niños con TEA' (Spanish parent guide, 2014): opened and useful, but more than 10 years old; not used.\n- APBA 'About Behavior Analysis' page: opened, but it adds nothing beyond the BACB fact sheet; not used.\n- Sage page for an Autism journal article on autistic experiences of ABA (10.1177/13623613221118216): failed to load; not used.\n- Sandbank 2020 Psychological Bulletin (PubMed 31763860): CAPTCHA; superseded by the 2023 BMJ update anyway.\n- PMC copy of Leaf et al. (PMC9114057): CAPTCHA; verified on the publisher platform instead.\n- Blogs and content sites in search results (tinyeye, behavioristbookclub, passthebigabaexam, Wikipedia): rejected by policy.",
+  "generated_by": "claude auto-post 2026-11-01"
+}
