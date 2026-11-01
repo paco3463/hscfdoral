@@ -49,9 +49,11 @@ jobs:
             echo "::notice::WP_USER / WP_APP_PASSWORD secrets are not set yet, so nothing was sent to WordPress."
             exit 0
           fi
+          # Gzipped as binary: the host's request filter rejects JSON bodies over about 1 MB (HTTP 413).
+          gzip -9c wordpress/dist/manifest.json > manifest.json.gz
           code=$(curl -sS -o response.json -w '%{http_code}' --max-time 300 \
-            -u "$WP_USER:$WP_APP_PASSWORD" -H 'Content-Type: application/json' \
-            --data-binary @wordpress/dist/manifest.json "$WP_URL/wp-json/hscf/v1/sync?dry=$DRY")
+            -u "$WP_USER:$WP_APP_PASSWORD" -H 'Content-Type: application/octet-stream' \
+            --data-binary @manifest.json.gz "$WP_URL/wp-json/hscf/v1/sync?dry=$DRY")
           python3 - "$code" <<'PY'
           import json, sys
           code = sys.argv[1]

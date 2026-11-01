@@ -215,7 +215,13 @@ add_action( 'rest_api_init', function () {
 		'permission_callback' => function () { return current_user_can( 'manage_options' ); },
 		'callback' => function ( WP_REST_Request $req ) {
 			$m = $req->get_json_params();
-			if ( ! is_array( $m ) ) return new WP_Error( 'hscf_bad_manifest', 'Send the manifest as JSON (Content-Type: application/json).', array( 'status' => 400 ) );
+			if ( ! is_array( $m ) ) {
+				// The host's request filter rejects JSON bodies over about 1 MB, so the GitHub Action sends the manifest gzipped as binary.
+				$raw = $req->get_body();
+				$txt = "\x1f\x8b" === substr( $raw, 0, 2 ) ? gzdecode( $raw, 32 * MB_IN_BYTES ) : $raw;
+				$m   = is_string( $txt ) ? json_decode( $txt, true ) : null;
+			}
+			if ( ! is_array( $m ) ) return new WP_Error( 'hscf_bad_manifest', 'Send the manifest as JSON, or gzipped JSON as application/octet-stream.', array( 'status' => 400 ) );
 			@set_time_limit( 300 );
 			$r = hscf_sync( $m, array( 'dry' => (bool) $req->get_param( 'dry' ), 'force' => (bool) $req->get_param( 'force' ), 'prune' => (bool) $req->get_param( 'prune' ) ) );
 			return new WP_REST_Response( $r, $r['errors'] ? 422 : 200 );
