@@ -1,8 +1,8 @@
 {
   "site_url": "https://hscfdoral.com/",
   "google": {
-    "ga4_measurement_id": "",
-    "ga4_property_id": "",
+    "ga4_measurement_id": "G-Y82XFL8WXY",
+    "ga4_property_id": "560632582",
     "search_console_site": "sc-domain:hscfdoral.com",
     "service_account_key_path": "~/.config/hscf/ga-service-account.json",
     "_help": "ga4_measurement_id (G-XXXXXXX) turns on the analytics tag in every page; ga4_property_id (numbers only) is used by seo/scripts/fetch_google_data.py. The key file lives OUTSIDE the project and is never shared. See seo/GOOGLE-SETUP.md."
@@ -23,7 +23,208 @@
       "Miami Springs",
       "Sweetwater"
     ],
-    "telehealth": "Florida"
+    "telehealth": "Florida",
+    "service_area": {
+      "_help": "Granular service area for schema.org areaServed, the Areas page and llms.txt. in_person = where clients come to the Doral office from (all Miami-Dade); telehealth = anywhere in Florida (examples are named on the Areas page). Every place carries its Wikipedia + Wikidata link so search engines know exactly which place is meant.",
+      "in_person": [
+        {
+          "name": "Doral",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Doral,_Florida",
+          "wikidata": "Q1784180",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Miami",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Miami",
+          "wikidata": "Q8652",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Hialeah",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Hialeah,_Florida",
+          "wikidata": "Q49276",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Hialeah Gardens",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Hialeah_Gardens,_Florida",
+          "wikidata": "Q595281",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Miami Lakes",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Miami_Lakes,_Florida",
+          "wikidata": "Q995006",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Miami Springs",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Miami_Springs,_Florida",
+          "wikidata": "Q775769",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Medley",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Medley,_Florida",
+          "wikidata": "Q1884547",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Virginia Gardens",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Virginia_Gardens,_Florida",
+          "wikidata": "Q2232282",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Sweetwater",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Sweetwater,_Florida",
+          "wikidata": "Q7655776",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "West Miami",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/West_Miami,_Florida",
+          "wikidata": "Q2152253",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Fontainebleau",
+          "type": "Place",
+          "wikipedia": "https://en.wikipedia.org/wiki/Fontainebleau,_Florida",
+          "wikidata": "Q514636",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Westchester",
+          "type": "Place",
+          "wikipedia": "https://en.wikipedia.org/wiki/Westchester,_Florida",
+          "wikidata": "Q1362680",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Coral Gables",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Coral_Gables,_Florida",
+          "wikidata": "Q427559",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "South Miami",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/South_Miami,_Florida",
+          "wikidata": "Q2154827",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Kendall",
+          "type": "Place",
+          "wikipedia": "https://en.wikipedia.org/wiki/Kendall,_Florida",
+          "wikidata": "Q2361035",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Pinecrest",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Pinecrest,_Florida",
+          "wikidata": "Q3286127",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Palmetto Bay",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Palmetto_Bay,_Florida",
+          "wikidata": "Q937586",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Cutler Bay",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Cutler_Bay,_Florida",
+          "wikidata": "Q1986600",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Miami Beach",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Miami_Beach,_Florida",
+          "wikidata": "Q201516",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Brickell",
+          "type": "Place",
+          "wikipedia": "https://en.wikipedia.org/wiki/Brickell",
+          "wikidata": "Q4965976",
+          "county": "Miami-Dade County"
+        },
+        {
+          "name": "Little Havana",
+          "type": "Place",
+          "wikipedia": "https://en.wikipedia.org/wiki/Little_Havana",
+          "wikidata": "Q665413",
+          "county": "Miami-Dade County"
+        }
+      ],
+      "county": {
+        "name": "Miami-Dade County",
+        "type": "AdministrativeArea",
+        "wikipedia": "https://en.wikipedia.org/wiki/Miami-Dade_County,_Florida",
+        "wikidata": "Q468557"
+      },
+      "state": {
+        "name": "Florida",
+        "type": "State",
+        "wikipedia": "https://en.wikipedia.org/wiki/Florida",
+        "wikidata": "Q812"
+      },
+      "telehealth_examples": [
+        {
+          "name": "Naples",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Naples,_Florida",
+          "wikidata": "Q257830",
+          "county": "Collier County"
+        },
+        {
+          "name": "Orlando",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Orlando,_Florida",
+          "wikidata": "Q49233",
+          "county": "Orange County"
+        },
+        {
+          "name": "Tampa",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Tampa,_Florida",
+          "wikidata": "Q49255",
+          "county": "Hillsborough County"
+        },
+        {
+          "name": "Fort Lauderdale",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/Fort_Lauderdale,_Florida",
+          "wikidata": "Q165972",
+          "county": "Broward County"
+        },
+        {
+          "name": "West Palm Beach",
+          "type": "City",
+          "wikipedia": "https://en.wikipedia.org/wiki/West_Palm_Beach,_Florida",
+          "wikidata": "Q163749",
+          "county": "Palm Beach County"
+        }
+      ]
+    }
   },
   "topic_clusters": [
     {

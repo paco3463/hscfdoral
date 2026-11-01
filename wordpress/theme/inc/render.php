@@ -85,7 +85,8 @@ function hscf_print( $doc ) {
 	echo hscf_partial( 'footer_' . $doc['lang'] );
 	echo hscf_partial( 'modal_' . $doc['lang'] );
 	echo hscf_t( $doc['extra'] );
-	echo '<script src="' . esc_url( get_template_directory_uri() . '/assets/js/main.js?v=' . HSCF_THEME_VERSION ) . '" defer></script>' . "\n";
+	$js = get_template_directory() . '/assets/js/main.js';  // version = file fingerprint, so every update reaches returning visitors
+	echo '<script src="' . esc_url( get_template_directory_uri() . '/assets/js/main.js?v=' . ( file_exists( $js ) ? substr( md5_file( $js ), 0, 10 ) : HSCF_THEME_VERSION ) ) . '" defer></script>' . "\n";
 	wp_footer();
 	echo "</body>\n</html>\n";
 }
@@ -120,7 +121,7 @@ function hscf_simple_doc( $lang, $title, $desc, $main, $alt, $robots = 'index, f
 		. '<link rel="icon" href="' . esc_url( $t . '/assets/img/favicon.ico' ) . '" sizes="any">' . "\n"
 		. '<link rel="preload" href="' . esc_url( $t . '/assets/fonts/fraunces.woff2' ) . '" as="font" type="font/woff2" crossorigin>' . "\n"
 		. '<link rel="preload" href="' . esc_url( $t . '/assets/fonts/figtree.woff2' ) . '" as="font" type="font/woff2" crossorigin>' . "\n"
-		. '<link rel="stylesheet" href="' . esc_url( $t . '/assets/css/styles.css?v=' . HSCF_THEME_VERSION ) . '">' . "\n";
+		. '<link rel="stylesheet" href="' . esc_url( $t . '/assets/css/styles.css?v=' . substr( (string) @md5_file( get_template_directory() . '/assets/css/styles.css' ), 0, 10 ) ) . '">' . "\n";
 	return array( 'lang' => $lang, 'head' => $head, 'main' => $main, 'splash' => '', 'extra' => '', 'active' => '', 'alt' => $alt );
 }
 

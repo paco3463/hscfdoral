@@ -363,15 +363,79 @@
   /* ---------- analytics key events (only if the GA4 tag is on the page) ----------
      Sends the action only: never names, emails, phone numbers or what someone wrote. */
   var track = function (name, params) { if (typeof window.gtag === "function") window.gtag("event", name, params || {}); };
+  /* Every link and button reports one event. Parameters describe the element and where it sits on the page
+     (link_location), never what a visitor typed. Event names used before stay the same. */
+  var clean = function (t, n) { return (t || "").replace(/\s+/g, " ").trim().slice(0, n || 100); };
+  var labelOf = function (el) { return clean(el.getAttribute("aria-label") || el.getAttribute("title") || el.innerText || (el.querySelector("img") || {}).alt || ""); };
+  var whereOf = function (el) {
+    if (el.closest("dialog")) return "popup";
+    if (el.closest(".site-header, .mobile-sheet, .mobile-nav")) return "header";
+    if (el.closest(".site-footer")) return "footer";
+    if (el.closest(".hero")) return "hero";
+    var sec = el.closest("section");
+    if (!sec) return "page";
+    var h = [].slice.call(sec.querySelectorAll("h2, h1")).filter(function (x) { return !x.closest("a, [class*=card]"); })[0];
+    return clean(sec.id || (h && h.innerText) || sec.className.replace(/section--?/g, ""), 60) || "section";
+  };
+  var pathOf = function (url) { try { var u = new URL(url, location.href); return u.host === location.host ? u.pathname + u.hash : u.href.slice(0, 120); } catch (err) { return clean(url, 120); } };
   doc.addEventListener("click", function (e) {
-    var a = e.target.closest("a, button");
-    if (!a) return;
+    var a = e.target.closest("a, button, [role=button]");
+    if (!a || !a.isConnected) return;
     var href = a.getAttribute("href") || "";
-    if (href.indexOf("tel:") === 0) track("click_to_call", { link_location: a.closest("header, footer, main, dialog") ? a.closest("header, footer, main, dialog").tagName.toLowerCase() : "page" });
-    else if (href.indexOf("mailto:") === 0) track(a.closest("dialog") ? "workshop_rsvp" : "click_email");
-    else if (href.indexOf("#book") > -1) track("book_consultation_click");
-    else if (a.classList.contains("lang-switch")) track("language_switch", { to: lang === "en" ? "es" : "en" });
-    else if (a.classList.contains("who")) track("finder_select", { who: a.getAttribute("data-who") });
+    if (/^(blob|data|javascript):/.test(href)) return;   // helper links the page creates itself (e.g. the calendar file)
+    var base = { link_text: labelOf(a), link_location: whereOf(a), page_language: lang };
+    var withUrl = function (o) { o.link_url = pathOf(href); return o; };
+    var dial = href.replace(/[^0-9+]/g, "");
+    if (href.indexOf("tel:") === 0) {
+      if (dial === "988" || dial === "911") track("crisis_line_click", { line: dial, link_location: base.link_location });
+      else if (a.closest("dialog")) track("workshop_rsvp", { method: "phone", link_location: "popup" });
+      else track("click_to_call", { phone_line: dial === "+17864239495" ? "secondary" : "main", link_location: base.link_location });
+    } else if (href.indexOf("mailto:") === 0) {
+      if (a.closest("dialog")) track("workshop_rsvp", { method: "email", link_location: "popup" });
+      else track("click_email", { link_location: base.link_location });
+    } else if (href.indexOf("sms:") === 0 || /wa\.me|whatsapp/.test(href)) {
+      track("click_message", { method: href.indexOf("sms:") === 0 ? "sms" : "whatsapp", link_location: base.link_location });
+    } else if (/google\.[a-z.]+\/maps|maps\.google|goo\.gl\/maps|maps\.app\.goo\.gl/.test(href)) {
+      track("get_directions", { link_location: base.link_location });
+    } else if (href.indexOf("#book") > -1) {
+      track("book_consultation_click", base);
+    } else if (a.classList.contains("lang-switch")) {
+      track("language_switch", { to: lang === "en" ? "es" : "en", link_location: base.link_location });
+    } else if (a.classList.contains("who")) {
+      track("finder_select", { who: a.getAttribute("data-who") });
+    } else if (a.matches("[data-yt], .yt-link") || a.closest("[data-yt]")) {
+      var yt = a.closest("[data-yt]");
+      track("video_play", { video_id: yt ? yt.getAttribute("data-yt") : pathOf(href), link_location: base.link_location });
+    } else if (a.matches("[data-ics]")) {
+      track("add_to_calendar", { link_location: base.link_location });
+    } else if (a.matches("[data-open-event], .event-pill") || a.closest(".event-pill")) {
+      track("workshop_popup_open", { link_location: base.link_location });
+    } else if (a.closest("[data-filters]") || a.classList.contains("chip")) {
+      track("filter_select", { filter: base.link_text, list: location.pathname });
+    } else if (a.matches(".g-item") || a.closest(".g-item")) {
+      track("gallery_open", { link_location: base.link_location });
+    } else if (a.matches("[data-breathe] button, .breathe-btn")) {
+      track("breathing_exercise", { action: base.link_text });
+    } else if (a.matches(".menu-toggle")) {
+      track("menu_open", {});
+    } else if (a.tagName === "A" && href && href.charAt(0) !== "#") {
+      var external = false;
+      try { var u = new URL(href, location.href); external = u.host !== location.host && /^https?:$/.test(u.protocol); } catch (err) {}
+      if (external) track("outbound_link", withUrl({ link_domain: new URL(href, location.href).host, link_text: base.link_text, link_location: base.link_location }));
+      else if (a.closest("nav.nav, .nav-drop, .mobile-nav, .mobile-sheet")) track("nav_click", withUrl(base));
+      else if (a.closest(".site-footer")) track("footer_click", withUrl(base));
+      else if (a.matches(".btn, .header-cta")) track("cta_click", withUrl(base));
+      else if (a.matches("[class*=card], .match, .rec-list a") || a.closest("[class*=-card]")) {
+        var title = a.querySelector("h2, h3, h4, strong");
+        if (title) base.link_text = clean(title.innerText);
+        track("card_click", withUrl(base));
+      }
+      else track("internal_link_click", withUrl(base));
+    } else if (a.tagName === "A" && href.charAt(0) === "#") {
+      track("jump_link_click", { link_text: base.link_text, target: href.slice(0, 60), link_location: base.link_location });
+    } else if (a.tagName === "BUTTON" && a.type !== "submit") {
+      track("button_click", { button_text: base.link_text, link_location: base.link_location });
+    }
   });
   window.HSCF_TRACK = track;
 
@@ -381,6 +445,12 @@
     var status = $(".form-status", form);
     var msgs = JSON.parse(form.getAttribute("data-msgs"));
     var submitBtn = $("button[type=submit]", form);
+    // Where the lead came from: QR codes and campaigns link to /contacto/?src=qr-sala-de-espera
+    var srcField = $("[data-lead-source]", form);
+    try {
+      var src = (new URLSearchParams(location.search).get("src") || "").toLowerCase().replace(/[^a-z0-9-]/g, "").slice(0, 60);
+      if (srcField && src) { srcField.value = src; srcField.setAttribute("value", src); }
+    } catch (err) {}
     var show = function (txt, ok) { status.textContent = txt; status.className = "form-status " + (ok ? "is-ok" : "is-err"); status.hidden = false; status.focus(); };
     form.addEventListener("submit", function (e) {
       e.preventDefault();

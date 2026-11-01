@@ -84,6 +84,73 @@ LOGOS = {
 }
 
 
+# SEO file names (Spanish, the site's main language): descriptive, lowercase, hyphens, no accents.
+# The keys above stay the same (the generator looks photos up by key); only the published file names change.
+NAMES = {
+    "staff": {
+        "jorge-garcia": "jorge-garcia-terapeuta-hscf-doral", "armando-matiz-reyes": "armando-matiz-reyes-hipnosis-clinica-hscf-doral",
+        "maria-cecilia-mauricio": "maria-cecilia-mauricio-coach-terapeuta-hscf-doral", "jose-mesa": "jose-mesa-analista-de-conducta-bcaba-hscf-doral",
+        "juan-felipe-diaz": "juan-felipe-diaz-consejero-hscf-doral", "paula-callegari": "paula-callegari-terapeuta-trilingue-hscf-doral",
+        "silvia-lugo": "silvia-lugo-psicologia-del-deporte-hscf-doral", "alibel-osorio": "alibel-osorio-terapeuta-hscf-doral",
+        "beatriz-pedreira": "beatriz-pedreira-trabajadora-social-hscf-doral",
+    },
+    "services": {
+        "aba": "terapia-aba-doral", "psicoterapia": "psicoterapia-individual-familiar-parejas-doral",
+        "talleres": "talleres-y-charlas-para-padres-doral", "aprendizaje": "neurofeedback-atencion-concentracion-doral",
+        "yoga": "yoga-reflexivo-doral", "coaching": "coaching-personal-doral", "hipnoterapia": "hipnoterapia-relajacion-doral",
+        "equipo-trabajo": "cursos-y-talleres-psicologia-doral", "consulta": "servicios-de-salud-mental-doral",
+        "familia-atardecer": "terapia-familiar-miami-dade",
+    },
+    "gallery": {
+        "2049": "equipo-hscf-evento-comunitario", "2050": "stand-hscf-feria-comunitaria-doral", "2051": "terapeutas-hscf-evento",
+        "2052": "feria-comunitaria-familias-hscf", "2053": "firma-de-libro-evento-hscf", "2054": "equipo-hscf-encuentro",
+        "2055": "grupo-de-mujeres-evento-hscf", "2056": "participantes-taller-hscf", "2057": "libro-cuando-la-adolescencia-toca-la-puerta",
+        "2058": "terapeutas-hscf-grupo", "2059": "presentacion-libro-adolescencia-hscf", "2060": "sala-de-reuniones-hscf-doral",
+        "2061": "encuentro-grupal-hscf", "2062": "taller-de-mujeres-hscf", "2063": "collage-taller-mujeres-de-mi-edad",
+        "2064": "taller-presentacion-pizarra-hscf", "2065": "taller-materiales-hscf", "2066": "manualidad-ama-a-tu-familia-hscf",
+        "2068": "charla-comunitaria-hscf", "2069": "grupo-taller-mujeres-hscf", "2071": "grupo-participantes-taller-hscf",
+        "2072": "dinamica-taller-hscf", "2073": "participantes-charla-hscf", "2074": "facilitadora-taller-hscf",
+        "2075": "volante-taller-para-padres-doral", "2076": "volante-como-ser-guias-para-hijos-saludables",
+        "2079": "charla-para-padres-hscf", "2080": "charla-con-presentacion-hscf", "2081": "conferencia-psicologia-hscf",
+        "2082": "charla-audiencia-hscf", "2083": "taller-dharma-holistic-center-doral", "2084": "charla-comunidad-hscf",
+        "2085": "terapeutas-hscf-dharma-holistic-center",
+    },
+    "events": {
+        "arte-una-herramienta": "evento-arte-una-herramienta-hscf", "sindrome-de-asperger": "evento-sindrome-de-asperger-hscf",
+        "la-vida-sin-limites": "evento-la-vida-sin-limites-hscf", "la-vida-sin-limites-2": "evento-la-vida-sin-limites-2-hscf",
+        "embellecerte": "evento-embellecerte-hscf", "neurofeedback-en": "evento-neurofeedback-ingles-hscf",
+        "neurofeedback-es": "evento-neurofeedback-hscf", "lo-que-no-mata-fortalece": "evento-lo-que-no-mata-fortalece-hscf",
+        "la-conciencia-los-sentimientos": "evento-la-conciencia-los-sentimientos-hscf", "habia-una-vez-edipo-rey": "evento-habia-una-vez-edipo-rey-hscf",
+        "el-arte-del-reencuentro": "evento-el-arte-del-reencuentro-taller-padres-hscf",
+    },
+    "talleres": {
+        "sos-adolescencia": "taller-sos-adolescencia", "bailando-con-los-miedos": "taller-bailando-con-los-miedos",
+        "bulimia-y-anorexia": "taller-bulimia-y-anorexia", "inteligencia-emocional": "taller-inteligencia-emocional",
+        "por-que-me-enfermo": "taller-por-que-me-enfermo", "cuando-la-adolescencia-toca-la-puerta": "taller-cuando-la-adolescencia-toca-la-puerta",
+        "el-arte-del-reencuentro": "taller-el-arte-del-reencuentro", "mi-paz-no-es-negociable": "taller-mi-paz-no-es-negociable",
+        "mujeres-de-nuestra-edad": "taller-mujeres-de-nuestra-edad", "amor-y-ego": "taller-amor-y-ego", "bullying": "taller-bullying-acoso-escolar",
+        "promoviendo-relaciones-saludables": "taller-promoviendo-relaciones-saludables", "descubriendo-el-oro": "taller-descubriendo-el-oro",
+    },
+    "cursos": {
+        "sindrome-de-la-cabana": "curso-sindrome-de-la-cabana", "resistencia-al-mejoramiento": "curso-resistencia-al-mejoramiento",
+        "taller-lenguaje": "curso-lenguaje-de-poder", "taller-neuroplasticidad": "curso-neuroplasticidad",
+    },
+    "news": {
+        "biodecodificacion-neuroemocional": "curso-biodecodificacion-neuroemocional", "cuando-la-adolescencia-curso": "curso-cuando-la-adolescencia-toca-la-puerta",
+        "ansiedad-en-tiempos-de-pandemia": "charla-ansiedad-en-tiempos-de-pandemia",
+    },
+    "blog": {  # the post's Spanish address
+        "prioritize-mental-health": "priorizar-la-salud-mental", "anxiety-attacks": "como-manejar-los-ataques-de-ansiedad",
+        "why-see-a-psychologist": "la-importancia-del-profesional-en-psicologia", "teen-groups": "grupos-para-adolescentes-hscf",
+        "staying-healthy": "estar-sano-depende-de-ti", "mind-body-health": "salud-mente-cuerpo", "attention-and-focus": "la-atencion-y-la-concentracion",
+        "what-is-memory": "que-es-la-memoria", "what-is-cogmed": "que-es-cogmed", "helping-children-through-separation": "ayudar-al-nino-con-la-separacion-de-sus-padres",
+        "family-wellbeing": "el-bienestar-en-la-familia", "covid-19-emotional-balance": "balance-emocional-despues-del-covid-19",
+        "improve-your-mental-health": "como-mejorar-mi-salud-mental", "assertive-communication": "la-comunicacion-asertiva",
+        "play-therapy-training-2021": "capacitacion-terapia-de-juego-2021",
+    },
+    "logos": {k: f"seguro-{k}-aceptado-hscf" for k in ("aetna", "bcbs", "cigna", "unitedhealthcare", "oscar", "bind", "optum", "avmed", "lucet", "umr", "anthem")},
+}
+
 def load(src):
     im = Image.open(src)
     im = ImageOps.exif_transpose(im)
@@ -147,15 +214,16 @@ def logo(src, base):
 def main(media):
     M = {"staff": {}, "gallery": [], "events": {}, "talleres": {}, "cursos": {}, "news": {}, "services": {}, "blog": {}, "logos": {}}
     p = lambda r: os.path.join(media, r)
-    for k, s in STAFF.items(): M["staff"][k] = portrait(p(s), f"staff/{k}")
-    for n in GALLERY: M["gallery"].append(photo(p(f"2019/12/IMG_{n}.jpg"), f"galeria/img-{n}", 1400, 520))
-    for k, s in EVENTS.items(): M["events"][k] = photo(p(s), f"eventos/{k}", 1200, 520)
-    for k, s in TALLERES.items(): M["talleres"][k] = photo(p(s), f"talleres/{k}", 1200, 560)
-    for k, s in CURSOS.items(): M["cursos"][k] = photo(p(s), f"cursos/{k}", 1200, 560)
-    for k, s in NEWS.items(): M["news"][k] = photo(p(s), f"novedades/{k}", 1200, 560)
-    for k, s in SERVICES.items(): M["services"][k] = photo(p(s), f"servicios/{k}", 1600, 640)
-    for k, lst in BLOG.items(): M["blog"][k] = [photo(p(s), f"blog/{k}" + (f"-{i + 1}" if i else ""), 1200, 560) for i, s in enumerate(lst)]
-    for k, s in LOGOS.items(): M["logos"][k] = logo(p(s), f"seguros/{k}")
+    N = NAMES
+    for k, s in STAFF.items(): M["staff"][k] = portrait(p(s), f"staff/{N['staff'][k]}")
+    for n in GALLERY: M["gallery"].append(dict(photo(p(f"2019/12/IMG_{n}.jpg"), f"galeria/{N['gallery'][n]}", 1400, 520), n=n))
+    for k, s in EVENTS.items(): M["events"][k] = photo(p(s), f"eventos/{N['events'][k]}", 1200, 520)
+    for k, s in TALLERES.items(): M["talleres"][k] = photo(p(s), f"talleres/{N['talleres'][k]}", 1200, 560)
+    for k, s in CURSOS.items(): M["cursos"][k] = photo(p(s), f"cursos/{N['cursos'][k]}", 1200, 560)
+    for k, s in NEWS.items(): M["news"][k] = photo(p(s), f"novedades/{N['news'][k]}", 1200, 560)
+    for k, s in SERVICES.items(): M["services"][k] = photo(p(s), f"servicios/{N['services'][k]}", 1600, 640)
+    for k, lst in BLOG.items(): M["blog"][k] = [photo(p(s), f"blog/{N['blog'][k]}" + (f"-{i + 1}" if i else ""), 1200, 560) for i, s in enumerate(lst)]
+    for k, s in LOGOS.items(): M["logos"][k] = logo(p(s), f"seguros/{N['logos'][k]}")
     json.dump(M, open(os.path.join(ROOT, "build", "media.json"), "w"), indent=1)
     total = sum(os.path.getsize(os.path.join(d, f)) for d, _, fs in os.walk(OUT) for f in fs)
     print(f"wrote build/media.json; assets/img is now {total / 1e6:.1f} MB")

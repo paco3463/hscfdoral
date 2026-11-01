@@ -3,8 +3,8 @@
  * Contact form: POST /wp-json/hscf/v1/contact (the form on /contacto/ and /en/contact/).
  *
  * Sends one email to the practice (option hscf_contact_to, default info@hscfdoral.com) with the visitor's
- * address as Reply-To. Nothing is stored in WordPress, logged or sent anywhere else: people sometimes
- * write about their health even when asked not to. Delivery needs WP Mail SMTP (see INSTALL.md).
+ * address as Reply-To, and saves the inquiry (including the message) to the private Contactos list
+ * (inc/leads.php), which only administrators can see. Delivery needs WP Mail SMTP (see INSTALL.md).
  */
 if ( ! defined( 'ABSPATH' ) ) exit;
 
@@ -54,7 +54,17 @@ function hscf_contact_submit( WP_REST_Request $req ) {
 	$headers = array( 'Content-Type: text/plain; charset=UTF-8' );
 	if ( $email ) $headers[] = 'Reply-To: ' . str_replace( array( "\r", "\n", '<', '>' ), '', $name ) . ' <' . $email . '>';
 
+	$consent = in_array( $f( 'consent_marketing', 5 ), array( '1', 'on', 'yes', 'true' ), true );
+	$source  = $f( 'source', 60 );
+	if ( $consent ) $body .= ( $lang === 'en' ? 'Agreed to receive news by email: yes' : 'Acepta recibir novedades por email: sí' ) . "\n";
+	if ( $source !== '' ) $body .= ( $lang === 'en' ? 'Source: ' : 'Origen: ' ) . $source . "\n";
+
 	set_transient( $ip_key, $count + 1, HOUR_IN_SECONDS );
+	if ( function_exists( 'hscf_lead_store' ) ) {
+		hscf_lead_store( array( 'name' => $name, 'email' => $email, 'phone' => $phone, 'for' => $f( 'for' ), 'service' => $f( 'service' ),
+			'language' => $f( 'language' ), 'contact_by' => $f( 'contact_by' ), 'message' => $f( 'message', 3000 ),
+			'page_language' => $lang, 'source' => $source, 'consent' => $consent ) );
+	}
 	$sent = wp_mail( $to, $subject, $body, $headers );
 	return new WP_REST_Response( array( 'ok' => (bool) $sent ), $sent ? 200 : 502 );
 }

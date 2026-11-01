@@ -1,833 +1,866 @@
 {
  "staff": {
   "jorge-garcia": {
-   "src": "assets/img/staff/jorge-garcia.webp",
+   "src": "assets/img/staff/jorge-garcia-terapeuta-hscf-doral.webp",
    "w": 320,
    "h": 400,
-   "sm": "assets/img/staff/jorge-garcia-sm.webp",
+   "sm": "assets/img/staff/jorge-garcia-terapeuta-hscf-doral-sm.webp",
    "sm_w": 320,
-   "jpg": "assets/img/staff/jorge-garcia.jpg"
+   "jpg": "assets/img/staff/jorge-garcia-terapeuta-hscf-doral.jpg"
   },
   "armando-matiz-reyes": {
-   "src": "assets/img/staff/armando-matiz-reyes.webp",
+   "src": "assets/img/staff/armando-matiz-reyes-hipnosis-clinica-hscf-doral.webp",
    "w": 768,
    "h": 960,
-   "sm": "assets/img/staff/armando-matiz-reyes-sm.webp",
+   "sm": "assets/img/staff/armando-matiz-reyes-hipnosis-clinica-hscf-doral-sm.webp",
    "sm_w": 420,
-   "jpg": "assets/img/staff/armando-matiz-reyes.jpg"
+   "jpg": "assets/img/staff/armando-matiz-reyes-hipnosis-clinica-hscf-doral.jpg"
   },
   "maria-cecilia-mauricio": {
-   "src": "assets/img/staff/maria-cecilia-mauricio.webp",
+   "src": "assets/img/staff/maria-cecilia-mauricio-coach-terapeuta-hscf-doral.webp",
    "w": 320,
    "h": 400,
-   "sm": "assets/img/staff/maria-cecilia-mauricio-sm.webp",
+   "sm": "assets/img/staff/maria-cecilia-mauricio-coach-terapeuta-hscf-doral-sm.webp",
    "sm_w": 320,
-   "jpg": "assets/img/staff/maria-cecilia-mauricio.jpg"
+   "jpg": "assets/img/staff/maria-cecilia-mauricio-coach-terapeuta-hscf-doral.jpg"
   },
   "jose-mesa": {
-   "src": "assets/img/staff/jose-mesa.webp",
+   "src": "assets/img/staff/jose-mesa-analista-de-conducta-bcaba-hscf-doral.webp",
    "w": 500,
    "h": 625,
-   "sm": "assets/img/staff/jose-mesa-sm.webp",
+   "sm": "assets/img/staff/jose-mesa-analista-de-conducta-bcaba-hscf-doral-sm.webp",
    "sm_w": 420,
-   "jpg": "assets/img/staff/jose-mesa.jpg"
+   "jpg": "assets/img/staff/jose-mesa-analista-de-conducta-bcaba-hscf-doral.jpg"
   },
   "juan-felipe-diaz": {
-   "src": "assets/img/staff/juan-felipe-diaz.webp",
+   "src": "assets/img/staff/juan-felipe-diaz-consejero-hscf-doral.webp",
    "w": 302,
    "h": 377,
-   "sm": "assets/img/staff/juan-felipe-diaz-sm.webp",
+   "sm": "assets/img/staff/juan-felipe-diaz-consejero-hscf-doral-sm.webp",
    "sm_w": 302,
-   "jpg": "assets/img/staff/juan-felipe-diaz.jpg"
+   "jpg": "assets/img/staff/juan-felipe-diaz-consejero-hscf-doral.jpg"
   },
   "paula-callegari": {
-   "src": "assets/img/staff/paula-callegari.webp",
+   "src": "assets/img/staff/paula-callegari-terapeuta-trilingue-hscf-doral.webp",
    "w": 640,
    "h": 800,
-   "sm": "assets/img/staff/paula-callegari-sm.webp",
+   "sm": "assets/img/staff/paula-callegari-terapeuta-trilingue-hscf-doral-sm.webp",
    "sm_w": 420,
-   "jpg": "assets/img/staff/paula-callegari.jpg"
+   "jpg": "assets/img/staff/paula-callegari-terapeuta-trilingue-hscf-doral.jpg"
   },
   "silvia-lugo": {
-   "src": "assets/img/staff/silvia-lugo.webp",
+   "src": "assets/img/staff/silvia-lugo-psicologia-del-deporte-hscf-doral.webp",
    "w": 900,
    "h": 1125,
-   "sm": "assets/img/staff/silvia-lugo-sm.webp",
+   "sm": "assets/img/staff/silvia-lugo-psicologia-del-deporte-hscf-doral-sm.webp",
    "sm_w": 420,
-   "jpg": "assets/img/staff/silvia-lugo.jpg"
+   "jpg": "assets/img/staff/silvia-lugo-psicologia-del-deporte-hscf-doral.jpg"
   },
   "alibel-osorio": {
-   "src": "assets/img/staff/alibel-osorio.webp",
+   "src": "assets/img/staff/alibel-osorio-terapeuta-hscf-doral.webp",
    "w": 900,
    "h": 1125,
-   "sm": "assets/img/staff/alibel-osorio-sm.webp",
+   "sm": "assets/img/staff/alibel-osorio-terapeuta-hscf-doral-sm.webp",
    "sm_w": 420,
-   "jpg": "assets/img/staff/alibel-osorio.jpg"
+   "jpg": "assets/img/staff/alibel-osorio-terapeuta-hscf-doral.jpg"
   },
   "beatriz-pedreira": {
-   "src": "assets/img/staff/beatriz-pedreira.webp",
+   "src": "assets/img/staff/beatriz-pedreira-trabajadora-social-hscf-doral.webp",
    "w": 900,
    "h": 1125,
-   "sm": "assets/img/staff/beatriz-pedreira-sm.webp",
+   "sm": "assets/img/staff/beatriz-pedreira-trabajadora-social-hscf-doral-sm.webp",
    "sm_w": 420,
-   "jpg": "assets/img/staff/beatriz-pedreira.jpg"
+   "jpg": "assets/img/staff/beatriz-pedreira-trabajadora-social-hscf-doral.jpg"
   }
  },
  "gallery": [
   {
-   "src": "assets/img/galeria/img-2049.webp",
+   "src": "assets/img/galeria/equipo-hscf-evento-comunitario.webp",
    "w": 1400,
    "h": 681,
-   "sm": "assets/img/galeria/img-2049-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/equipo-hscf-evento-comunitario-sm.webp",
+   "sm_w": 520,
+   "n": "2049"
   },
   {
-   "src": "assets/img/galeria/img-2050.webp",
+   "src": "assets/img/galeria/stand-hscf-feria-comunitaria-doral.webp",
    "w": 768,
    "h": 768,
-   "sm": "assets/img/galeria/img-2050-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/stand-hscf-feria-comunitaria-doral-sm.webp",
+   "sm_w": 520,
+   "n": "2050"
   },
   {
-   "src": "assets/img/galeria/img-2051.webp",
+   "src": "assets/img/galeria/terapeutas-hscf-evento.webp",
    "w": 872,
    "h": 960,
-   "sm": "assets/img/galeria/img-2051-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/terapeutas-hscf-evento-sm.webp",
+   "sm_w": 520,
+   "n": "2051"
   },
   {
-   "src": "assets/img/galeria/img-2052.webp",
+   "src": "assets/img/galeria/feria-comunitaria-familias-hscf.webp",
    "w": 720,
    "h": 960,
-   "sm": "assets/img/galeria/img-2052-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/feria-comunitaria-familias-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2052"
   },
   {
-   "src": "assets/img/galeria/img-2053.webp",
+   "src": "assets/img/galeria/firma-de-libro-evento-hscf.webp",
    "w": 960,
    "h": 720,
-   "sm": "assets/img/galeria/img-2053-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/firma-de-libro-evento-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2053"
   },
   {
-   "src": "assets/img/galeria/img-2054.webp",
+   "src": "assets/img/galeria/equipo-hscf-encuentro.webp",
    "w": 960,
    "h": 720,
-   "sm": "assets/img/galeria/img-2054-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/equipo-hscf-encuentro-sm.webp",
+   "sm_w": 520,
+   "n": "2054"
   },
   {
-   "src": "assets/img/galeria/img-2055.webp",
+   "src": "assets/img/galeria/grupo-de-mujeres-evento-hscf.webp",
    "w": 768,
    "h": 1024,
-   "sm": "assets/img/galeria/img-2055-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/grupo-de-mujeres-evento-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2055"
   },
   {
-   "src": "assets/img/galeria/img-2056.webp",
+   "src": "assets/img/galeria/participantes-taller-hscf.webp",
    "w": 960,
    "h": 720,
-   "sm": "assets/img/galeria/img-2056-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/participantes-taller-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2056"
   },
   {
-   "src": "assets/img/galeria/img-2057.webp",
+   "src": "assets/img/galeria/libro-cuando-la-adolescencia-toca-la-puerta.webp",
    "w": 720,
    "h": 960,
-   "sm": "assets/img/galeria/img-2057-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/libro-cuando-la-adolescencia-toca-la-puerta-sm.webp",
+   "sm_w": 520,
+   "n": "2057"
   },
   {
-   "src": "assets/img/galeria/img-2058.webp",
+   "src": "assets/img/galeria/terapeutas-hscf-grupo.webp",
    "w": 1080,
    "h": 810,
-   "sm": "assets/img/galeria/img-2058-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/terapeutas-hscf-grupo-sm.webp",
+   "sm_w": 520,
+   "n": "2058"
   },
   {
-   "src": "assets/img/galeria/img-2059.webp",
+   "src": "assets/img/galeria/presentacion-libro-adolescencia-hscf.webp",
    "w": 592,
    "h": 960,
-   "sm": "assets/img/galeria/img-2059-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/presentacion-libro-adolescencia-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2059"
   },
   {
-   "src": "assets/img/galeria/img-2060.webp",
+   "src": "assets/img/galeria/sala-de-reuniones-hscf-doral.webp",
    "w": 960,
    "h": 960,
-   "sm": "assets/img/galeria/img-2060-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/sala-de-reuniones-hscf-doral-sm.webp",
+   "sm_w": 520,
+   "n": "2060"
   },
   {
-   "src": "assets/img/galeria/img-2061.webp",
+   "src": "assets/img/galeria/encuentro-grupal-hscf.webp",
    "w": 960,
    "h": 720,
-   "sm": "assets/img/galeria/img-2061-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/encuentro-grupal-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2061"
   },
   {
-   "src": "assets/img/galeria/img-2062.webp",
+   "src": "assets/img/galeria/taller-de-mujeres-hscf.webp",
    "w": 960,
    "h": 721,
-   "sm": "assets/img/galeria/img-2062-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/taller-de-mujeres-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2062"
   },
   {
-   "src": "assets/img/galeria/img-2063.webp",
+   "src": "assets/img/galeria/collage-taller-mujeres-de-mi-edad.webp",
    "w": 765,
    "h": 956,
-   "sm": "assets/img/galeria/img-2063-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/collage-taller-mujeres-de-mi-edad-sm.webp",
+   "sm_w": 520,
+   "n": "2063"
   },
   {
-   "src": "assets/img/galeria/img-2064.webp",
+   "src": "assets/img/galeria/taller-presentacion-pizarra-hscf.webp",
    "w": 720,
    "h": 960,
-   "sm": "assets/img/galeria/img-2064-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/taller-presentacion-pizarra-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2064"
   },
   {
-   "src": "assets/img/galeria/img-2065.webp",
+   "src": "assets/img/galeria/taller-materiales-hscf.webp",
    "w": 720,
    "h": 960,
-   "sm": "assets/img/galeria/img-2065-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/taller-materiales-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2065"
   },
   {
-   "src": "assets/img/galeria/img-2066.webp",
+   "src": "assets/img/galeria/manualidad-ama-a-tu-familia-hscf.webp",
    "w": 720,
    "h": 960,
-   "sm": "assets/img/galeria/img-2066-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/manualidad-ama-a-tu-familia-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2066"
   },
   {
-   "src": "assets/img/galeria/img-2068.webp",
+   "src": "assets/img/galeria/charla-comunitaria-hscf.webp",
    "w": 540,
    "h": 960,
-   "sm": "assets/img/galeria/img-2068-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/charla-comunitaria-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2068"
   },
   {
-   "src": "assets/img/galeria/img-2069.webp",
+   "src": "assets/img/galeria/grupo-taller-mujeres-hscf.webp",
    "w": 960,
    "h": 720,
-   "sm": "assets/img/galeria/img-2069-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/grupo-taller-mujeres-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2069"
   },
   {
-   "src": "assets/img/galeria/img-2071.webp",
+   "src": "assets/img/galeria/grupo-participantes-taller-hscf.webp",
    "w": 960,
    "h": 528,
-   "sm": "assets/img/galeria/img-2071-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/grupo-participantes-taller-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2071"
   },
   {
-   "src": "assets/img/galeria/img-2072.webp",
+   "src": "assets/img/galeria/dinamica-taller-hscf.webp",
    "w": 720,
    "h": 960,
-   "sm": "assets/img/galeria/img-2072-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/dinamica-taller-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2072"
   },
   {
-   "src": "assets/img/galeria/img-2073.webp",
+   "src": "assets/img/galeria/participantes-charla-hscf.webp",
    "w": 960,
    "h": 720,
-   "sm": "assets/img/galeria/img-2073-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/participantes-charla-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2073"
   },
   {
-   "src": "assets/img/galeria/img-2074.webp",
+   "src": "assets/img/galeria/facilitadora-taller-hscf.webp",
    "w": 720,
    "h": 960,
-   "sm": "assets/img/galeria/img-2074-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/facilitadora-taller-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2074"
   },
   {
-   "src": "assets/img/galeria/img-2075.webp",
+   "src": "assets/img/galeria/volante-taller-para-padres-doral.webp",
    "w": 1080,
    "h": 1350,
-   "sm": "assets/img/galeria/img-2075-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/volante-taller-para-padres-doral-sm.webp",
+   "sm_w": 520,
+   "n": "2075"
   },
   {
-   "src": "assets/img/galeria/img-2076.webp",
+   "src": "assets/img/galeria/volante-como-ser-guias-para-hijos-saludables.webp",
    "w": 720,
    "h": 405,
-   "sm": "assets/img/galeria/img-2076-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/volante-como-ser-guias-para-hijos-saludables-sm.webp",
+   "sm_w": 520,
+   "n": "2076"
   },
   {
-   "src": "assets/img/galeria/img-2079.webp",
+   "src": "assets/img/galeria/charla-para-padres-hscf.webp",
    "w": 960,
    "h": 1280,
-   "sm": "assets/img/galeria/img-2079-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/charla-para-padres-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2079"
   },
   {
-   "src": "assets/img/galeria/img-2080.webp",
+   "src": "assets/img/galeria/charla-con-presentacion-hscf.webp",
    "w": 720,
    "h": 1280,
-   "sm": "assets/img/galeria/img-2080-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/charla-con-presentacion-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2080"
   },
   {
-   "src": "assets/img/galeria/img-2081.webp",
+   "src": "assets/img/galeria/conferencia-psicologia-hscf.webp",
    "w": 720,
    "h": 1280,
-   "sm": "assets/img/galeria/img-2081-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/conferencia-psicologia-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2081"
   },
   {
-   "src": "assets/img/galeria/img-2082.webp",
+   "src": "assets/img/galeria/charla-audiencia-hscf.webp",
    "w": 960,
    "h": 1280,
-   "sm": "assets/img/galeria/img-2082-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/charla-audiencia-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2082"
   },
   {
-   "src": "assets/img/galeria/img-2083.webp",
+   "src": "assets/img/galeria/taller-dharma-holistic-center-doral.webp",
    "w": 1032,
    "h": 774,
-   "sm": "assets/img/galeria/img-2083-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/taller-dharma-holistic-center-doral-sm.webp",
+   "sm_w": 520,
+   "n": "2083"
   },
   {
-   "src": "assets/img/galeria/img-2084.webp",
+   "src": "assets/img/galeria/charla-comunidad-hscf.webp",
    "w": 1032,
    "h": 774,
-   "sm": "assets/img/galeria/img-2084-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/charla-comunidad-hscf-sm.webp",
+   "sm_w": 520,
+   "n": "2084"
   },
   {
-   "src": "assets/img/galeria/img-2085.webp",
+   "src": "assets/img/galeria/terapeutas-hscf-dharma-holistic-center.webp",
    "w": 720,
    "h": 1280,
-   "sm": "assets/img/galeria/img-2085-sm.webp",
-   "sm_w": 520
+   "sm": "assets/img/galeria/terapeutas-hscf-dharma-holistic-center-sm.webp",
+   "sm_w": 520,
+   "n": "2085"
   }
  ],
  "events": {
   "arte-una-herramienta": {
-   "src": "assets/img/eventos/arte-una-herramienta.webp",
+   "src": "assets/img/eventos/evento-arte-una-herramienta-hscf.webp",
    "w": 1200,
    "h": 1200,
-   "sm": "assets/img/eventos/arte-una-herramienta-sm.webp",
+   "sm": "assets/img/eventos/evento-arte-una-herramienta-hscf-sm.webp",
    "sm_w": 520
   },
   "sindrome-de-asperger": {
-   "src": "assets/img/eventos/sindrome-de-asperger.webp",
+   "src": "assets/img/eventos/evento-sindrome-de-asperger-hscf.webp",
    "w": 1200,
    "h": 1200,
-   "sm": "assets/img/eventos/sindrome-de-asperger-sm.webp",
+   "sm": "assets/img/eventos/evento-sindrome-de-asperger-hscf-sm.webp",
    "sm_w": 520
   },
   "la-vida-sin-limites": {
-   "src": "assets/img/eventos/la-vida-sin-limites.webp",
+   "src": "assets/img/eventos/evento-la-vida-sin-limites-hscf.webp",
    "w": 1200,
    "h": 1200,
-   "sm": "assets/img/eventos/la-vida-sin-limites-sm.webp",
+   "sm": "assets/img/eventos/evento-la-vida-sin-limites-hscf-sm.webp",
    "sm_w": 520
   },
   "la-vida-sin-limites-2": {
-   "src": "assets/img/eventos/la-vida-sin-limites-2.webp",
+   "src": "assets/img/eventos/evento-la-vida-sin-limites-2-hscf.webp",
    "w": 1200,
    "h": 1200,
-   "sm": "assets/img/eventos/la-vida-sin-limites-2-sm.webp",
+   "sm": "assets/img/eventos/evento-la-vida-sin-limites-2-hscf-sm.webp",
    "sm_w": 520
   },
   "embellecerte": {
-   "src": "assets/img/eventos/embellecerte.webp",
+   "src": "assets/img/eventos/evento-embellecerte-hscf.webp",
    "w": 1200,
    "h": 1203,
-   "sm": "assets/img/eventos/embellecerte-sm.webp",
+   "sm": "assets/img/eventos/evento-embellecerte-hscf-sm.webp",
    "sm_w": 520
   },
   "neurofeedback-en": {
-   "src": "assets/img/eventos/neurofeedback-en.webp",
+   "src": "assets/img/eventos/evento-neurofeedback-ingles-hscf.webp",
    "w": 1200,
    "h": 1558,
-   "sm": "assets/img/eventos/neurofeedback-en-sm.webp",
+   "sm": "assets/img/eventos/evento-neurofeedback-ingles-hscf-sm.webp",
    "sm_w": 520
   },
   "neurofeedback-es": {
-   "src": "assets/img/eventos/neurofeedback-es.webp",
+   "src": "assets/img/eventos/evento-neurofeedback-hscf.webp",
    "w": 1200,
    "h": 1558,
-   "sm": "assets/img/eventos/neurofeedback-es-sm.webp",
+   "sm": "assets/img/eventos/evento-neurofeedback-hscf-sm.webp",
    "sm_w": 520
   },
   "lo-que-no-mata-fortalece": {
-   "src": "assets/img/eventos/lo-que-no-mata-fortalece.webp",
+   "src": "assets/img/eventos/evento-lo-que-no-mata-fortalece-hscf.webp",
    "w": 1200,
    "h": 1200,
-   "sm": "assets/img/eventos/lo-que-no-mata-fortalece-sm.webp",
+   "sm": "assets/img/eventos/evento-lo-que-no-mata-fortalece-hscf-sm.webp",
    "sm_w": 520
   },
   "la-conciencia-los-sentimientos": {
-   "src": "assets/img/eventos/la-conciencia-los-sentimientos.webp",
+   "src": "assets/img/eventos/evento-la-conciencia-los-sentimientos-hscf.webp",
    "w": 1200,
    "h": 1204,
-   "sm": "assets/img/eventos/la-conciencia-los-sentimientos-sm.webp",
+   "sm": "assets/img/eventos/evento-la-conciencia-los-sentimientos-hscf-sm.webp",
    "sm_w": 520
   },
   "habia-una-vez-edipo-rey": {
-   "src": "assets/img/eventos/habia-una-vez-edipo-rey.webp",
+   "src": "assets/img/eventos/evento-habia-una-vez-edipo-rey-hscf.webp",
    "w": 1200,
    "h": 1445,
-   "sm": "assets/img/eventos/habia-una-vez-edipo-rey-sm.webp",
+   "sm": "assets/img/eventos/evento-habia-una-vez-edipo-rey-hscf-sm.webp",
    "sm_w": 520
   },
   "el-arte-del-reencuentro": {
-   "src": "assets/img/eventos/el-arte-del-reencuentro.webp",
+   "src": "assets/img/eventos/evento-el-arte-del-reencuentro-taller-padres-hscf.webp",
    "w": 481,
    "h": 602,
-   "sm": "assets/img/eventos/el-arte-del-reencuentro-sm.webp",
+   "sm": "assets/img/eventos/evento-el-arte-del-reencuentro-taller-padres-hscf-sm.webp",
    "sm_w": 481
   }
  },
  "talleres": {
   "sos-adolescencia": {
-   "src": "assets/img/talleres/sos-adolescencia.webp",
+   "src": "assets/img/talleres/taller-sos-adolescencia.webp",
    "w": 1200,
    "h": 802,
-   "sm": "assets/img/talleres/sos-adolescencia-sm.webp",
+   "sm": "assets/img/talleres/taller-sos-adolescencia-sm.webp",
    "sm_w": 560
   },
   "bailando-con-los-miedos": {
-   "src": "assets/img/talleres/bailando-con-los-miedos.webp",
+   "src": "assets/img/talleres/taller-bailando-con-los-miedos.webp",
    "w": 1200,
    "h": 1799,
-   "sm": "assets/img/talleres/bailando-con-los-miedos-sm.webp",
+   "sm": "assets/img/talleres/taller-bailando-con-los-miedos-sm.webp",
    "sm_w": 560
   },
   "bulimia-y-anorexia": {
-   "src": "assets/img/talleres/bulimia-y-anorexia.webp",
+   "src": "assets/img/talleres/taller-bulimia-y-anorexia.webp",
    "w": 1200,
    "h": 1800,
-   "sm": "assets/img/talleres/bulimia-y-anorexia-sm.webp",
+   "sm": "assets/img/talleres/taller-bulimia-y-anorexia-sm.webp",
    "sm_w": 560
   },
   "inteligencia-emocional": {
-   "src": "assets/img/talleres/inteligencia-emocional.webp",
+   "src": "assets/img/talleres/taller-inteligencia-emocional.webp",
    "w": 1200,
    "h": 801,
-   "sm": "assets/img/talleres/inteligencia-emocional-sm.webp",
+   "sm": "assets/img/talleres/taller-inteligencia-emocional-sm.webp",
    "sm_w": 560
   },
   "por-que-me-enfermo": {
-   "src": "assets/img/talleres/por-que-me-enfermo.webp",
+   "src": "assets/img/talleres/taller-por-que-me-enfermo.webp",
    "w": 1200,
    "h": 1856,
-   "sm": "assets/img/talleres/por-que-me-enfermo-sm.webp",
+   "sm": "assets/img/talleres/taller-por-que-me-enfermo-sm.webp",
    "sm_w": 560
   },
   "cuando-la-adolescencia-toca-la-puerta": {
-   "src": "assets/img/talleres/cuando-la-adolescencia-toca-la-puerta.webp",
+   "src": "assets/img/talleres/taller-cuando-la-adolescencia-toca-la-puerta.webp",
    "w": 450,
    "h": 450,
-   "sm": "assets/img/talleres/cuando-la-adolescencia-toca-la-puerta-sm.webp",
+   "sm": "assets/img/talleres/taller-cuando-la-adolescencia-toca-la-puerta-sm.webp",
    "sm_w": 450
   },
   "el-arte-del-reencuentro": {
-   "src": "assets/img/talleres/el-arte-del-reencuentro.webp",
+   "src": "assets/img/talleres/taller-el-arte-del-reencuentro.webp",
    "w": 1200,
    "h": 799,
-   "sm": "assets/img/talleres/el-arte-del-reencuentro-sm.webp",
+   "sm": "assets/img/talleres/taller-el-arte-del-reencuentro-sm.webp",
    "sm_w": 560
   },
   "mi-paz-no-es-negociable": {
-   "src": "assets/img/talleres/mi-paz-no-es-negociable.webp",
+   "src": "assets/img/talleres/taller-mi-paz-no-es-negociable.webp",
    "w": 1200,
    "h": 1804,
-   "sm": "assets/img/talleres/mi-paz-no-es-negociable-sm.webp",
+   "sm": "assets/img/talleres/taller-mi-paz-no-es-negociable-sm.webp",
    "sm_w": 560
   },
   "mujeres-de-nuestra-edad": {
-   "src": "assets/img/talleres/mujeres-de-nuestra-edad.webp",
+   "src": "assets/img/talleres/taller-mujeres-de-nuestra-edad.webp",
    "w": 1200,
    "h": 800,
-   "sm": "assets/img/talleres/mujeres-de-nuestra-edad-sm.webp",
+   "sm": "assets/img/talleres/taller-mujeres-de-nuestra-edad-sm.webp",
    "sm_w": 560
   },
   "amor-y-ego": {
-   "src": "assets/img/talleres/amor-y-ego.webp",
+   "src": "assets/img/talleres/taller-amor-y-ego.webp",
    "w": 1200,
    "h": 1801,
-   "sm": "assets/img/talleres/amor-y-ego-sm.webp",
+   "sm": "assets/img/talleres/taller-amor-y-ego-sm.webp",
    "sm_w": 560
   },
   "bullying": {
-   "src": "assets/img/talleres/bullying.webp",
+   "src": "assets/img/talleres/taller-bullying-acoso-escolar.webp",
    "w": 1200,
    "h": 1200,
-   "sm": "assets/img/talleres/bullying-sm.webp",
+   "sm": "assets/img/talleres/taller-bullying-acoso-escolar-sm.webp",
    "sm_w": 560
   },
   "promoviendo-relaciones-saludables": {
-   "src": "assets/img/talleres/promoviendo-relaciones-saludables.webp",
+   "src": "assets/img/talleres/taller-promoviendo-relaciones-saludables.webp",
    "w": 1200,
    "h": 800,
-   "sm": "assets/img/talleres/promoviendo-relaciones-saludables-sm.webp",
+   "sm": "assets/img/talleres/taller-promoviendo-relaciones-saludables-sm.webp",
    "sm_w": 560
   },
   "descubriendo-el-oro": {
-   "src": "assets/img/talleres/descubriendo-el-oro.webp",
+   "src": "assets/img/talleres/taller-descubriendo-el-oro.webp",
    "w": 1200,
    "h": 2132,
-   "sm": "assets/img/talleres/descubriendo-el-oro-sm.webp",
+   "sm": "assets/img/talleres/taller-descubriendo-el-oro-sm.webp",
    "sm_w": 560
   }
  },
  "cursos": {
   "sindrome-de-la-cabana": {
-   "src": "assets/img/cursos/sindrome-de-la-cabana.webp",
+   "src": "assets/img/cursos/curso-sindrome-de-la-cabana.webp",
    "w": 646,
    "h": 900,
-   "sm": "assets/img/cursos/sindrome-de-la-cabana-sm.webp",
+   "sm": "assets/img/cursos/curso-sindrome-de-la-cabana-sm.webp",
    "sm_w": 560
   },
   "resistencia-al-mejoramiento": {
-   "src": "assets/img/cursos/resistencia-al-mejoramiento.webp",
+   "src": "assets/img/cursos/curso-resistencia-al-mejoramiento.webp",
    "w": 960,
    "h": 540,
-   "sm": "assets/img/cursos/resistencia-al-mejoramiento-sm.webp",
+   "sm": "assets/img/cursos/curso-resistencia-al-mejoramiento-sm.webp",
    "sm_w": 560
   },
   "taller-lenguaje": {
-   "src": "assets/img/cursos/taller-lenguaje.webp",
+   "src": "assets/img/cursos/curso-lenguaje-de-poder.webp",
    "w": 960,
    "h": 540,
-   "sm": "assets/img/cursos/taller-lenguaje-sm.webp",
+   "sm": "assets/img/cursos/curso-lenguaje-de-poder-sm.webp",
    "sm_w": 560
   },
   "taller-neuroplasticidad": {
-   "src": "assets/img/cursos/taller-neuroplasticidad.webp",
+   "src": "assets/img/cursos/curso-neuroplasticidad.webp",
    "w": 960,
    "h": 540,
-   "sm": "assets/img/cursos/taller-neuroplasticidad-sm.webp",
+   "sm": "assets/img/cursos/curso-neuroplasticidad-sm.webp",
    "sm_w": 560
   }
  },
  "news": {
   "biodecodificacion-neuroemocional": {
-   "src": "assets/img/novedades/biodecodificacion-neuroemocional.webp",
+   "src": "assets/img/novedades/curso-biodecodificacion-neuroemocional.webp",
    "w": 1200,
    "h": 1200,
-   "sm": "assets/img/novedades/biodecodificacion-neuroemocional-sm.webp",
+   "sm": "assets/img/novedades/curso-biodecodificacion-neuroemocional-sm.webp",
    "sm_w": 560
   },
   "cuando-la-adolescencia-curso": {
-   "src": "assets/img/novedades/cuando-la-adolescencia-curso.webp",
+   "src": "assets/img/novedades/curso-cuando-la-adolescencia-toca-la-puerta.webp",
    "w": 1200,
    "h": 1200,
-   "sm": "assets/img/novedades/cuando-la-adolescencia-curso-sm.webp",
+   "sm": "assets/img/novedades/curso-cuando-la-adolescencia-toca-la-puerta-sm.webp",
    "sm_w": 560
   },
   "ansiedad-en-tiempos-de-pandemia": {
-   "src": "assets/img/novedades/ansiedad-en-tiempos-de-pandemia.webp",
+   "src": "assets/img/novedades/charla-ansiedad-en-tiempos-de-pandemia.webp",
    "w": 1200,
    "h": 1200,
-   "sm": "assets/img/novedades/ansiedad-en-tiempos-de-pandemia-sm.webp",
+   "sm": "assets/img/novedades/charla-ansiedad-en-tiempos-de-pandemia-sm.webp",
    "sm_w": 560
   }
  },
  "services": {
   "psicoterapia": {
-   "src": "assets/img/servicios/psicoterapia.webp",
+   "src": "assets/img/servicios/psicoterapia-individual-familiar-parejas-doral.webp",
    "w": 1600,
    "h": 1067,
-   "sm": "assets/img/servicios/psicoterapia-sm.webp",
+   "sm": "assets/img/servicios/psicoterapia-individual-familiar-parejas-doral-sm.webp",
    "sm_w": 640
   },
   "yoga": {
-   "src": "assets/img/servicios/yoga.webp",
+   "src": "assets/img/servicios/yoga-reflexivo-doral.webp",
    "w": 1600,
    "h": 900,
-   "sm": "assets/img/servicios/yoga-sm.webp",
+   "sm": "assets/img/servicios/yoga-reflexivo-doral-sm.webp",
    "sm_w": 640
   },
   "coaching": {
-   "src": "assets/img/servicios/coaching.webp",
+   "src": "assets/img/servicios/coaching-personal-doral.webp",
    "w": 1600,
    "h": 1078,
-   "sm": "assets/img/servicios/coaching-sm.webp",
+   "sm": "assets/img/servicios/coaching-personal-doral-sm.webp",
    "sm_w": 640
   },
   "hipnoterapia": {
-   "src": "assets/img/servicios/hipnoterapia.webp",
+   "src": "assets/img/servicios/hipnoterapia-relajacion-doral.webp",
    "w": 1600,
    "h": 1067,
-   "sm": "assets/img/servicios/hipnoterapia-sm.webp",
+   "sm": "assets/img/servicios/hipnoterapia-relajacion-doral-sm.webp",
    "sm_w": 640
   },
   "consulta": {
-   "src": "assets/img/servicios/consulta.webp",
+   "src": "assets/img/servicios/servicios-de-salud-mental-doral.webp",
    "w": 1600,
    "h": 1069,
-   "sm": "assets/img/servicios/consulta-sm.webp",
+   "sm": "assets/img/servicios/servicios-de-salud-mental-doral-sm.webp",
    "sm_w": 640
   },
   "talleres": {
-   "src": "assets/img/servicios/talleres.webp",
+   "src": "assets/img/servicios/talleres-y-charlas-para-padres-doral.webp",
    "w": 1600,
    "h": 1068,
-   "sm": "assets/img/servicios/talleres-sm.webp",
+   "sm": "assets/img/servicios/talleres-y-charlas-para-padres-doral-sm.webp",
    "sm_w": 640
   },
   "familia-atardecer": {
-   "src": "assets/img/servicios/familia-atardecer.webp",
+   "src": "assets/img/servicios/terapia-familiar-miami-dade.webp",
    "w": 1600,
    "h": 1065,
-   "sm": "assets/img/servicios/familia-atardecer-sm.webp",
+   "sm": "assets/img/servicios/terapia-familiar-miami-dade-sm.webp",
    "sm_w": 640
   },
   "aprendizaje": {
-   "src": "assets/img/servicios/aprendizaje.webp",
+   "src": "assets/img/servicios/neurofeedback-atencion-concentracion-doral.webp",
    "w": 1600,
    "h": 958,
-   "sm": "assets/img/servicios/aprendizaje-sm.webp",
+   "sm": "assets/img/servicios/neurofeedback-atencion-concentracion-doral-sm.webp",
    "sm_w": 640
   },
   "equipo-trabajo": {
-   "src": "assets/img/servicios/equipo-trabajo.webp",
+   "src": "assets/img/servicios/cursos-y-talleres-psicologia-doral.webp",
    "w": 1600,
    "h": 1068,
-   "sm": "assets/img/servicios/equipo-trabajo-sm.webp",
+   "sm": "assets/img/servicios/cursos-y-talleres-psicologia-doral-sm.webp",
    "sm_w": 640
   },
   "aba": {
-   "src": "assets/img/servicios/aba.webp",
+   "src": "assets/img/servicios/terapia-aba-doral.webp",
    "w": 1600,
    "h": 1067,
-   "sm": "assets/img/servicios/aba-sm.webp",
+   "sm": "assets/img/servicios/terapia-aba-doral-sm.webp",
    "sm_w": 640
   }
  },
  "blog": {
   "prioritize-mental-health": [
    {
-    "src": "assets/img/blog/prioritize-mental-health.webp",
+    "src": "assets/img/blog/priorizar-la-salud-mental.webp",
     "w": 1080,
     "h": 1080,
-    "sm": "assets/img/blog/prioritize-mental-health-sm.webp",
+    "sm": "assets/img/blog/priorizar-la-salud-mental-sm.webp",
     "sm_w": 560
    }
   ],
   "anxiety-attacks": [
    {
-    "src": "assets/img/blog/anxiety-attacks.webp",
+    "src": "assets/img/blog/como-manejar-los-ataques-de-ansiedad.webp",
     "w": 1200,
     "h": 1200,
-    "sm": "assets/img/blog/anxiety-attacks-sm.webp",
+    "sm": "assets/img/blog/como-manejar-los-ataques-de-ansiedad-sm.webp",
     "sm_w": 560
    }
   ],
   "why-see-a-psychologist": [
    {
-    "src": "assets/img/blog/why-see-a-psychologist.webp",
+    "src": "assets/img/blog/la-importancia-del-profesional-en-psicologia.webp",
     "w": 1200,
     "h": 675,
-    "sm": "assets/img/blog/why-see-a-psychologist-sm.webp",
+    "sm": "assets/img/blog/la-importancia-del-profesional-en-psicologia-sm.webp",
     "sm_w": 560
    }
   ],
   "teen-groups": [
    {
-    "src": "assets/img/blog/teen-groups.webp",
+    "src": "assets/img/blog/grupos-para-adolescentes-hscf.webp",
     "w": 768,
     "h": 1024,
-    "sm": "assets/img/blog/teen-groups-sm.webp",
+    "sm": "assets/img/blog/grupos-para-adolescentes-hscf-sm.webp",
     "sm_w": 560
    }
   ],
   "staying-healthy": [
    {
-    "src": "assets/img/blog/staying-healthy.webp",
+    "src": "assets/img/blog/estar-sano-depende-de-ti.webp",
     "w": 1200,
     "h": 800,
-    "sm": "assets/img/blog/staying-healthy-sm.webp",
+    "sm": "assets/img/blog/estar-sano-depende-de-ti-sm.webp",
     "sm_w": 560
    }
   ],
   "mind-body-health": [
    {
-    "src": "assets/img/blog/mind-body-health.webp",
+    "src": "assets/img/blog/salud-mente-cuerpo.webp",
     "w": 626,
     "h": 417,
-    "sm": "assets/img/blog/mind-body-health-sm.webp",
+    "sm": "assets/img/blog/salud-mente-cuerpo-sm.webp",
     "sm_w": 560
    }
   ],
   "attention-and-focus": [
    {
-    "src": "assets/img/blog/attention-and-focus.webp",
+    "src": "assets/img/blog/la-atencion-y-la-concentracion.webp",
     "w": 1200,
     "h": 1200,
-    "sm": "assets/img/blog/attention-and-focus-sm.webp",
+    "sm": "assets/img/blog/la-atencion-y-la-concentracion-sm.webp",
     "sm_w": 560
    }
   ],
   "what-is-memory": [
    {
-    "src": "assets/img/blog/what-is-memory.webp",
+    "src": "assets/img/blog/que-es-la-memoria.webp",
     "w": 1200,
     "h": 1029,
-    "sm": "assets/img/blog/what-is-memory-sm.webp",
+    "sm": "assets/img/blog/que-es-la-memoria-sm.webp",
     "sm_w": 560
    }
   ],
   "what-is-cogmed": [
    {
-    "src": "assets/img/blog/what-is-cogmed.webp",
+    "src": "assets/img/blog/que-es-cogmed.webp",
     "w": 1000,
     "h": 1000,
-    "sm": "assets/img/blog/what-is-cogmed-sm.webp",
+    "sm": "assets/img/blog/que-es-cogmed-sm.webp",
     "sm_w": 560
    }
   ],
   "helping-children-through-separation": [
    {
-    "src": "assets/img/blog/helping-children-through-separation.webp",
+    "src": "assets/img/blog/ayudar-al-nino-con-la-separacion-de-sus-padres.webp",
     "w": 640,
     "h": 480,
-    "sm": "assets/img/blog/helping-children-through-separation-sm.webp",
+    "sm": "assets/img/blog/ayudar-al-nino-con-la-separacion-de-sus-padres-sm.webp",
     "sm_w": 560
    }
   ],
   "family-wellbeing": [
    {
-    "src": "assets/img/blog/family-wellbeing.webp",
+    "src": "assets/img/blog/el-bienestar-en-la-familia.webp",
     "w": 640,
     "h": 427,
-    "sm": "assets/img/blog/family-wellbeing-sm.webp",
+    "sm": "assets/img/blog/el-bienestar-en-la-familia-sm.webp",
     "sm_w": 560
    }
   ],
   "covid-19-emotional-balance": [
    {
-    "src": "assets/img/blog/covid-19-emotional-balance.webp",
+    "src": "assets/img/blog/balance-emocional-despues-del-covid-19.webp",
     "w": 640,
     "h": 423,
-    "sm": "assets/img/blog/covid-19-emotional-balance-sm.webp",
+    "sm": "assets/img/blog/balance-emocional-despues-del-covid-19-sm.webp",
     "sm_w": 560
    }
   ],
   "improve-your-mental-health": [
    {
-    "src": "assets/img/blog/improve-your-mental-health.webp",
+    "src": "assets/img/blog/como-mejorar-mi-salud-mental.webp",
     "w": 1200,
     "h": 800,
-    "sm": "assets/img/blog/improve-your-mental-health-sm.webp",
+    "sm": "assets/img/blog/como-mejorar-mi-salud-mental-sm.webp",
     "sm_w": 560
    }
   ],
   "assertive-communication": [
    {
-    "src": "assets/img/blog/assertive-communication.webp",
+    "src": "assets/img/blog/la-comunicacion-asertiva.webp",
     "w": 640,
     "h": 427,
-    "sm": "assets/img/blog/assertive-communication-sm.webp",
+    "sm": "assets/img/blog/la-comunicacion-asertiva-sm.webp",
     "sm_w": 560
    }
   ],
   "play-therapy-training-2021": [
    {
-    "src": "assets/img/blog/play-therapy-training-2021.webp",
+    "src": "assets/img/blog/capacitacion-terapia-de-juego-2021.webp",
     "w": 1200,
     "h": 1178,
-    "sm": "assets/img/blog/play-therapy-training-2021-sm.webp",
+    "sm": "assets/img/blog/capacitacion-terapia-de-juego-2021-sm.webp",
     "sm_w": 560
    },
    {
-    "src": "assets/img/blog/play-therapy-training-2021-2.webp",
+    "src": "assets/img/blog/capacitacion-terapia-de-juego-2021-2.webp",
     "w": 1200,
     "h": 1190,
-    "sm": "assets/img/blog/play-therapy-training-2021-2-sm.webp",
+    "sm": "assets/img/blog/capacitacion-terapia-de-juego-2021-2-sm.webp",
     "sm_w": 560
    },
    {
-    "src": "assets/img/blog/play-therapy-training-2021-3.webp",
+    "src": "assets/img/blog/capacitacion-terapia-de-juego-2021-3.webp",
     "w": 1200,
     "h": 1185,
-    "sm": "assets/img/blog/play-therapy-training-2021-3-sm.webp",
+    "sm": "assets/img/blog/capacitacion-terapia-de-juego-2021-3-sm.webp",
     "sm_w": 560
    },
    {
-    "src": "assets/img/blog/play-therapy-training-2021-4.webp",
+    "src": "assets/img/blog/capacitacion-terapia-de-juego-2021-4.webp",
     "w": 1200,
     "h": 1178,
-    "sm": "assets/img/blog/play-therapy-training-2021-4-sm.webp",
+    "sm": "assets/img/blog/capacitacion-terapia-de-juego-2021-4-sm.webp",
     "sm_w": 560
    },
    {
-    "src": "assets/img/blog/play-therapy-training-2021-5.webp",
+    "src": "assets/img/blog/capacitacion-terapia-de-juego-2021-5.webp",
     "w": 1200,
     "h": 1180,
-    "sm": "assets/img/blog/play-therapy-training-2021-5-sm.webp",
+    "sm": "assets/img/blog/capacitacion-terapia-de-juego-2021-5-sm.webp",
     "sm_w": 560
    },
    {
-    "src": "assets/img/blog/play-therapy-training-2021-6.webp",
+    "src": "assets/img/blog/capacitacion-terapia-de-juego-2021-6.webp",
     "w": 768,
     "h": 1024,
-    "sm": "assets/img/blog/play-therapy-training-2021-6-sm.webp",
+    "sm": "assets/img/blog/capacitacion-terapia-de-juego-2021-6-sm.webp",
     "sm_w": 560
    }
   ]
  },
  "logos": {
   "aetna": {
-   "src": "assets/img/seguros/aetna.webp",
+   "src": "assets/img/seguros/seguro-aetna-aceptado-hscf.webp",
    "w": 360,
    "h": 160
   },
   "bcbs": {
-   "src": "assets/img/seguros/bcbs.webp",
+   "src": "assets/img/seguros/seguro-bcbs-aceptado-hscf.webp",
    "w": 360,
    "h": 160
   },
   "cigna": {
-   "src": "assets/img/seguros/cigna.webp",
+   "src": "assets/img/seguros/seguro-cigna-aceptado-hscf.webp",
    "w": 360,
    "h": 160
   },
   "unitedhealthcare": {
-   "src": "assets/img/seguros/unitedhealthcare.webp",
+   "src": "assets/img/seguros/seguro-unitedhealthcare-aceptado-hscf.webp",
    "w": 360,
    "h": 160
   },
   "oscar": {
-   "src": "assets/img/seguros/oscar.webp",
+   "src": "assets/img/seguros/seguro-oscar-aceptado-hscf.webp",
    "w": 360,
    "h": 160
   },
   "bind": {
-   "src": "assets/img/seguros/bind.webp",
+   "src": "assets/img/seguros/seguro-bind-aceptado-hscf.webp",
    "w": 360,
    "h": 160
   },
   "optum": {
-   "src": "assets/img/seguros/optum.webp",
+   "src": "assets/img/seguros/seguro-optum-aceptado-hscf.webp",
    "w": 360,
    "h": 160
   },
   "avmed": {
-   "src": "assets/img/seguros/avmed.webp",
+   "src": "assets/img/seguros/seguro-avmed-aceptado-hscf.webp",
    "w": 360,
    "h": 160
   },
   "lucet": {
-   "src": "assets/img/seguros/lucet.webp",
+   "src": "assets/img/seguros/seguro-lucet-aceptado-hscf.webp",
    "w": 360,
    "h": 160
   },
   "umr": {
-   "src": "assets/img/seguros/umr.webp",
+   "src": "assets/img/seguros/seguro-umr-aceptado-hscf.webp",
    "w": 360,
    "h": 160
   },
   "anthem": {
-   "src": "assets/img/seguros/anthem.webp",
+   "src": "assets/img/seguros/seguro-anthem-aceptado-hscf.webp",
    "w": 360,
    "h": 160
   }

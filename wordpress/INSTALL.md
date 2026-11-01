@@ -123,7 +123,7 @@ The form on `/contacto/` and `/en/contact/` emails **info@hscfdoral.com** throug
 3. WP Mail SMTP → Tools → Email Test → send to info@hscfdoral.com. Then send a test from the site's contact form.
 4. If the test can't connect (some shared plans block outside mail ports), tell the user. The options are GoDaddy's hosting relay or a sending service (Brevo, SendGrid, Postmark), which needs its own DNS records; the user decides. Until then the form shows its error message and visitors can still call or email.
 
-The form stores nothing in WordPress; each message is only emailed.
+Each request (name, email, phone, who it's for, service, language, contact preference, the message, source and email opt-in) is emailed and also saved to the private **Contactos** list (`inc/leads.php`, table `{prefix}hscf_leads`): a Dashboard widget plus WordPress admin → **Contactos**, with filters, status, notes, CSV export and delete, for administrators only. QR codes and campaigns link to `/contacto/?src=<name>` (letters, digits and hyphens) so each lead shows where it came from.
 
 ## 8. HTTPS (after the domain points here)
 

@@ -744,7 +744,8 @@ CONTACT = {
     "h1": "Contact",
     "lead": "Tell us what's going on and we'll point you to the right service and professional. We see clients in English and Spanish.",
     "form_h2": "Request an appointment",
-    "form_note": "Please don't include medical or health details in this form. We'll talk about them privately by phone.",
+    "form_note": "Please don't include medical or health details in this form. We'll talk about them privately by phone. We keep your request privately so we can reply.",
+    "f_consent": "Email me HSCF news, workshops and tips (optional). I can unsubscribe at any time.",
     "f_name": "Your name",
     "f_email": "Email",
     "f_phone": "Phone",
@@ -920,3 +921,136 @@ FINDER = [
      ]},
 ]
 FINDER_TESTING = "Psychological evaluations"
+
+# ---------------------------------------------------------------- legal pages (privacy, terms, accessibility)
+# Each section: (h2, [paragraph or ("ul", [items])]). Describe only what the site really does; update "updated" on any change.
+LEGAL_UI = {"updated": "Last updated", "footer_privacy_link": "Privacy", "footer_terms_link": "Terms",
+            "footer_a11y_link": "Accessibility", "credit": "Website developed by"}
+LEGAL = {
+  "privacy": {
+    "title": "Privacy Policy | Healthy Solutions Doral | HSCF",
+    "description": "How Healthy Solutions for Children and Families collects, uses and protects the information you share on hscfdoral.com.",
+    "h1": "Privacy policy",
+    "lead": "What information this website collects, what we use it for, and how to ask us to change or delete it.",
+    "updated": "October 24, 2026",
+    "sections": [
+      ("Who we are", ["Healthy Solutions for Children and Families (HSCF) is a mental health center at 8245 NW 36th St, Suite 7, Doral, FL 33166. You can email us at <a href=\"mailto:info@hscfdoral.com\">info@hscfdoral.com</a> or call <a href=\"tel:+13055945658\">(305) 594-5658</a>.",
+        "This policy covers this website only. The clinical information you share as a client is protected by the confidentiality rules for mental health professionals in Florida and, where applicable, by the federal HIPAA law, as explained in our <a href=\"/en/notice-of-privacy-practices/\">Notice of Privacy Practices</a>. That information is not handled through this website."]),
+      ("Information you give us", ["When you send the contact form, we keep:",
+        ("ul", ["your name, email and phone number;", "who the help is for, the service you're interested in, your preferred language and how you'd like us to contact you;",
+                "the message you write;", "whether you agreed to receive news by email;", "the language of the page and the link you came from (for example, a QR code)."]),
+        "We ask you not to include medical or health details in the form. If you do, we'll treat them as confidential, but it's better to talk about them by phone."]),
+      ("Information collected automatically", [
+        "We use <strong>Google Analytics</strong> to understand how the site is used: which pages are visited, the type of device, the approximate city, how you arrived and which links or buttons are clicked. Google Analytics uses cookies to tell visits apart. We never send it what you type in the form. Google signals and ad personalization are turned off.",
+        "The site saves two small things in your browser: whether you've seen the welcome screen (for your visit only) and whether you've seen a workshop notice, so it isn't shown again.",
+        "The map of our office loads from Google Maps. YouTube videos load only when you press play, using YouTube's privacy-enhanced mode. Some course materials are on Google Drive or Google Docs. Each of these services has its own privacy policy."]),
+      ("How we use your information", [("ul", ["to answer your request and arrange an appointment or a call;", "to send you news, workshops and tips by email, only if you agreed;",
+          "to improve the site and learn which information is most useful;", "to protect the site from spam and abuse, for example by limiting how many messages can be sent per hour."])]),
+      ("Who we share it with", ["We don't sell or rent your information. It is shared only with the providers we need to run the site: our website host, the service that delivers our emails, and Google Analytics. We may also share it if the law requires us to."]),
+      ("How long we keep it", ["We keep contact form requests for as long as we need them to reply and stay in touch with you. You can ask us to delete them at any time. Google Analytics keeps its data for a limited period set in our account."]),
+      ("Your choices", [("ul", ["Ask us for a copy of the information we hold about you, or ask us to correct or delete it, by emailing <a href=\"mailto:info@hscfdoral.com\">info@hscfdoral.com</a>.",
+          "Stop receiving emails at any time by replying to any of our messages or writing to us.",
+          "Block or delete cookies in your browser settings, or use the <a href=\"https://tools.google.com/dlpage/gaoptout\">Google Analytics opt-out add-on</a>."])]),
+      ("Children", ["This website is meant for adults. If you're looking for help for a child or teen, please have a parent or guardian send the form."]),
+      ("Security", ["The site uses an encrypted connection (HTTPS), and only authorized HSCF staff can see requests. No system on the internet is completely secure, so please don't send sensitive health information through the form or by email."]),
+      ("Changes to this policy", ["If we change this policy, we'll post the new version on this page with its update date."]),
+    ],
+  },
+  "terms": {
+    "title": "Terms and Conditions | Healthy Solutions Doral | HSCF",
+    "description": "Terms of use for hscfdoral.com, the website of Healthy Solutions for Children and Families in Doral, Florida.",
+    "h1": "Terms and conditions",
+    "lead": "The conditions for using this website. By using it, you agree to these terms.",
+    "updated": "October 24, 2026",
+    "sections": [
+      ("General information, not professional advice", ["The content on this site, including the blog, is for information and education. It is not a diagnosis, treatment, or psychological or medical advice for your personal situation, and it is not a substitute for care from a professional.",
+        "Using the site or sending the form does not create a therapeutic relationship with HSCF or any of its professionals. That relationship begins only after an initial consultation and once you sign the required consents."]),
+      ("Emergencies", ["This website, the form and our email are not monitored 24 hours a day and are not for emergencies. If you or someone you love is in crisis, call or text <a href=\"tel:988\">988</a> (Suicide &amp; Crisis Lifeline) or call <a href=\"tel:911\">911</a>."]),
+      ("Appointments, insurance, prices and workshops", ["Information about services, insurance, packages and prices is general and may change. Your insurance coverage is verified individually before you start. Workshop and event dates, locations and facilitators may change or be cancelled."]),
+      ("Testimonials", ["Testimonials reflect personal experiences. They don't guarantee results, because every process is different."]),
+      ("Intellectual property", ["The text, logo, photos and design of this site belong to HSCF or its licensors. You may share links to our pages, but you may not copy or reuse the content for commercial purposes without our written permission."]),
+      ("Links to other sites", ["We link to sites run by other organizations, such as research sources, videos or course materials. We don't control those sites and aren't responsible for their content or privacy practices."]),
+      ("Acceptable use", ["Don't use the site to send spam or illegal or offensive content, or to try to access restricted areas, disrupt how it works, or collect other people's data."]),
+      ("Warranties and liability", ["We do our best to keep the information accurate and up to date, but the site is provided as is, without warranties of any kind. To the extent the law allows, HSCF is not liable for damages that result from using the site or relying on its content."]),
+      ("Governing law", ["These terms are governed by the laws of the State of Florida. Any dispute will be resolved in the courts of Miami-Dade County."]),
+      ("Changes and contact", ["We may update these terms. The current version is always the one on this page. If you have questions, email us at <a href=\"mailto:info@hscfdoral.com\">info@hscfdoral.com</a>."]),
+    ],
+  },
+  "accessibility": {
+    "title": "Accessibility | Healthy Solutions Doral | HSCF",
+    "description": "Healthy Solutions for Children and Families' commitment to a website everyone can use, and how to ask for help.",
+    "h1": "Accessibility statement",
+    "lead": "We want everyone to be able to use this site, including people with disabilities. If something doesn't work for you, tell us and we'll fix it.",
+    "updated": "October 24, 2026",
+    "sections": [
+      ("Our goal", ["We work to make hscfdoral.com meet the Web Content Accessibility Guidelines (WCAG) 2.2, Level AA, and to work with screen readers, keyboards, magnification and other assistive technology."]),
+      ("What we've done", [("ul", ["Colors with enough contrast to read text easily.", "Alternative text that describes images and photos.",
+          "Full keyboard navigation, with a visible indicator of the selected element.", "Ordered headings and labels on every form field.",
+          "A complete Spanish and English version, with the language marked on every page.", "Animations that stop if your device asks for reduced motion.",
+          "A layout that adapts to phones, tablets and text zoom up to 200%."])]),
+      ("Known limitations", [("ul", ["Some past workshop and event flyers are images with text. We describe their content in the alternative text.",
+          "Some YouTube videos and Google Drive or Google Docs materials come from third parties and may not have captions or be fully accessible.",
+          "The map of our office comes from Google Maps. The address also appears as text on every page."])]),
+      ("How to ask for help", ["If you have trouble using any part of the site, or need the information in another format, email us at <a href=\"mailto:info@hscfdoral.com\">info@hscfdoral.com</a> or call <a href=\"tel:+13055945658\">(305) 594-5658</a>. Tell us the page and the problem, and we'll get back to you as soon as possible with the information you need.",
+        "If you need an accommodation for your visit or session, let us know when you book."]),
+      ("Review", ["We review the site's accessibility every time we update it. This statement was last reviewed on the date shown above."]),
+    ],
+  },
+}
+
+# ---------------------------------------------------------------- HIPAA Notice of Privacy Practices (45 CFR 164.520)
+LEGAL_UI["footer_hipaa_link"] = "HIPAA notice"
+LEGAL["hipaa"] = {
+    "title": "Notice of Privacy Practices (HIPAA) | HSCF Doral",
+    "description": "How Healthy Solutions for Children and Families may use and disclose your health information, and your rights under HIPAA.",
+    "h1": "Notice of privacy practices",
+    "lead": "<strong>This notice describes how medical information about you may be used and disclosed and how you can get access to this information. Please review it carefully.</strong>",
+    "updated": "October 24, 2026 (effective date)",
+    "sections": [
+      ("Our commitment", ["At Healthy Solutions for Children and Families (HSCF), we protect the privacy of your health information. The federal HIPAA law requires us to protect your identifiable health information (called \"protected health information\"), to give you this notice of our legal duties and privacy practices, and to follow the notice currently in effect.",
+        "When a Florida law protects your information more than HIPAA does, for example the confidentiality between therapist and client, we follow the law that gives you more protection."]),
+      ("How we may use and disclose your information without your authorization", ["We may use and share your information for:",
+        ("ul", ["<strong>Treatment:</strong> to provide your care and coordinate it with other professionals who treat you, for example your doctor or a psychiatrist.",
+                "<strong>Payment:</strong> to bill and collect for services from you or your insurance, for example to verify your coverage or request an authorization.",
+                "<strong>Health care operations:</strong> to run the practice, improve the quality of care, train staff and complete audits.",
+                "<strong>Reminders and communications:</strong> to remind you of appointments or tell you about treatment options."]),
+        "We may also share it with vendors who help us (for example, billing or electronic record systems) only if they sign an agreement that requires them to protect it."]),
+      ("Other uses and disclosures the law allows or requires", [("ul", [
+        "When the law requires it.",
+        "To report suspected abuse, abandonment or neglect of a child, an elderly person or a vulnerable adult, as Florida law requires.",
+        "To prevent or lessen a serious and imminent threat to the health or safety of a person or the public.",
+        "For public health and health oversight activities, such as inspections or professional licensing.",
+        "In court or administrative proceedings, when there is a court order or another valid legal process.",
+        "To law enforcement, in the limited situations the law allows.",
+        "To coroners or medical examiners, and for organ donation.",
+        "For approved research that protects your privacy.",
+        "For special government functions, such as national security, and for workers' compensation as the law allows.",
+        "To a family member or person involved in your care, if you don't object or if, in an emergency, we believe it is in your best interest."])]),
+      ("Uses that require your written authorization", [("ul", [
+        "<strong>Psychotherapy notes:</strong> a therapist's personal notes, kept separate from your record, are shared only with your authorization, except for the limited exceptions the law allows.",
+        "<strong>Marketing:</strong> we do not use your health information for marketing without your authorization.",
+        "<strong>Sale:</strong> we never sell your health information."]),
+        "Any other use not described in this notice requires your written authorization. You may revoke it in writing at any time, except for what we have already done based on it."]),
+      ("Your rights", [("ul", [
+        "<strong>See and get a copy</strong> of your record, on paper or electronically. We may charge a reasonable, cost-based fee.",
+        "<strong>Ask for a correction</strong> if you believe your information is wrong or incomplete. If we say no, we'll tell you why in writing.",
+        "<strong>Ask for confidential communications:</strong> for example, that we call you at a different number or write to a different address.",
+        "<strong>Ask us to limit</strong> how we use or share your information. We don't always have to agree, but if you pay for a service fully out of pocket and ask us not to share it with your insurer, we must agree.",
+        "<strong>Get a list</strong> of certain disclosures we made of your information in the last six years.",
+        "<strong>Get a paper copy</strong> of this notice, even if you agreed to receive it electronically.",
+        "<strong>Choose a representative:</strong> if someone has your medical power of attorney or is your legal guardian, they can exercise your rights.",
+        "<strong>Be notified</strong> if a breach affects your information."]),
+        "To use any of these rights, write to our Privacy Officer (details below)."]),
+      ("Minors", ["Parents or guardians generally exercise a minor's rights. Florida law lets some minors receive certain mental health services on their own; in those cases we protect their information as that law requires."]),
+      ("Our duties", [("ul", ["Keep your protected health information private and secure.",
+        "Tell you promptly if a breach occurs that may have compromised your information.", "Follow the practices in this notice and give you a copy of it.",
+        "Not use or share your information other than as described here, unless you authorize us in writing."])]),
+      ("Changes to this notice", ["We may change this notice, and the changes will apply to all the information we have about you. The current notice will be on this page and in our office, and we'll give you a copy if you ask."]),
+      ("Complaints", ["If you believe we have not protected your privacy, you can file a complaint with our Privacy Officer or with the U.S. Department of Health and Human Services Office for Civil Rights: 200 Independence Avenue, S.W., Washington, D.C. 20201, phone 1-877-696-6775, or at <a href=\"https://www.hhs.gov/ocr/complaints/\">www.hhs.gov/ocr/complaints</a>. We will not retaliate against you for filing a complaint."]),
+      ("Contact: Privacy Officer", ["Healthy Solutions for Children and Families · Privacy Officer<br>8245 NW 36th St, Suite 7, Doral, FL 33166<br>Phone: <a href=\"tel:+13055945658\">(305) 594-5658</a> · Email: <a href=\"mailto:info@hscfdoral.com\">info@hscfdoral.com</a>"]),
+    ],
+}
+
+# Areas page: telehealth anywhere in Florida (keep in step with seo/config.json -> markets.service_area)
+AREAS_HUB["tele_h2"] = "Telehealth therapy across Florida"
+AREAS_HUB["tele_p"] = "If you can't come to Doral, many of our therapy sessions can also be held by video from anywhere in Florida: Naples, Orlando, Tampa, Fort Lauderdale, West Palm Beach and the rest of the state. Write to us and we'll tell you which services are available by telehealth."

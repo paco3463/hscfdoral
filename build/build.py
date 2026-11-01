@@ -67,6 +67,9 @@ PAGES = {
     "news": ("novedades/", "en/news/"), "events": ("eventos/", "en/events/"), "gallery": ("galeria/", "en/gallery/"),
     "services": ("servicios/", "en/services/"), "insurance": ("seguros/", "en/insurance/"), "staff": ("staff/", "en/staff/"),
     "blog": ("blog/", "en/blog/"), "contact": ("contacto/", "en/contact/"), "areas": ("areas/", "en/areas/"),
+    "privacy": ("politica-de-privacidad/", "en/privacy-policy/"), "terms": ("terminos-y-condiciones/", "en/terms-and-conditions/"),
+    "accessibility": ("accesibilidad/", "en/accessibility/"),
+    "hipaa": ("aviso-de-practicas-de-privacidad/", "en/notice-of-privacy-practices/"),
 }
 
 def path_for(key, lang, ident=None):
@@ -160,7 +163,7 @@ def pic(m, alt, cur, cls="house-img house", eager=False, sizes="(max-width: 700p
 
 def gal(n):
     """Gallery photo by its old file number, e.g. gal("2073") -> (media entry, number)."""
-    return next(m for m in MEDIA["gallery"] if m["src"].endswith(f"img-{n}.webp")), n
+    return next(m for m in MEDIA["gallery"] if m.get("n") == n), n  # "n" = the original camera number, kept in build/media.json
 
 def gpic(n, lang, cur, cls="house-img house", eager=False, sizes="(max-width: 900px) 92vw, 560px"):
     m, n = gal(n)
@@ -173,6 +176,14 @@ def staff_pic(pid, lang, cur, cls="house-img house", eager=False, sizes="(max-wi
 # ---------------------------------------------------------------- shared chunks
 def _seo_config():
     return json.load(open(os.path.join(ROOT, "seo", "config.json"), encoding="utf-8"))
+
+_ASSET_V = {}
+def asset(path, cur):
+    """Relative link to a CSS/JS file with a content fingerprint (?v=...), so browsers fetch it again after every change."""
+    if path not in _ASSET_V:
+        import hashlib
+        with open(os.path.join(ROOT, "site", path), "rb") as fh: _ASSET_V[path] = hashlib.sha1(fh.read()).hexdigest()[:10]
+    return rel(path, cur) + "?v=" + _ASSET_V[path]
 
 def analytics_tag():
     """GA4 tag, only when seo/config.json has a measurement ID. Never sends form contents or health details."""
@@ -229,11 +240,24 @@ def head(lang, cur, title, desc, alt_path, ld=None, og_image=None, preload_video
 <link rel="alternate" type="application/rss+xml" title="Healthy Solutions — Blog" href="{rel('blog/feed.xml' if lang == 'es' else 'en/blog/feed.xml', cur)}">
 <link rel="preload" href="{rel('assets/fonts/fraunces.woff2', cur)}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{rel('assets/fonts/figtree.woff2', cur)}" as="font" type="font/woff2" crossorigin>
-{pre}<link rel="stylesheet" href="{rel('assets/css/styles.css', cur)}">
+{pre}<link rel="stylesheet" href="{asset('assets/css/styles.css', cur)}">
 {analytics_tag()}
 {lds}
 </head>
 """
+
+def place_ld(pl):
+    """One place from seo/config.json markets.service_area, with Wikipedia + Wikidata links and its county and state."""
+    d = {"@type": pl["type"], "name": pl["name"], "sameAs": [u for u in (pl.get("wikipedia"), "https://www.wikidata.org/wiki/" + pl["wikidata"] if pl.get("wikidata") else None) if u]}
+    if pl.get("county"): d["containedInPlace"] = {"@type": "AdministrativeArea", "name": pl["county"], "containedInPlace": {"@type": "State", "name": "Florida"}}
+    return d
+
+def service_area():
+    return _seo_config()["markets"]["service_area"]
+
+def area_served_in_person():
+    sa = service_area()
+    return [place_ld(x) for x in sa["in_person"]] + [place_ld(sa["county"])]
 
 def business_ld(lang):
     M = C[lang]
@@ -248,11 +272,15 @@ def business_ld(lang):
         "availableLanguage": [{"@type": "Language", "name": "Spanish"}, {"@type": "Language", "name": "English"}],
         "address": ADDRESS, "geo": {"@type": "GeoCoordinates", "latitude": 25.8097, "longitude": -80.3299},
         "hasMap": "https://www.google.com/maps?q=8245+NW+36th+St+Ste+7,+Doral,+FL+33166",
-        "areaServed": [{"@type": "City", "name": a["city"]} for a in C["en"].AREAS] + [{"@type": "AdministrativeArea", "name": "Miami-Dade County"}],
+        "areaServed": area_served_in_person() + [place_ld(service_area()["state"])],
         "medicalSpecialty": "Psychiatric",
         "knowsAbout": ["Psychotherapy", "Family therapy", "Couples therapy", "Play therapy", "Cognitive behavioral therapy", "Applied Behavior Analysis",
                        "Autism", "Psychological testing", "Neuropsychological testing", "Developmental assessment", "Parenting workshops", "Neurofeedback", "Hypnotherapy", "Coaching"],
-        "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": strip(s["name"]), "url": absurl(path_for("service", lang, s["id"]))}} for s in C[lang].SERVICES],
+        "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": strip(s["name"]), "url": absurl(path_for("service", lang, s["id"]))}} for s in C[lang].SERVICES]
+                      + [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": strip(C[lang].AREAS_HUB["tele_h2"]), "serviceType": "Telehealth therapy",
+                          "url": absurl(path_for("areas", lang)), "provider": {"@id": BASE + "#practice"},
+                          "areaServed": [place_ld(service_area()["state"])] + [place_ld(x) for x in service_area()["telehealth_examples"]],
+                          "availableChannel": {"@type": "ServiceChannel", "name": "Telehealth (video)", "serviceUrl": absurl(path_for("contact", lang))}}}],
         "employee": [{"@type": "Person", "name": p["name"], "url": absurl(path_for("person", lang, p["id"]))} for p in C[lang].TEAM],
     }
 
@@ -388,6 +416,10 @@ def footer(lang, cur):
       <p>&copy; <span data-year>2026</span> {U['footer_rights']}</p>
       <p>{U['footer_privacy']}</p>
     </div>
+    <div class="footer-legal">
+      <nav aria-label="{'Legal' if lang == 'en' else 'Información legal'}"><a href="{L('privacy')}">{M.LEGAL_UI['footer_privacy_link']}</a><a href="{L('terms')}">{M.LEGAL_UI['footer_terms_link']}</a><a href="{L('accessibility')}">{M.LEGAL_UI['footer_a11y_link']}</a><a href="{L('hipaa')}">{M.LEGAL_UI['footer_hipaa_link']}</a></nav>
+      <p class="footer-credit">{M.LEGAL_UI['credit']} <a href="https://opencreative.info" target="_blank" rel="noopener">Open!Creative</a></p>
+    </div>
   </div>
 </footer>
 """
@@ -439,7 +471,7 @@ def page(lang, cur, active, alt_path, title, desc, body, ld=None, splash=None, p
                                    "splash": splash or "", "extra": extra_script, "robots": robots or ""})
     return (head(lang, cur, title, desc, alt_path, ld, og_image=og_image, preload_video=preload_video, **kw) + "<body>\n" + SVG_DEFS + "\n" + (splash or "")
             + header(lang, cur, active, alt_path) + f'<main id="main">\n{body}\n</main>\n' + footer(lang, cur)
-            + event_modal(lang, cur) + extra_script + f'<script src="{rel("assets/js/main.js", cur)}" defer></script>\n</body>\n</html>\n')
+            + event_modal(lang, cur) + extra_script + f'<script src="{asset("assets/js/main.js", cur)}" defer></script>\n</body>\n</html>\n')
 
 def crumbs(lang, cur, items):
     lis = [f'<li><span aria-current="page">{n}</span></li>' if i == len(items) - 1 else f'<li><a href="{rel(p, cur)}">{n}</a></li>' for i, (n, p) in enumerate(items)]
@@ -826,7 +858,7 @@ def build_gallery(lang):
     M = C[lang]; U = M.UI; G = M.GALLERY
     cur = path_for("gallery", lang); alt = alt_of("gallery", lang)
     items = [home_crumb(lang), (U["nav_activities"], path_for("activities", lang)), (U["nav_gallery"], cur)]
-    nums = [x["src"].split("img-")[1].split(".")[0] for x in MEDIA["gallery"]]
+    nums = [x["n"] for x in MEDIA["gallery"]]  # original camera numbers, stored by build/tools/import_old_media.py
     tiles = "".join(
         f'<li><a class="g-item" href="{rel(m["src"], cur)}" data-w="{m["w"]}" data-h="{m["h"]}" aria-label="{G["open"]}: {strip(G["alts"][n])}">'
         f'<img src="{rel(m["sm"], cur)}" alt="{strip(G["alts"][n])}" width="{m["sm_w"]}" height="{round(m["h"] * m["sm_w"] / m["w"])}" loading="lazy" decoding="async"></a></li>'
@@ -920,7 +952,7 @@ def build_service(lang, s):
     ld = [breadcrumb_ld(items),
           {"@context": "https://schema.org", "@type": "Service", "name": strip(s["name"]), "serviceType": strip(s["name"]), "description": strip(s["description"]),
            "url": absurl(cur), "provider": {"@id": BASE + "#practice"}, "availableLanguage": ["Spanish", "English"],
-           "areaServed": [{"@type": "City", "name": a["city"]} for a in M.AREAS],
+           "areaServed": area_served_in_person(),
            "availableChannel": {"@type": "ServiceChannel", "serviceLocation": {"@type": "Place", "name": "Healthy Solutions for Children and Families", "address": ADDRESS}}}]
     if s["faq"]: ld.append(faq_ld(s["faq"]))
     write(cur, page(lang, cur, "services", alt, s["title"], s["description"], body, ld))
@@ -1064,8 +1096,10 @@ def build_contact(lang):
         <fieldset class="field"><legend>{K['f_lang']}</legend><div class="radio-row">{radios('language', K['f_lang_opts'])}</div></fieldset>
         <fieldset class="field"><legend>{K['f_contact']}</legend><div class="radio-row">{radios('contact_by', K['f_contact_opts'])}</div></fieldset>
         <div class="field full"><label for="f-msg">{K['f_msg']}</label><textarea id="f-msg" name="message" rows="4"></textarea></div>
+        <label class="consent full"><input type="checkbox" name="consent_marketing" value="1"><span>{K['f_consent']}</span></label>
         <div class="hp" aria-hidden="true"><label>Leave empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
         <input type="hidden" name="page_language" value="{lang}">
+        <input type="hidden" name="source" value="web" data-lead-source>
         <div class="full"><button class="btn" type="submit">{K['f_submit']}</button></div>
       </div>
       <div class="form-status" role="status" tabindex="-1" hidden></div>
@@ -1086,17 +1120,38 @@ def build_contact(lang):
     ld = [business_ld(lang), breadcrumb_ld(items), webpage_ld("ContactPage", lang, cur, K["title"], K["description"])]
     write(cur, page(lang, cur, "contact", alt, K["title"], K["description"], body, ld))
 
+def build_legal(lang, key):
+    """Privacy policy, terms and accessibility statement: one reading column, text from LEGAL in the content files."""
+    M = C[lang]; U = M.UI; D = M.LEGAL[key]
+    cur = path_for(key, lang); alt = alt_of(key, lang)
+    items = [home_crumb(lang), (D["h1"], cur)]
+    def block(b):
+        if isinstance(b, tuple) and b[0] == "ul": return '<ul class="house-list">' + "".join(f"<li>{i}</li>" for i in b[1]) + "</ul>"
+        return f"<p>{b}</p>"
+    secs = "".join(f"<h2>{h}</h2>" + "".join(block(b) for b in bl) for h, bl in D["sections"])
+    body = page_hero(lang, cur, items, D["h1"], D["lead"]) + f"""
+<section class="section section--flush-top"><div class="wrap">
+  <div class="prose legal"><p class="legal-updated">{M.LEGAL_UI['updated']}: {D['updated']}</p>{secs}</div>
+</div></section>
+"""
+    ld = [breadcrumb_ld(items), webpage_ld("WebPage", lang, cur, D["title"], D["description"])]
+    write(cur, page(lang, cur, "", alt, D["title"], D["description"], body, ld))
+
 def build_areas_hub(lang):
     M = C[lang]; U = M.UI; A = M.AREAS_HUB
     cur = path_for("areas", lang); alt = alt_of("areas", lang)
     items = [home_crumb(lang), (U["nav_areas"], cur)]
     cards = "".join(f'<a class="area-card" href="{rel(path_for("area", lang, a["id"]), cur)}"><strong>{a["city"]}</strong><span>{a["lead"]}</span></a>' for a in M.AREAS)
-    also = "".join(f"<li>{c}</li>" for c in A["also"])
+    main = {a["city"] for a in M.AREAS}
+    also = "".join(f"<li>{x['name']}</li>" for x in service_area()["in_person"] if x["name"] not in main)
     body = page_hero(lang, cur, items, A["h1"], A["lead"], pic(MEDIA["services"]["familia-atardecer"], "", cur, eager=True)) + f"""
 <section class="section section--blush"><div class="wrap"><div class="area-grid">{cards}</div></div></section>
 <section class="section"><div class="wrap split">
   <div><h2>{A['also_h2']}</h2><ul class="plain-cloud mt-m">{also}</ul></div>
   {map_iframe(lang)}
+</div></section>
+<section class="section section--blush section--tight"><div class="wrap prose">
+  <h2>{A['tele_h2']}</h2><p>{A['tele_p']}</p>
 </div></section>
 {cta_band(lang, cur)}
 """
@@ -1156,7 +1211,7 @@ def build_sitemap(extra_urls):
     urls = []
     def add(key, ident=None):
         urls.append((path_for(key, "es", ident), path_for(key, "en", ident), TODAY))
-    for k in ["home", "about", "activities", "news", "events", "gallery", "services", "insurance", "staff", "contact", "areas"]: add(k)
+    for k in ["home", "about", "activities", "news", "events", "gallery", "services", "insurance", "staff", "contact", "areas", "privacy", "terms", "accessibility", "hipaa"]: add(k)
     for s in C["es"].SERVICES: add("service", s["id"])
     for p in C["es"].TEAM: add("person", p["id"])
     for a in C["es"].AREAS: add("area", a["id"])
@@ -1307,7 +1362,8 @@ def build_llms(cfg, arts):
          "- Languages: Spanish and English (one therapist also works in Portuguese)",
          "- Insurance: in network with Aetna, Blue Cross Blue Shield, Cigna and UnitedHealthcare; also works with Oscar and Bind; does not accept TRICARE",
          "- Private packages: 8, 12 or 16 weekly sessions",
-         "- Areas served: " + ", ".join(cfg["markets"]["primary"] + cfg["markets"]["secondary"]),
+         "- In-person areas served (Miami-Dade County): " + ", ".join(x["name"] for x in cfg["markets"]["service_area"]["in_person"]),
+         "- Telehealth: therapy by video anywhere in Florida, including " + ", ".join(x["name"] for x in cfg["markets"]["service_area"]["telehealth_examples"]),
          "- Not an emergency service. In a crisis, call or text 988 (Suicide & Crisis Lifeline) or call 911.", "",
          "## Services", ""]
     L += [f"- [{s['name']}]({absurl(path_for('service', 'en', s['id']))}): {sh(s['short'])}" for s in EN.SERVICES]
@@ -1322,6 +1378,12 @@ def build_llms(cfg, arts):
     L += [f"- [{s['name']}]({absurl(path_for('service', 'es', s['id']))}): {sh(s['short'])}" for s in ES.SERVICES]
     L += [f"- [Seguros y paquetes]({absurl(path_for('insurance', 'es'))}): {sh(ES.INSURANCE['description'])}"]
     L += [f"- [{a['meta']['es']['title']}]({absurl(path_for('article', 'es', a['id']))}): {a['meta']['es']['summary']}" for a in arts[:30]]
+    L += ["", "## Policies", "",
+          f"- [Privacy policy]({absurl(path_for('privacy', 'en'))}): what the website collects, why, and how to ask for a copy or deletion",
+          f"- [Notice of privacy practices (HIPAA)]({absurl(path_for('hipaa', 'en'))}): how client health information may be used and the client's rights",
+          f"- [Terms and conditions]({absurl(path_for('terms', 'en'))}): the site is general information, not therapy, and not for emergencies",
+          f"- [Accessibility statement]({absurl(path_for('accessibility', 'en'))}): WCAG 2.2 AA goal and how to ask for help",
+          f"- [Política de privacidad]({absurl(path_for('privacy', 'es'))}) · [Aviso HIPAA]({absurl(path_for('hipaa', 'es'))}) · [Términos]({absurl(path_for('terms', 'es'))}) · [Accesibilidad]({absurl(path_for('accessibility', 'es'))})"]
     L += ["", "## Optional", "",
           f"- [About us]({absurl(path_for('about', 'en'))})",
           f"- [Events]({absurl(path_for('events', 'en'))}): the free Hablemos sobre Ansiedad workshop and past events",
@@ -1412,6 +1474,7 @@ def main(argv=None):
     for lang in LANGS:
         build_home(lang); build_about(lang); build_activities(lang); build_news(lang); build_events(lang); build_gallery(lang)
         build_services_hub(lang); build_insurance(lang); build_staff_hub(lang); build_contact(lang); build_areas_hub(lang)
+        for k in ("privacy", "terms", "accessibility", "hipaa"): build_legal(lang, k)
         for s in C[lang].SERVICES: build_service(lang, s)
         for p in C[lang].TEAM: build_person(lang, p)
         for a in C[lang].AREAS: build_area(lang, a)

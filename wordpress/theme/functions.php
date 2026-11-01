@@ -12,6 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 define( 'HSCF_THEME_VERSION', '1.0.0' );
 require_once __DIR__ . '/inc/render.php';
 require_once __DIR__ . '/inc/sync.php';
+require_once __DIR__ . '/inc/leads.php';
 require_once __DIR__ . '/inc/contact.php';
 
 /* ---------- English posts: their own type, at /en/<yyyy>/<mm>/<slug>/ ---------- */

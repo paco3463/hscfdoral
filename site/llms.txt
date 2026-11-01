@@ -8,7 +8,8 @@ Key facts:
 - Languages: Spanish and English (one therapist also works in Portuguese)
 - Insurance: in network with Aetna, Blue Cross Blue Shield, Cigna and UnitedHealthcare; also works with Oscar and Bind; does not accept TRICARE
 - Private packages: 8, 12 or 16 weekly sessions
-- Areas served: Doral, Miami-Dade County, Hialeah, Miami Lakes, Coral Gables, Kendall, Miami, Miami Springs, Sweetwater
+- In-person areas served (Miami-Dade County): Doral, Miami, Hialeah, Hialeah Gardens, Miami Lakes, Miami Springs, Medley, Virginia Gardens, Sweetwater, West Miami, Fontainebleau, Westchester, Coral Gables, South Miami, Kendall, Pinecrest, Palmetto Bay, Cutler Bay, Miami Beach, Brickell, Little Havana
+- Telehealth: therapy by video anywhere in Florida, including Naples, Orlando, Tampa, Fort Lauderdale, West Palm Beach
 - Not an emergency service. In a crisis, call or text 988 (Suicide & Crisis Lifeline) or call 911.
 
 ## Services
@@ -84,6 +85,14 @@ Key facts:
 - [La comunicación efectiva o asertiva](https://hscfdoral.com/2021/06/la-comunicacion-efectiva-o-asertiva/): Qué significa la comunicación asertiva en la pareja y cinco consejos prácticos, desde elegir el momento oportuno para hablar hasta compartir tus emociones con sinceridad.
 - [¿Cómo puedo mejorar mi salud mental?](https://hscfdoral.com/2021/05/como-puedo-mejorar-mi-salud-mental/): Por qué la salud mental importa y formas cotidianas de cuidarla, desde la gratitud, el sueño y el ejercicio hasta la conexión con otros, la meditación y la relajación.
 - [Balance y armonía: confrontación del COVID-19 después de la vacuna](https://hscfdoral.com/2021/04/balance-y-armonia-confrontacion-del-covid-19-despues-de-la-vacuna/): Una mirada a cómo el COVID-19 afectó la salud emocional, qué reportaron los primeros estudios sobre miedo, ansiedad y depresión, y qué apoyos fortalecen la resiliencia.
+
+## Policies
+
+- [Privacy policy](https://hscfdoral.com/en/privacy-policy/): what the website collects, why, and how to ask for a copy or deletion
+- [Notice of privacy practices (HIPAA)](https://hscfdoral.com/en/notice-of-privacy-practices/): how client health information may be used and the client's rights
+- [Terms and conditions](https://hscfdoral.com/en/terms-and-conditions/): the site is general information, not therapy, and not for emergencies
+- [Accessibility statement](https://hscfdoral.com/en/accessibility/): WCAG 2.2 AA goal and how to ask for help
+- [Política de privacidad](https://hscfdoral.com/politica-de-privacidad/) · [Aviso HIPAA](https://hscfdoral.com/aviso-de-practicas-de-privacidad/) · [Términos](https://hscfdoral.com/terminos-y-condiciones/) · [Accesibilidad](https://hscfdoral.com/accesibilidad/)
 
 ## Optional
 
