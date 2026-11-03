@@ -374,6 +374,7 @@ SERVICES = [
             ["¿Atienden a niños, adolescentes y adultos?", "Sí. Ofrecemos terapia individual para niños, adolescentes y adultos, y terapia de pareja, de familia y de grupo."],
             ["¿Qué enfoques usan?", "Entre otros, la terapia centrada en soluciones, la experiencial, la psicodinámica, la cognitivo-conductual, la terapia de juego, la terapia focalizada en las emociones para parejas y la terapia sistémica para parejas y familias."],
             ["¿La terapia es en español?", "Sí. Atendemos en español y en inglés."],
+            ["¿Ofrecen terapia por video?", "Sí. La terapia individual y la terapia de pareja también se ofrecen por telesalud (video), desde cualquier lugar de Florida. Las evaluaciones psicológicas se hacen en persona en nuestra oficina de Doral."],
             ["¿Aceptan mi seguro?", "Estamos dentro de la red de Aetna, Blue Cross Blue Shield, Cigna y UnitedHealthcare, y trabajamos con Oscar y Bind. Llámanos para confirmar tu cobertura."],
         ],
         "staff": ["jorge-garcia", "paula-callegari", "alibel-osorio", "beatriz-pedreira", "silvia-lugo", "juan-felipe-diaz"],
@@ -577,9 +578,9 @@ STAFF_HUB = {
 # id = slug (the Spanish address at the site root). "old" lists previous WordPress slugs that now redirect here.
 TEAM = [
     {
-        "id": "jorge-garcia", "old": ["karina-la-banca"], "name": "Jorge Garcia", "first": "Jorge", "creds": "",
-        "role": "Terapeuta", "title_role": "Terapeuta",
-        "short": "Terapeuta interactivo que integra enfoques cognitivo-conductuales, centrados en la persona y psicodinámicos.",
+        "id": "jorge-garcia", "old": ["karina-la-banca"], "name": "Dr. Jorge Garcia", "first": "Jorge", "creds": "",
+        "role": "Supervisor y psicólogo", "title_role": "Supervisor y psicólogo",
+        "short": "Psicólogo y supervisor que integra enfoques cognitivo-conductuales, centrados en la persona y psicodinámicos.",
         "bio": [
             "Soy un terapeuta interactivo dedicado a ayudar a las personas a desarrollar su potencial ilimitado. Mi enfoque combina las terapias cognitivo-conductual, centrada en la persona y psicodinámica, y da gran importancia a la relación terapéutica.",
             "Creo que el autodescubrimiento es un paso valiente hacia un cambio de conducta positivo. Te invito a contactarme para una consulta. Gracias por considerarme tu compañero en el camino hacia el bienestar mental.",
@@ -1060,4 +1061,4 @@ LEGAL["hipaa"] = {
 
 # Areas page: telehealth anywhere in Florida (keep in step with seo/config.json -> markets.service_area)
 AREAS_HUB["tele_h2"] = "Terapia por telesalud en todo Florida"
-AREAS_HUB["tele_p"] = "Si no puedes venir a Doral, muchas de nuestras sesiones de terapia también se pueden hacer por video, desde cualquier lugar de Florida: Naples, Orlando, Tampa, Fort Lauderdale, West Palm Beach y el resto del estado. Escríbenos y te diremos qué servicios están disponibles por telesalud."
+AREAS_HUB["tele_p"] = "Si no puedes venir a Doral, la terapia individual y la terapia de pareja también se pueden hacer por video, desde cualquier lugar de Florida: Naples, Orlando, Tampa, Fort Lauderdale, West Palm Beach y el resto del estado. Las evaluaciones psicológicas se hacen en persona en nuestra oficina de Doral."

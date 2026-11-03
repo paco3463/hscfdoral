@@ -277,7 +277,7 @@ def business_ld(lang):
         "knowsAbout": ["Psychotherapy", "Family therapy", "Couples therapy", "Play therapy", "Cognitive behavioral therapy", "Applied Behavior Analysis",
                        "Autism", "Psychological testing", "Neuropsychological testing", "Developmental assessment", "Parenting workshops", "Neurofeedback", "Hypnotherapy", "Coaching"],
         "makesOffer": [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": strip(s["name"]), "url": absurl(path_for("service", lang, s["id"]))}} for s in C[lang].SERVICES]
-                      + [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": strip(C[lang].AREAS_HUB["tele_h2"]), "serviceType": "Telehealth therapy",
+                      + [{"@type": "Offer", "itemOffered": {"@type": "Service", "name": strip(C[lang].AREAS_HUB["tele_h2"]), "serviceType": "Telehealth individual and couples therapy",
                           "url": absurl(path_for("areas", lang)), "provider": {"@id": BASE + "#practice"},
                           "areaServed": [place_ld(service_area()["state"])] + [place_ld(x) for x in service_area()["telehealth_examples"]],
                           "availableChannel": {"@type": "ServiceChannel", "name": "Telehealth (video)", "serviceUrl": absurl(path_for("contact", lang))}}}],
@@ -1065,10 +1065,12 @@ def build_person(lang, p):
   <p class="mt-l"><a class="text-link" href="{rel(path_for('staff', lang), cur)}">{U['all_staff']}</a></p>
 </div></section>
 """
-    person = {"@context": "https://schema.org", "@type": "Person", "name": p["name"], "jobTitle": strip(p["role"]),
+    honorific, plain_name = ("Dr.", p["name"][4:]) if p["name"].startswith("Dr. ") else (None, p["name"])
+    person = {"@context": "https://schema.org", "@type": "Person", "name": plain_name, "jobTitle": strip(p["role"]),
               "image": BASE + MEDIA["staff"][p["id"]]["jpg"], "url": absurl(cur), "worksFor": {"@id": BASE + "#practice"},
               "description": strip(p["short"]), "knowsAbout": [strip(x) for x in p["focus"]],
               "workLocation": {"@type": "Place", "address": ADDRESS}}
+    if honorific: person["honorificPrefix"] = honorific
     if p["creds"]: person["honorificSuffix"] = p["creds"]
     if p["langs"]: person["knowsLanguage"] = p["langs"]
     ld = [breadcrumb_ld(items), person]
@@ -1363,7 +1365,7 @@ def build_llms(cfg, arts):
          "- Insurance: in network with Aetna, Blue Cross Blue Shield, Cigna and UnitedHealthcare; also works with Oscar and Bind; does not accept TRICARE",
          "- Private packages: 8, 12 or 16 weekly sessions",
          "- In-person areas served (Miami-Dade County): " + ", ".join(x["name"] for x in cfg["markets"]["service_area"]["in_person"]),
-         "- Telehealth: therapy by video anywhere in Florida, including " + ", ".join(x["name"] for x in cfg["markets"]["service_area"]["telehealth_examples"]),
+         "- Telehealth: individual and couples therapy by video anywhere in Florida (psychological testing is in person only), including " + ", ".join(x["name"] for x in cfg["markets"]["service_area"]["telehealth_examples"]),
          "- Not an emergency service. In a crisis, call or text 988 (Suicide & Crisis Lifeline) or call 911.", "",
          "## Services", ""]
     L += [f"- [{s['name']}]({absurl(path_for('service', 'en', s['id']))}): {sh(s['short'])}" for s in EN.SERVICES]

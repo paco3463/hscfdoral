@@ -370,6 +370,7 @@ SERVICES = [
             ["Do you see children, teens and adults?", "Yes. We offer individual therapy for children, teens and adults, as well as couples, family and group therapy."],
             ["What approaches do you use?", "Among others: solution-focused, experiential, psychodynamic and cognitive behavioral therapy, play therapy, emotionally focused therapy for couples and systemic therapy for couples and families."],
             ["Is therapy available in Spanish?", "Yes. We see clients in Spanish and English."],
+            ["Do you offer therapy by video?", "Yes. Individual therapy and couples therapy are also offered by telehealth (video) from anywhere in Florida. Psychological testing is done in person at our Doral office."],
             ["Do you take my insurance?", "We are in network with Aetna, Blue Cross Blue Shield, Cigna and UnitedHealthcare, and we work with Oscar and Bind. Call us to confirm your coverage."],
         ],
         "staff": ["jorge-garcia", "paula-callegari", "alibel-osorio", "beatriz-pedreira", "silvia-lugo", "juan-felipe-diaz"],
@@ -571,9 +572,9 @@ STAFF_HUB = {
 
 TEAM = [
     {
-        "id": "jorge-garcia", "old": ["karina-la-banca"], "name": "Jorge Garcia", "first": "Jorge", "creds": "",
-        "role": "Therapist", "title_role": "Therapist",
-        "short": "An interactive therapist who blends cognitive-behavioral, client-centered and psychodynamic approaches.",
+        "id": "jorge-garcia", "old": ["karina-la-banca"], "name": "Dr. Jorge Garcia", "first": "Jorge", "creds": "",
+        "role": "Supervisor and psychologist", "title_role": "Supervisor and Psychologist",
+        "short": "A psychologist and supervisor who blends cognitive-behavioral, client-centered and psychodynamic approaches.",
         "bio": [
             "I am an interactive therapist dedicated to helping individuals unlock their unlimited potential. My approach blends cognitive-behavioral, client-centered and psychodynamic therapies, emphasizing the importance of the therapeutic relationship.",
             "I believe that personal discovery is a courageous step toward positive behavioral change. I invite you to reach out for a consultation. Thank you for considering me as your partner in mental health wellness.",
@@ -1053,4 +1054,4 @@ LEGAL["hipaa"] = {
 
 # Areas page: telehealth anywhere in Florida (keep in step with seo/config.json -> markets.service_area)
 AREAS_HUB["tele_h2"] = "Telehealth therapy across Florida"
-AREAS_HUB["tele_p"] = "If you can't come to Doral, many of our therapy sessions can also be held by video from anywhere in Florida: Naples, Orlando, Tampa, Fort Lauderdale, West Palm Beach and the rest of the state. Write to us and we'll tell you which services are available by telehealth."
+AREAS_HUB["tele_p"] = "If you can't come to Doral, individual therapy and couples therapy can also be held by video from anywhere in Florida: Naples, Orlando, Tampa, Fort Lauderdale, West Palm Beach and the rest of the state. Psychological testing is done in person at our Doral office."
