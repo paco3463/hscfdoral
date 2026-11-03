@@ -169,7 +169,7 @@ def gpic(n, lang, cur, cls="house-img house", eager=False, sizes="(max-width: 90
     m, n = gal(n)
     return pic(m, C[lang].GALLERY["alts"][n], cur, cls, eager, sizes)
 
-def staff_pic(pid, lang, cur, cls="house-img house", eager=False, sizes="(max-width: 700px) 60vw, 300px", alt=None):
+def staff_pic(pid, lang, cur, cls="house-img staff-photo", eager=False, sizes="(max-width: 700px) 60vw, 300px", alt=None):
     p = person_by_id(lang, pid)
     return pic(MEDIA["staff"][pid], EXTRA[lang]["portrait_of"] + " " + p["name"] if alt is None else alt, cur, cls, eager, sizes)
 
@@ -323,7 +323,7 @@ def header(lang, cur, active, alt_path):
     svc_menu = "".join(f'<a href="{L("service", s["id"])}"><strong>{s["menu"]}</strong><span>{s["short"]}</span></a>' for s in M.SERVICES if s["id"] != "courses") + \
         f'<a href="{L("insurance")}#evaluaciones"><strong>{M.FINDER_TESTING}</strong><span>{M.INSURANCE["testing_p"]}</span></a>' + \
         f'<a class="nav-menu-all" href="{L("services")}">{U["nav_all_services"]}</a>'
-    staff_menu = "".join(f'<a class="nav-person" href="{L("person", p["id"])}">{staff_pic(p["id"], lang, cur, "house-img house", sizes="44px", alt="")}<span class="nav-person-text"><strong>{p["name"]}</strong><span>{p["title_role"]}</span></span></a>' for p in M.TEAM) + \
+    staff_menu = "".join(f'<a class="nav-person" href="{L("person", p["id"])}">{staff_pic(p["id"], lang, cur, sizes="44px", alt="")}<span class="nav-person-text"><strong>{p["name"]}</strong><span>{p["title_role"]}</span></span></a>' for p in M.TEAM) + \
         f'<a class="nav-menu-all" href="{L("staff")}">{U["nav_all_staff"]}</a>'
     def drop(key, label, menu, mid, cls=""):
         cur_cls = " is-current" if active == key else ""
@@ -1041,7 +1041,7 @@ def build_person(lang, p):
     body = f"""<section class="page-hero"><div class="wrap">
   {crumbs(lang, cur, items)}
   <div class="profile-hero">
-    {staff_pic(p['id'], lang, cur, 'house-img house', eager=True, sizes='(max-width: 900px) 80vw, 440px')}
+    {staff_pic(p['id'], lang, cur, eager=True, sizes='(max-width: 900px) 80vw, 440px')}
     <div>
       <h1>{p['name']}{('<span class="creds">' + p['creds'] + '</span>') if p['creds'] else ''}</h1>
       <p class="role">{p['role']}</p>

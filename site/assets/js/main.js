@@ -175,7 +175,7 @@
       var p = data.people[c[2]];
       var m = $(".match", result);
       m.innerHTML =
-        '<div class="house-img house"><img src="' + p.img + '" alt="" loading="lazy"></div>' +
+        '<div class="house-img staff-photo"><img src="' + p.img + '" alt="" loading="lazy"></div>' +
         "<div><p>" + data.labels.match + "</p><strong>" + p.name + "</strong>" +
         '<div class="role">' + p.role + "</div>" +
         '<a class="text-link" href="' + p.url + '">' + data.labels.meet + " " + p.first + "</a></div>";

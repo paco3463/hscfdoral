@@ -150,6 +150,9 @@ p { margin: 0 0 1em; max-width: 68ch; text-wrap: pretty; }
 .house-c { clip-path: url(#house-chimney); -webkit-clip-path: url(#house-chimney); }
 .house-img { position: relative; aspect-ratio: 4 / 5; background: var(--apricot-soft); overflow: hidden; }
 .house-img img, .house-img video { width: 100%; height: 100%; object-fit: cover; }
+/* staff photos are plain rectangles everywhere (owner request), not house frames */
+.staff-photo { border-radius: var(--radius-small); }
+.nav-person .staff-photo, .clinician-mini .staff-photo { border-radius: 8px; }
 
 /* ---------- buttons ---------- */
 .btn {
@@ -616,8 +619,6 @@ body.site-reveal main, body.site-reveal .site-header { animation: site-in 1.1s v
 .team-card[hidden] { display: none; }
 .team-card .house-img img { transition: transform .8s var(--ease-soft); }
 .team-card:hover .house-img img { transform: scale(1.05); }
-/* staff grid: plain vertical rectangles instead of the house frame (profile pages and the menu keep the house) */
-.team-card .house-img.house { clip-path: none; -webkit-clip-path: none; border-radius: var(--radius-small); }
 .team-card h2 { font-size: 1.55rem; }
 .team-card .role { font-size: .93rem; color: var(--cocoa-2); margin: 0; font-weight: 550; }
 .team-card .short { font-size: .93rem; color: var(--dune); margin: 0; }
