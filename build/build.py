@@ -267,9 +267,9 @@ def business_ld(lang):
         "description": strip(M.HOME["description"]), "url": BASE,
         "logo": BASE + "assets/img/logo.png", "image": BASE + "assets/img/og-image.jpg",
         "telephone": "+1-305-594-5658", "email": "info@hscfdoral.com",
-        "contactPoint": [{"@type": "ContactPoint", "telephone": "+1-305-594-5658", "contactType": "customer service", "availableLanguage": ["Spanish", "English"]},
-                         {"@type": "ContactPoint", "telephone": "+1-786-423-9495", "contactType": "customer service", "availableLanguage": ["Spanish", "English"]}],
-        "availableLanguage": [{"@type": "Language", "name": "Spanish"}, {"@type": "Language", "name": "English"}],
+        "contactPoint": [{"@type": "ContactPoint", "telephone": "+1-305-594-5658", "contactType": "customer service", "availableLanguage": ["Spanish", "English", "Portuguese"]},
+                         {"@type": "ContactPoint", "telephone": "+1-786-423-9495", "contactType": "customer service", "availableLanguage": ["Spanish", "English", "Portuguese"]}],
+        "availableLanguage": [{"@type": "Language", "name": "Spanish"}, {"@type": "Language", "name": "English"}, {"@type": "Language", "name": "Portuguese"}],
         "address": ADDRESS, "geo": {"@type": "GeoCoordinates", "latitude": 25.8097, "longitude": -80.3299},
         "hasMap": "https://www.google.com/maps?q=8245+NW+36th+St+Ste+7,+Doral,+FL+33166",
         "areaServed": area_served_in_person() + [place_ld(service_area()["state"])],
@@ -523,12 +523,15 @@ def map_iframe(lang, cls="map-frame"):
     src = f"https://maps.google.com/maps?q=8245%20NW%2036th%20St%20Ste%207%2C%20Doral%2C%20FL%2033166&amp;t=m&amp;z=15&amp;hl={lang}&amp;output=embed"
     return f'<div class="{cls}"><iframe src="{src}" title="{C[lang].UI["map_title"]}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>'
 
-def svc_list(lang, cur, ids=None):
+def svc_list(lang, cur, ids=None, evaluations=False):
     items = []
     for s in C[lang].SERVICES:
         if ids and s["id"] not in ids: continue
         items.append(f'<li><a href="{rel(path_for("service", lang, s["id"]), cur)}"><span class="svc-name">{s["name"]}</span>'
                      f'<span class="svc-short">{s["short"]}</span><span class="svc-go" aria-hidden="true">{ARROW}</span></a></li>')
+    if evaluations:  # evaluations live on the insurance page, but belong in "what we offer"
+        items.append(f'<li><a href="{rel(path_for("insurance", lang), cur)}#evaluaciones"><span class="svc-name">{C[lang].FINDER_TESTING}</span>'
+                     f'<span class="svc-short">{C[lang].SERVICES_HUB["eval_short"]}</span><span class="svc-go" aria-hidden="true">{ARROW}</span></a></li>')
     return '<ul class="svc-list">' + "".join(items) + "</ul>"
 
 def related_cards(lang, cur, ids):
@@ -550,7 +553,7 @@ def logo_strip(lang, cur):
         f'<li><img src="{rel(m["src"], cur)}" alt="{n}" width="{m["w"]}" height="{m["h"]}" loading="lazy" decoding="async"></li>'
         for k, n, m in [(k, LOGO_NAMES[k], MEDIA["logos"][k]) for k in LOGO_ORDER]) + "</ul>"
 
-LOGO_ORDER = ["aetna", "bcbs", "cigna", "unitedhealthcare", "oscar", "bind", "umr", "optum", "anthem", "avmed", "lucet"]
+LOGO_ORDER = ["aetna", "bcbs", "cigna", "unitedhealthcare", "bind", "umr", "optum", "anthem", "avmed", "lucet"]
 LOGO_NAMES = {"aetna": "Aetna", "bcbs": "Blue Cross Blue Shield", "cigna": "Cigna", "unitedhealthcare": "UnitedHealthcare", "oscar": "Oscar",
               "bind": "Bind", "umr": "UMR", "optum": "Optum", "anthem": "Anthem Blue Cross", "avmed": "AvMed", "lucet": "Lucet"}
 
@@ -594,9 +597,6 @@ def build_home(lang):
              "people": {p["id"]: {"name": p["name"], "first": p["first"], "role": p["title_role"], "img": rel(MEDIA["staff"][p["id"]]["sm"], cur), "url": L("person", p["id"])} for p in M.TEAM},
              "labels": {"match": H["finder_match"], "meet": U["view_profile"]}}
     finder_script = "<script>window.HSCF_FINDER=" + json.dumps(fdata, ensure_ascii=False).replace("</", "<\\/") + ";</script>\n"
-    news_img = {"psychotherapy": MEDIA["services"]["psicoterapia"], "parent-workshops": MEDIA["talleres"]["promoviendo-relaciones-saludables"], "yoga": MEDIA["services"]["yoga"]}
-    news = "".join(f'<a class="news-card" href="{L("service", sid)}">{pic(news_img[sid], "", cur, "news-card-img", sizes="(max-width: 760px) 92vw, 380px")}'
-                   f'<div><h3>{t}</h3><p>{d}</p><span class="text-link">{U["learn_more"]}</span></div></a>' for sid, t, d in H["news_cards"])
     testis = "".join(
         f'<figure class="testimonial"><blockquote><p>{t["quote"]}</p></blockquote>'
         f'<details><summary><span class="t-more">{U["read_more"]}</span><span class="t-less">{U["read_less"]}</span></summary>{"".join(f"<p>{x}</p>" for x in t["full"])}</details>'
@@ -648,17 +648,17 @@ def build_home(lang):
   </div>
 </section>
 
-<section class="section section--flush-top" aria-labelledby="news-h">
-  <div class="wrap">
-    <div class="section-head"><h2 id="news-h">{H['news_h2']}</h2></div>
-    <div class="news-grid">{news}</div>
+<section class="section section--flush-top" aria-labelledby="offer-h">
+  <div class="wrap svc-layout">
+    <div class="section-head"><h2 id="offer-h">{H['offer_h2']}</h2><p class="lead">{H['offer_lead']}</p></div>
+    <div>{svc_list(lang, cur, evaluations=True)}</div>
   </div>
 </section>
 
 <section class="section section--blush" aria-labelledby="what-h">
   <div class="wrap split">
     <div class="intro-media">
-      {gpic('2050', lang, cur)}
+      {gpic('t17', lang, cur)}
       <div class="tag"><img src="{rel('assets/img/logo.png', cur)}" alt="" width="312" height="287">{U['languages_note']}</div>
     </div>
     <div>
@@ -677,7 +677,7 @@ def build_home(lang):
       <div class="mt-s">{''.join(f'<p>{p}</p>' for p in H['labor_p'])}</div>
       <a class="text-link" href="{L('service', 'parent-workshops')}">{H['labor_link']}</a>
     </div>
-    {gpic('2073', lang, cur, 'house-img house-c')}
+    {gpic('t18', lang, cur, 'house-img house-c')}
   </div>
 </section>
 
@@ -765,10 +765,10 @@ def build_about(lang):
     items = [home_crumb(lang), (U["nav_about"], cur)]
     pillars = "".join(f"<li><h3>{a}</h3><p>{b}</p></li>" for a, b in A["pillars"])
     extra = f'<div class="btn-row mt-m"><a class="btn" href="{rel(path_for("contact", lang), cur)}">{U["cta_book_long"]}</a><a class="btn btn--ghost" href="{rel(path_for("staff", lang), cur)}">{U["nav_staff"]}</a></div>'
-    body = page_hero(lang, cur, items, A["h1"], A["lead"], gpic("2069", lang, cur, eager=True), extra) + f"""
+    body = page_hero(lang, cur, items, A["h1"], A["lead"], gpic("t16", lang, cur, eager=True), extra) + f"""
 <section class="section section--blush"><div class="wrap split">
   <div class="prose">{''.join(f'<p>{p}</p>' for p in A['p'])}</div>
-  {gpic('2050', lang, cur, 'house-img house-c')}
+  {gpic('t05', lang, cur, 'house-img house-c')}
 </div></section>
 <section class="section"><div class="wrap">
   <div class="section-head"><h2>{A['pillars_h2']}</h2></div>
@@ -887,7 +887,7 @@ def build_services_hub(lang):
 </div></section>
 <section class="section"><div class="wrap svc-layout">
   <div class="section-head"><h2>{S['list_h2']}</h2></div>
-  <div>{svc_list(lang, cur)}</div>
+  <div>{svc_list(lang, cur, evaluations=True)}</div>
 </div></section>
 <section class="section section--blush" id="evaluaciones"><div class="wrap split">
   <div>
@@ -951,7 +951,7 @@ def build_service(lang, s):
 """
     ld = [breadcrumb_ld(items),
           {"@context": "https://schema.org", "@type": "Service", "name": strip(s["name"]), "serviceType": strip(s["name"]), "description": strip(s["description"]),
-           "url": absurl(cur), "provider": {"@id": BASE + "#practice"}, "availableLanguage": ["Spanish", "English"],
+           "url": absurl(cur), "provider": {"@id": BASE + "#practice"}, "availableLanguage": ["Spanish", "English", "Portuguese"],
            "areaServed": area_served_in_person(),
            "availableChannel": {"@type": "ServiceChannel", "serviceLocation": {"@type": "Place", "name": "Healthy Solutions for Children and Families", "address": ADDRESS}}}]
     if s["faq"]: ld.append(faq_ld(s["faq"]))
@@ -979,7 +979,7 @@ def build_insurance(lang):
   <div class="split split--top">
     <ul class="plan-list">{plans}</ul>
     <div>
-      <p class="tricare">{I['tricare']}</p>
+      {f'<p class="tricare">{I["tricare"]}</p>' if I['tricare'] else ''}
       <p>{I['logos_p']}</p>
     </div>
   </div>
@@ -1028,7 +1028,7 @@ def build_person(lang, p):
     if len(title) > 60: title = f'{p["name"]} | {p["title_role"]} | HSCF'
     desc = f'{p["name"]}{", " + p["creds"] if p["creds"] else ""}: {p["short"]} Healthy Solutions, Doral, FL.'
     if len(desc) > 158: desc = f'{p["name"]}: {p["short"]}'
-    if len(desc) < 110: desc = desc + (" Atendemos en español e inglés en Doral, FL." if lang == "es" else " Bilingual care in Doral, FL.")
+    if len(desc) < 110: desc = desc + (" Atendemos en español, inglés y portugués en Doral, FL." if lang == "es" else " Care in English, Spanish and Portuguese in Doral, FL.")
     ul = lambda lst: '<ul class="house-list">' + "".join(f"<li>{x}</li>" for x in lst) + "</ul>"
     details = []
     if p["focus"]: details.append(f'<div><h2>{U["focus"]}</h2>{ul(p["focus"])}</div>')
@@ -1265,6 +1265,8 @@ def build_crawler_files(cfg, preview=False):
 REDIRECTS = [
     ("contact-us", "contacto/"), ("trainings", "cursos-y-talleres/"), ("novedades-2", "novedades/"),
     ("mentores", "staff/"), ("annette-dallera", "staff/"), ("sandra-alvarez", "staff/"),
+    ("jose-mesa", "staff/"), ("juan-felipe-diaz", "staff/"), ("juan-felipe-diaz-3", "staff/"), ("maria-cecilia-mauricio", "staff/"), ("maria-cecilia-mauricio-2", "staff/"),
+    ("en/staff/jose-mesa", "en/staff/"), ("en/staff/juan-felipe-diaz", "en/staff/"), ("en/staff/maria-cecilia-mauricio", "en/staff/"),
     ("2021/06/play-therapy-training-module-1", "2021/06/lisa-saldana-presents-play-therapy-training/"),
     ("2021/06/play-therapy-training-module-2", "2021/06/lisa-saldana-presents-play-therapy-training/"),
     ("2021/07/play-therapy-training-working-with-familes-with-play-therapy", "2021/06/lisa-saldana-presents-play-therapy-training/"),
@@ -1357,12 +1359,12 @@ def build_llms(cfg, arts):
     ES, EN = C["es"], C["en"]; U = EN.UI
     sh = lambda t: re.sub(r"<[^>]+>", "", t.replace("<br>", "; ")).replace("&amp;", "&").replace("&nbsp;", " ")
     L = ["# Healthy Solutions for Children and Families (HSCF)", "",
-         "> Bilingual (Spanish and English) mental health center in Doral, Florida. Psychotherapy for children, teens, adults, couples and families; ABA therapy; psychological and developmental testing for ages 2 to 21; parent workshops; neurofeedback, reflective yoga, coaching and hypnotherapy. The site's main language is Spanish; English pages are under /en/.", "",
+         "> Mental health center in Doral, Florida, with care in English, Spanish and Portuguese. Psychotherapy for children, teens, adults, couples and families; ABA therapy; psychological and developmental testing for ages 2 to 21; parent workshops; neurofeedback, reflective yoga, coaching and hypnotherapy. The site's main language is Spanish; English pages are under /en/.", "",
          "Key facts:",
          f"- Address: {U['address_line1']}, {U['address_line2']}",
          f"- Phone: {U['phone']} or {U['phone2']} · Email: {U['email']}",
-         "- Languages: Spanish and English (one therapist also works in Portuguese)",
-         "- Insurance: in network with Aetna, Blue Cross Blue Shield, Cigna and UnitedHealthcare; also works with Oscar and Bind; does not accept TRICARE",
+         "- Languages: English, Spanish and Portuguese",
+         "- Insurance: in network with Aetna, Blue Cross Blue Shield, Cigna, UnitedHealthcare, Bind and UMR",
          "- Private packages: 8, 12 or 16 weekly sessions",
          "- In-person areas served (Miami-Dade County): " + ", ".join(x["name"] for x in cfg["markets"]["service_area"]["in_person"]),
          "- Telehealth: individual and couples therapy by video anywhere in Florida (psychological testing is in person only), including " + ", ".join(x["name"] for x in cfg["markets"]["service_area"]["telehealth_examples"]),

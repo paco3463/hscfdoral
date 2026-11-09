@@ -57,23 +57,192 @@
    "jpg": "assets/img/staff/silvia-lugo-psicologia-del-deporte-hscf-doral.jpg"
   },
   "alibel-osorio": {
-   "src": "assets/img/staff/alibel-osorio-terapeuta-hscf-doral.webp",
+   "src": "assets/img/staff/alibel-osorio-terapeuta-hipnoterapeuta-hscf-doral.webp",
    "w": 900,
    "h": 1125,
-   "sm": "assets/img/staff/alibel-osorio-terapeuta-hscf-doral-sm.webp",
+   "sm": "assets/img/staff/alibel-osorio-terapeuta-hipnoterapeuta-hscf-doral-sm.webp",
    "sm_w": 420,
-   "jpg": "assets/img/staff/alibel-osorio-terapeuta-hscf-doral.jpg"
+   "jpg": "assets/img/staff/alibel-osorio-terapeuta-hipnoterapeuta-hscf-doral.jpg"
   },
   "beatriz-pedreira": {
-   "src": "assets/img/staff/beatriz-pedreira-trabajadora-social-hscf-doral.webp",
+   "src": "assets/img/staff/beatriz-pedreira-trabajadora-social-rcswi-hscf-doral.webp",
    "w": 900,
    "h": 1125,
-   "sm": "assets/img/staff/beatriz-pedreira-trabajadora-social-hscf-doral-sm.webp",
+   "sm": "assets/img/staff/beatriz-pedreira-trabajadora-social-rcswi-hscf-doral-sm.webp",
    "sm_w": 420,
-   "jpg": "assets/img/staff/beatriz-pedreira-trabajadora-social-hscf-doral.jpg"
+   "jpg": "assets/img/staff/beatriz-pedreira-trabajadora-social-rcswi-hscf-doral.jpg"
+  },
+  "jesica-viegas": {
+   "src": "assets/img/staff/jesica-viegas-terapeuta-de-yoga-breathwork-hscf-doral.webp",
+   "w": 850,
+   "h": 1062,
+   "sm": "assets/img/staff/jesica-viegas-terapeuta-de-yoga-breathwork-hscf-doral-sm.webp",
+   "sm_w": 420,
+   "jpg": "assets/img/staff/jesica-viegas-terapeuta-de-yoga-breathwork-hscf-doral.jpg"
+  },
+  "iris-aguila": {
+   "src": "assets/img/staff/iris-aguila-hscf-doral.webp",
+   "w": 900,
+   "h": 1125,
+   "sm": "assets/img/staff/iris-aguila-hscf-doral-sm.webp",
+   "sm_w": 420,
+   "jpg": "assets/img/staff/iris-aguila-hscf-doral.jpg"
+  },
+  "andrea-echeverria": {
+   "src": "assets/img/staff/andrea-echeverria-coach-hipnosis-clinica-hscf-doral.webp",
+   "w": 720,
+   "h": 900,
+   "sm": "assets/img/staff/andrea-echeverria-coach-hipnosis-clinica-hscf-doral-sm.webp",
+   "sm_w": 420,
+   "jpg": "assets/img/staff/andrea-echeverria-coach-hipnosis-clinica-hscf-doral.jpg",
+   "placeholder": true
   }
  },
  "gallery": [
+  {
+   "src": "assets/img/galeria/charla-hscf-facilitadoras-con-el-grupo.webp",
+   "w": 1400,
+   "h": 1050,
+   "sm": "assets/img/galeria/charla-hscf-facilitadoras-con-el-grupo-sm.webp",
+   "sm_w": 520,
+   "n": "t17"
+  },
+  {
+   "src": "assets/img/galeria/taller-ansiedad-florida-blue-hialeah-publico.webp",
+   "w": 1400,
+   "h": 1050,
+   "sm": "assets/img/galeria/taller-ansiedad-florida-blue-hialeah-publico-sm.webp",
+   "sm_w": 520,
+   "n": "t18"
+  },
+  {
+   "src": "assets/img/galeria/taller-ansiedad-florida-blue-hialeah-sala.webp",
+   "w": 1400,
+   "h": 1050,
+   "sm": "assets/img/galeria/taller-ansiedad-florida-blue-hialeah-sala-sm.webp",
+   "sm_w": 520,
+   "n": "t08"
+  },
+  {
+   "src": "assets/img/galeria/taller-ansiedad-florida-blue-hialeah-escenario.webp",
+   "w": 1200,
+   "h": 1600,
+   "sm": "assets/img/galeria/taller-ansiedad-florida-blue-hialeah-escenario-sm.webp",
+   "sm_w": 520,
+   "n": "t06"
+  },
+  {
+   "src": "assets/img/galeria/taller-ansiedad-florida-blue-hialeah-ponente.webp",
+   "w": 1200,
+   "h": 1600,
+   "sm": "assets/img/galeria/taller-ansiedad-florida-blue-hialeah-ponente-sm.webp",
+   "sm_w": 520,
+   "n": "t07"
+  },
+  {
+   "src": "assets/img/galeria/charla-hscf-grupo-en-la-sala.webp",
+   "w": 1328,
+   "h": 747,
+   "sm": "assets/img/galeria/charla-hscf-grupo-en-la-sala-sm.webp",
+   "sm_w": 520,
+   "n": "t16"
+  },
+  {
+   "src": "assets/img/galeria/charla-hscf-presentacion.webp",
+   "w": 1200,
+   "h": 1600,
+   "sm": "assets/img/galeria/charla-hscf-presentacion-sm.webp",
+   "sm_w": 520,
+   "n": "t15"
+  },
+  {
+   "src": "assets/img/galeria/taller-hscf-grupo-pequeno.webp",
+   "w": 1134,
+   "h": 1984,
+   "sm": "assets/img/galeria/taller-hscf-grupo-pequeno-sm.webp",
+   "sm_w": 520,
+   "n": "t05"
+  },
+  {
+   "src": "assets/img/galeria/clase-yoga-respiracion-grupo.webp",
+   "w": 1400,
+   "h": 1050,
+   "sm": "assets/img/galeria/clase-yoga-respiracion-grupo-sm.webp",
+   "sm_w": 520,
+   "n": "t11"
+  },
+  {
+   "src": "assets/img/galeria/clase-hscf-facilitadora.webp",
+   "w": 1200,
+   "h": 1600,
+   "sm": "assets/img/galeria/clase-hscf-facilitadora-sm.webp",
+   "sm_w": 520,
+   "n": "t13"
+  },
+  {
+   "src": "assets/img/galeria/clase-hscf-facilitadora-y-participante.webp",
+   "w": 1200,
+   "h": 1600,
+   "sm": "assets/img/galeria/clase-hscf-facilitadora-y-participante-sm.webp",
+   "sm_w": 520,
+   "n": "t10"
+  },
+  {
+   "src": "assets/img/galeria/clase-hscf-participantes.webp",
+   "w": 1200,
+   "h": 1600,
+   "sm": "assets/img/galeria/clase-hscf-participantes-sm.webp",
+   "sm_w": 520,
+   "n": "t14"
+  },
+  {
+   "src": "assets/img/galeria/clase-yoga-esteras.webp",
+   "w": 747,
+   "h": 1600,
+   "sm": "assets/img/galeria/clase-yoga-esteras-sm.webp",
+   "sm_w": 520,
+   "n": "t12"
+  },
+  {
+   "src": "assets/img/galeria/clase-yoga-relajacion.webp",
+   "w": 747,
+   "h": 1600,
+   "sm": "assets/img/galeria/clase-yoga-relajacion-sm.webp",
+   "sm_w": 520,
+   "n": "t09"
+  },
+  {
+   "src": "assets/img/galeria/clase-respiracion-consciente.webp",
+   "w": 747,
+   "h": 1600,
+   "sm": "assets/img/galeria/clase-respiracion-consciente-sm.webp",
+   "sm_w": 520,
+   "n": "t04"
+  },
+  {
+   "src": "assets/img/galeria/clase-yoga-instructora.webp",
+   "w": 747,
+   "h": 1600,
+   "sm": "assets/img/galeria/clase-yoga-instructora-sm.webp",
+   "sm_w": 520,
+   "n": "t01"
+  },
+  {
+   "src": "assets/img/galeria/clase-yoga-meditacion.webp",
+   "w": 747,
+   "h": 1600,
+   "sm": "assets/img/galeria/clase-yoga-meditacion-sm.webp",
+   "sm_w": 520,
+   "n": "t02"
+  },
+  {
+   "src": "assets/img/galeria/sesion-reiki-relajacion.webp",
+   "w": 747,
+   "h": 1600,
+   "sm": "assets/img/galeria/sesion-reiki-relajacion-sm.webp",
+   "sm_w": 520,
+   "n": "t03"
+  },
   {
    "src": "assets/img/galeria/equipo-hscf-evento-comunitario.webp",
    "w": 1400,
@@ -508,6 +677,13 @@
    "w": 1200,
    "h": 2132,
    "sm": "assets/img/talleres/taller-descubriendo-el-oro-sm.webp",
+   "sm_w": 560
+  },
+  "hablemos-sobre-ansiedad": {
+   "src": "assets/img/talleres/taller-hablemos-sobre-ansiedad-florida-blue-hialeah.webp",
+   "w": 1200,
+   "h": 900,
+   "sm": "assets/img/talleres/taller-hablemos-sobre-ansiedad-florida-blue-hialeah-sm.webp",
    "sm_w": 560
   }
  },

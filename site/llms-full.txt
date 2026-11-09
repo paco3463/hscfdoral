@@ -1,6 +1,6 @@
 # Healthy Solutions for Children and Families — full text
 
-Source: https://hscfdoral.com/ · Generated 2026-11-01 from the site's content. Information is general and not a substitute for care.
+Source: https://hscfdoral.com/ · Generated 2026-11-09 from the site's content. Information is general and not a substitute for care.
 
 ## About
 
@@ -62,7 +62,7 @@ We offer psychotherapy for people dealing with:
 - Behavior problems
 - Attention deficit and hyperactivity
 - Questions about sexual identity
-- Autism
+- Autism spectrum
 - Relationship problems
 - Life transitions: divorce, moves and grief
 ### Individual therapy
@@ -83,8 +83,11 @@ A: Among others: solution-focused, experiential, psychodynamic and cognitive beh
 Q: Is therapy available in Spanish?
 A: Yes. We see clients in Spanish and English.
 
+Q: Do you offer therapy by video?
+A: Yes. Individual therapy and couples therapy are also offered by telehealth (video) from anywhere in Florida. Psychological testing is done in person at our Doral office.
+
 Q: Do you take my insurance?
-A: We are in network with Aetna, Blue Cross Blue Shield, Cigna and UnitedHealthcare, and we work with Oscar and Bind. Call us to confirm your coverage.
+A: We are in network with Aetna, Blue Cross Blue Shield, Cigna, UnitedHealthcare, Bind and UMR. Call us to confirm your coverage.
 
 ## Workshops and talks for parents (https://hscfdoral.com/en/parent-workshops-and-talks/)
 
@@ -93,6 +96,7 @@ Our workshops and talks aim for a shift in perspective: understanding that child
 Our goal is for parents to open up to different challenges from a place of compassion, acceptance and listening, and to discover what will lead each of them on a path of growth and change.
 In the workshops we share strategies and tools that give parents and children the chance to succeed in a safe environment. Coaching helps children feel more prepared to face their challenges and learn how to handle them.
 ### Our workshops
+- Let’s Talk About Anxiety (Hablemos sobre Ansiedad): A free workshop on anxiety at the Florida Blue Center in Hialeah, in Spanish.
 - SOS… Adolescence: A workshop for parents of teenagers.
 - Dancing with our fears: A workshop to discover our deepest fears and invite them to dance.
 - Bulimia and anorexia: two sides of the same coin: On the causes and mechanisms of both disorders, and how to support and care for people living with them.
@@ -190,7 +194,6 @@ A: No. It can be a helpful complement, but it does not replace mental health car
 
 Programs for parents, teens and adults who want to understand themselves better and grow. Here you’ll find material from the courses we’ve taught (in Spanish).
 
-- Cabin syndrome and the new reality: A parenting program on the fear of going back out and adapting to the new reality after lockdown.
 - Resistance to improvement: Why we sometimes resist change and how to move forward, with Armando Matiz Reyes.
 - Language workshop: the language of power: The language of power and the power of language, with Armando Matiz Reyes.
 - Neuroplasticity workshop: How the brain changes and adapts throughout life, with Armando Matiz Reyes.
@@ -208,26 +211,29 @@ Interested in the next course? Call us at (305) 594-5658 or write to us to ask a
 We offer testing for ages 2 to 21.
 - Developmental assessment (CSBS DP, ages 0 to 5)
 - Neuropsychological testing
-- Autism testing
+- Autism spectrum testing
 - Psychoeducational testing
 - Gifted testing
 - Adult psychological testing
 
-Insurance: Aetna (in network), Blue Cross Blue Shield (in network), Cigna (in network), UnitedHealthcare (in network), Oscar, Bind. We do not accept TRICARE or any plan affiliated with that network.
+Insurance: Aetna (in network), Blue Cross Blue Shield (in network), Cigna (in network), UnitedHealthcare (in network), Bind (in network), UMR (in network). 
 
 ## Frequently asked questions
 
 Q: Which insurance plans do you accept?
-A: We are in network with Aetna, Blue Cross Blue Shield, Cigna and UnitedHealthcare, and we also work with Oscar and Bind. We do not accept TRICARE or plans affiliated with that network. Call us to confirm your coverage.
+A: We are in network with Aetna, Blue Cross Blue Shield, Cigna, UnitedHealthcare, Bind and UMR. Call us to confirm your coverage.
 
 Q: Are there options if I don’t use insurance?
 A: Yes. We offer private mental health packages of 8, 12 or 16 weekly sessions, lasting two, three or four months.
 
 Q: What evaluations do you offer?
-A: Evaluations for ages 2 to 21: developmental assessment (CSBS DP, ages 0 to 5), neuropsychological, autism, psychoeducational and gifted testing. We also offer psychological testing for adults.
+A: Evaluations for ages 2 to 21: developmental assessment (CSBS DP, ages 0 to 5), neuropsychological, autism spectrum, psychoeducational and gifted testing. We also offer psychological testing for adults.
 
-Q: Do you offer therapy in Spanish?
-A: Yes. We are a bilingual team and see clients in Spanish and English. One of our therapists also works in Portuguese.
+Q: Do you offer therapy in Spanish or Portuguese?
+A: Yes. We see clients in English, Spanish and Portuguese.
+
+Q: What kinds of therapy do you use?
+A: Among others, cognitive behavioral therapy (CBT), psychodynamic, solution-focused and play therapy, plus emotionally focused and systemic therapy for couples and families.
 
 Q: Do you offer ABA therapy?
 A: Yes. We offer Applied Behavior Analysis (ABA) to help build communication, social skills and independence, especially for children with autism and other developmental conditions.
