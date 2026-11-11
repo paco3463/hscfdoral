@@ -41,12 +41,12 @@
    "jpg": "assets/img/staff/juan-felipe-diaz-consejero-hscf-doral.jpg"
   },
   "paula-callegari": {
-   "src": "assets/img/staff/paula-callegari-terapeuta-trilingue-hscf-doral.webp",
-   "w": 640,
-   "h": 800,
-   "sm": "assets/img/staff/paula-callegari-terapeuta-trilingue-hscf-doral-sm.webp",
+   "src": "assets/img/staff/paula-callegari-psicoterapeuta-trilingue-hscf-doral.webp",
+   "w": 900,
+   "h": 1125,
+   "sm": "assets/img/staff/paula-callegari-psicoterapeuta-trilingue-hscf-doral-sm.webp",
    "sm_w": 420,
-   "jpg": "assets/img/staff/paula-callegari-terapeuta-trilingue-hscf-doral.jpg"
+   "jpg": "assets/img/staff/paula-callegari-psicoterapeuta-trilingue-hscf-doral.jpg"
   },
   "silvia-lugo": {
    "src": "assets/img/staff/silvia-lugo-psicologia-del-deporte-hscf-doral.webp",
@@ -89,13 +89,12 @@
    "jpg": "assets/img/staff/iris-aguila-hscf-doral.jpg"
   },
   "andrea-echeverria": {
-   "src": "assets/img/staff/andrea-echeverria-coach-hipnosis-clinica-hscf-doral.webp",
-   "w": 720,
-   "h": 900,
-   "sm": "assets/img/staff/andrea-echeverria-coach-hipnosis-clinica-hscf-doral-sm.webp",
+   "src": "assets/img/staff/andrea-echeverria-coach-terapeuta-hscf-doral.webp",
+   "w": 900,
+   "h": 1125,
+   "sm": "assets/img/staff/andrea-echeverria-coach-terapeuta-hscf-doral-sm.webp",
    "sm_w": 420,
-   "jpg": "assets/img/staff/andrea-echeverria-coach-hipnosis-clinica-hscf-doral.jpg",
-   "placeholder": true
+   "jpg": "assets/img/staff/andrea-echeverria-coach-terapeuta-hscf-doral.jpg"
   }
  },
  "gallery": [
@@ -250,14 +249,6 @@
    "sm": "assets/img/galeria/equipo-hscf-evento-comunitario-sm.webp",
    "sm_w": 520,
    "n": "2049"
-  },
-  {
-   "src": "assets/img/galeria/stand-hscf-feria-comunitaria-doral.webp",
-   "w": 768,
-   "h": 768,
-   "sm": "assets/img/galeria/stand-hscf-feria-comunitaria-doral-sm.webp",
-   "sm_w": 520,
-   "n": "2050"
   },
   {
    "src": "assets/img/galeria/terapeutas-hscf-evento.webp",

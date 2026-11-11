@@ -1166,7 +1166,7 @@ def build_area(lang, a):
     items = [home_crumb(lang), (U["nav_areas"], path_for("areas", lang)), (a["city"], cur)]
     near = "".join(f'<li><a href="{rel(path_for("area", lang, n), cur)}">{next(x for x in M.AREAS if x["id"] == n)["city"]}</a></li>' for n in a["nearby"])
     extra = f'<div class="btn-row mt-m"><a class="btn" href="{rel(path_for("contact", lang), cur)}">{U["cta_book_long"]}</a><a class="btn btn--ghost" href="tel:{TEL1}">{PHONE}{U["phone"]}</a></div>'
-    img_n = {"doral": "2050", "hialeah": "2052", "miami-lakes": "2069", "coral-gables": "2058", "kendall": "2073", "miami": "2084"}[a["id"]]
+    img_n = {"doral": "t15", "hialeah": "2052", "miami-lakes": "2069", "coral-gables": "2058", "kendall": "2073", "miami": "2084"}[a["id"]]
     body = page_hero(lang, cur, items, a["h1"], a["lead"], gpic(img_n, lang, cur, eager=True), extra) + f"""
 <section class="section section--blush"><div class="wrap content-grid">
   <div class="prose">
