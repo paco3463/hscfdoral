@@ -1,0 +1,235 @@
+{
+  "id": "early-signs-of-autism",
+  "kind": "article",
+  "status": "published",
+  "review_policy": "automatic",
+  "risk": "standard",
+  "topic_cluster": "autism-aba",
+  "audience": "parents",
+  "services": [
+    "aba"
+  ],
+  "condition": {
+    "name_en": "Autism spectrum disorder",
+    "name_es": "Trastorno del espectro autista",
+    "same_as": [
+      "https://cdc.gov/autism/signs-symptoms/index.html",
+      "https://www.cdc.gov/autism/es/signs-symptoms/signos-y-sintomas-de-los-trastornos-del-espectro-autista.html"
+    ],
+    "is_medical_condition": true
+  },
+  "en": {
+    "slug": "early-signs-of-autism-in-toddlers",
+    "title": "Early Signs of Autism in Toddlers: A Guide by Age for Parents",
+    "seo_title": "Early Signs of Autism in Toddlers: A Parent Guide | HSCF",
+    "description": "Early signs of autism in toddlers by age, the 18- and 24-month M-CHAT screening, and what to do if you're worried: pediatrician, Early Steps, school.",
+    "primary_keyword": "early signs of autism in toddlers",
+    "secondary_keywords": [
+      "autism signs by age",
+      "M-CHAT-R/F autism screening",
+      "autism red flags 18 months",
+      "Early Steps Florida",
+      "what to do if I think my child has autism"
+    ],
+    "summary": "A plain-language guide to the early signs of autism in toddlers by age, why one sign is not a diagnosis, the M-CHAT-R/F screening at 18 and 24 months, and the steps to take in Florida if you are worried, with or without a diagnosis.",
+    "faq": [
+      [
+        "What are the first signs of autism in a toddler?",
+        "The earliest signs usually involve social communication and play: not responding to their name by about 12 months, not pointing to show you things by about 14 to 18 months, little pretend play by 18 months, and repeating the same actions with toys. Signs vary a lot, and many of these behaviors also appear in children who are not autistic. A professional looks at the overall picture."
+      ],
+      [
+        "At what age can autism be diagnosed?",
+        "Signs usually appear in the first two years of life, and a specialist can usually make a reliable diagnosis by age 2, sometimes as early as 18 months. Autism can also be diagnosed later, at any age."
+      ],
+      [
+        "What is the M-CHAT-R/F?",
+        "It is a short questionnaire for parents of children 16 to 30 months old, used to screen for autism at the 18- and 24-month checkups. If the result shows some risk, the clinician asks follow-up questions. A positive result is not a diagnosis, but most children who screen positive have some developmental difference that deserves an evaluation."
+      ],
+      [
+        "Do I need a diagnosis to get early intervention?",
+        "No. You can ask for a free evaluation without a diagnosis or a doctor's referral. In Florida, children under 3 are served by Early Steps, and for children 3 and older you can call a local public elementary school and ask for a preschool special education evaluation."
+      ],
+      [
+        "Does one sign mean my child is autistic?",
+        "No. No single sign fits every autistic child, and some autistic children show none of the common signs. If something worries you, write down what you see and talk to your pediatrician, who can screen your child and refer you to a specialist if needed."
+      ]
+    ]
+  },
+  "es": {
+    "slug": "senales-tempranas-de-autismo",
+    "title": "Señales tempranas de autismo: guía por edades para padres",
+    "seo_title": "Señales tempranas de autismo en niños pequeños | HSCF",
+    "description": "Señales tempranas de autismo por edad, la prueba M-CHAT de los 18 y 24 meses y qué hacer si te preocupa: pediatra, Early Steps y escuela.",
+    "primary_keyword": "señales tempranas de autismo",
+    "secondary_keywords": [
+      "síntomas de autismo en bebés",
+      "señales de autismo en niños de 2 años",
+      "cómo saber si mi hijo tiene autismo",
+      "prueba M-CHAT en español",
+      "Early Steps Florida"
+    ],
+    "summary": "Una guía en lenguaje sencillo sobre las señales tempranas de autismo por edad, por qué una sola señal no es un diagnóstico, la prueba M-CHAT-R/F de los 18 y 24 meses y los pasos a seguir en Florida si te preocupa, con o sin diagnóstico.",
+    "faq": [
+      [
+        "¿Cuáles son las primeras señales de autismo en un niño pequeño?",
+        "Las primeras señales suelen tener que ver con la comunicación social y el juego: no responder a su nombre hacia los 12 meses, no señalar para mostrarte cosas hacia los 14 a 18 meses, poco juego de \"hacer como si\" a los 18 meses y repetir las mismas acciones con los juguetes. Las señales varían mucho, y muchas de estas conductas también se ven en niños que no son autistas. Un profesional evalúa el conjunto."
+      ],
+      [
+        "¿A qué edad se puede diagnosticar el autismo?",
+        "Las señales suelen aparecer en los dos primeros años de vida, y un especialista por lo general puede hacer un diagnóstico confiable hacia los 2 años, a veces desde los 18 meses. El autismo también se puede diagnosticar más tarde, a cualquier edad."
+      ],
+      [
+        "¿Qué es el M-CHAT-R/F?",
+        "Es un cuestionario corto para padres de niños de 16 a 30 meses que se usa para detectar el autismo en los chequeos de los 18 y 24 meses. Si el resultado muestra cierto riesgo, el profesional hace preguntas de seguimiento. Un resultado positivo no es un diagnóstico, pero la mayoría de los niños que salen positivos tienen alguna diferencia del desarrollo que merece una evaluación."
+      ],
+      [
+        "¿Necesito un diagnóstico para recibir intervención temprana?",
+        "No. Puedes pedir una evaluación gratuita sin diagnóstico y sin un referido del médico. En Florida, los niños menores de 3 años reciben atención a través de Early Steps, y para niños de 3 años o más puedes llamar a una escuela primaria pública de tu zona y pedir una evaluación de educación especial preescolar."
+      ],
+      [
+        "¿Una sola señal significa que mi hijo es autista?",
+        "No. No existe una señal que se vea en todos los niños autistas, y algunos no muestran ninguna de las señales comunes. Si algo te preocupa, anota lo que ves y habla con el pediatra, que puede hacer una prueba de detección y darte un referido a un especialista si hace falta."
+      ]
+    ]
+  },
+  "author": {
+    "type": "Organization",
+    "name": "Healthy Solutions for Children and Families",
+    "team_id": null
+  },
+  "medical_reviewer": null,
+  "date_published": "2026-11-15",
+  "date_modified": "2026-11-15",
+  "next_review_due": "2027-11-15",
+  "hero_image": {
+    "src": "assets/img/blog/el-bienestar-en-la-familia.webp",
+    "alt_en": "A father, a mother and four children kneel on the grass in a sunny backyard, petting a wet golden retriever",
+    "alt_es": "Un papá, una mamá y cuatro niños arrodillados en el césped de un jardín soleado acarician a un golden retriever mojado",
+    "width": 640,
+    "height": 427
+  },
+  "sources": [
+    {
+      "id": 1,
+      "kind": "clinical_guideline",
+      "authors": "Hyman SL, Levy SE, Myers SM; AAP Council on Children With Disabilities, Section on Developmental and Behavioral Pediatrics",
+      "title": "Identification, Evaluation, and Management of Children With Autism Spectrum Disorder",
+      "publisher": "Pediatrics (American Academy of Pediatrics)",
+      "year": 2020,
+      "url": "https://doi.org/10.1542/peds.2019-3447",
+      "doi": "10.1542/peds.2019-3447",
+      "pmid": null,
+      "verified_on": "2026-11-15"
+    },
+    {
+      "id": 2,
+      "kind": "government",
+      "authors": "Centers for Disease Control and Prevention",
+      "title": "Signs and Symptoms of Autism Spectrum Disorder (Signos y síntomas de los trastornos del espectro autista)",
+      "publisher": "CDC",
+      "year": 2024,
+      "url": "https://cdc.gov/autism/signs-symptoms/index.html",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-11-15"
+    },
+    {
+      "id": 3,
+      "kind": "government",
+      "authors": "National Institute of Mental Health",
+      "title": "Autism Spectrum Disorder (Trastornos del espectro autista), NIH Publication No. 25-MH-8084",
+      "publisher": "National Institute of Mental Health (NIMH)",
+      "year": 2025,
+      "url": "https://www.nimh.nih.gov/health/publications/autism-spectrum-disorder",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-11-15"
+    },
+    {
+      "id": 4,
+      "kind": "peer_reviewed",
+      "authors": "Zwaigenbaum L, Bauman ML, Stone WL, Yirmiya N, Estes A, Hansen RL, McPartland JC, Natowicz MR, Choueiri R, Fein D, Kasari C, Pierce K, Buie T, Carter A, Davis PA, Granpeesheh D, Mailloux Z, Newschaffer C, Robins D, Smith Roley S, Wagner S, Wetherby A",
+      "title": "Early Identification of Autism Spectrum Disorder: Recommendations for Practice and Research",
+      "publisher": "Pediatrics",
+      "year": 2015,
+      "url": "https://doi.org/10.1542/peds.2014-3667c",
+      "doi": "10.1542/peds.2014-3667c",
+      "pmid": null,
+      "verified_on": "2026-11-15"
+    },
+    {
+      "id": 5,
+      "kind": "peer_reviewed",
+      "authors": "Robins DL, Casagrande K, Barton M, Chen CM, Dumont-Mathieu T, Fein D",
+      "title": "Validation of the Modified Checklist for Autism in Toddlers, Revised With Follow-up (M-CHAT-R/F)",
+      "publisher": "Pediatrics",
+      "year": 2014,
+      "url": "https://doi.org/10.1542/peds.2013-1813",
+      "doi": "10.1542/peds.2013-1813",
+      "pmid": "24366990",
+      "verified_on": "2026-11-15"
+    },
+    {
+      "id": 6,
+      "kind": "systematic_review",
+      "authors": "Wieckowski AT, Williams LN, Rando J, Lyall K, Robins DL",
+      "title": "Sensitivity and Specificity of the Modified Checklist for Autism in Toddlers (Original and Revised): A Systematic Review and Meta-analysis",
+      "publisher": "JAMA Pediatrics",
+      "year": 2023,
+      "url": "https://doi.org/10.1001/jamapediatrics.2022.5975",
+      "doi": "10.1001/jamapediatrics.2022.5975",
+      "pmid": "36804771",
+      "verified_on": "2026-11-15"
+    },
+    {
+      "id": 7,
+      "kind": "clinical_guideline",
+      "authors": "US Preventive Services Task Force",
+      "title": "Autism Spectrum Disorder in Young Children: Screening (Final Recommendation Statement)",
+      "publisher": "US Preventive Services Task Force (USPSTF)",
+      "year": 2016,
+      "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/autism-spectrum-disorder-in-young-children-screening",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-11-15"
+    },
+    {
+      "id": 8,
+      "kind": "government",
+      "authors": "Centers for Disease Control and Prevention, Learn the Signs. Act Early.",
+      "title": "Concerned About Your Child's Development? (¿Le preocupa el desarrollo de su hijo?)",
+      "publisher": "CDC",
+      "year": 2026,
+      "url": "https://cdc.gov/act-early/families/concerned.html",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-11-15"
+    },
+    {
+      "id": 9,
+      "kind": "government",
+      "authors": "Centers for Disease Control and Prevention, Aprenda los signos. Reaccione pronto.",
+      "title": "Indicadores del desarrollo de los CDC (CDC's Developmental Milestones)",
+      "publisher": "CDC",
+      "year": 2026,
+      "url": "https://cdc.gov/act-early/es/milestones/index.html",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-11-15"
+    },
+    {
+      "id": 10,
+      "kind": "government",
+      "authors": "Florida Department of Health",
+      "title": "Early Steps",
+      "publisher": "Florida Department of Health (Clay County)",
+      "year": 2026,
+      "url": "https://clay.floridahealth.gov/programs-and-services/childrenshealth/earlysteps/index.html",
+      "doi": null,
+      "pmid": null,
+      "verified_on": "2026-11-15"
+    }
+  ],
+  "research_notes": "CLAIMS WHERE THE EVIDENCE IS MIXED OR NEEDS CLINICAL JUDGMENT\n- Universal screening: the USPSTF [7] (2016) gave an I statement (insufficient evidence on benefits vs harms of screening children with no concerns); the AAP [1] recommends screening all children at 18 and 24 months. The post presents both. The USPSTF page says an update of this topic is in progress; re-check at the next review.\n- M-CHAT accuracy: Wieckowski 2023 [6] pooled sensitivity 0.83, specificity 0.94 across 50 studies, but sensitivity was much lower in prospective studies (0.57 vs 0.86), specificity lower in high-likelihood samples (0.70), most studies had flow/timing concerns, and only English-language papers were included. Senior author (Robins) co-developed the M-CHAT. The post says accuracy varies and a normal screen should not override a parent's ongoing worry. No pooled numbers are quoted in the article.\n- Robins 2014 [5]: 47.5% of children positive after follow-up were diagnosed with ASD and 94.6% had some developmental delay or concern (from the abstract on Drexel's repository). Sample size was not shown on the page I opened, so the post gives no sample size.\n- Age thresholds: AAP Table 4 [1] says no response to name by 12 months, no pointing to show interest by 14 months, no pretend play by 18 months; CDC [2] uses 9 months (name), 12 (gestures, pat-a-cake), 15 (sharing interests), 18 (pointing). The post blends them as 'about 9-12' and 'about 14-18' months and cites both.\n- Regression: 'about one-quarter, most typically between 18 and 24 months' is from the AAP report text [1]; the onset-pattern heterogeneity is from Zwaigenbaum [4].\n- Zwaigenbaum 2015 [4] is an expert-panel consensus/review in a Pediatrics supplement (classified peer_reviewed, not systematic_review). It is 11 years old; kept as foundational and because newer citations agree (AAP 2020).\n- Uncited practical advice: home tips 2 (write down examples) and 3 (play face to face), and the 'tell your pediatrician if you are still worried after a normal screen' line (an inference from [6]'s finding that some autistic children screen negative).\n- The CDC sign lists use some deficit wording ('avoids eye contact', 'obsessive interests'); the post rewords neutrally and dropped 'obsessive interests'.\n\nHSCF ITEMS A PERSON SHOULD CONFIRM\n- The HSCF paragraph uses only what build/content_*.py say about ABA (detailed assessment, individual plan, family goals, home/school/community, progress reviewed with family). It does not name any staff or credential.\n- The post points to page:insurance for 'the evaluations we offer'. The site lists 'Evaluación del desarrollo (CSBS DP, 0-5)' and 'Evaluación del espectro autista'. The post deliberately does NOT say HSCF diagnoses autism (per the task). Please confirm who performs the autism-spectrum evaluation and whether it is diagnostic, before any future post says more.\n- Still open from what-is-aba-therapy: the ABA service page says a BCBA designs/supervises programs, but no BCBA appears on the staff pages.\n- Hero image: assets/img/blog/el-bienestar-en-la-familia.webp (stock photo of a family with a dog, reused from the legacy family-wellbeing post). Avoids the heroes of the three most recent posts. Low resolution (640x427); a better, consented photo would help.\n\nSOURCE VERIFICATION NOTES (all opened 2026-11-15)\n- [1] AAP report: full PDF hosted by University of Washington DBP (depts.washington.edu/dbpeds). Verified title, authors, Pediatrics 2020;145(1):e20193447, DOI; Table 4 red flags; screening at 18 and 24 months plus general screening at 9, 18, 30 months; M-CHAT-R/F for 16-30 months with follow-up for scores 3-7; 'results of a screening test are not diagnostic'; diagnosis accurate as young as 18 months; definitive diagnosis not necessary to institute services; screen-positive children referred for both diagnostic assessment and intervention. PMID not confirmed (PubMed blocked), so null.\n- [2] CDC Signs and Symptoms: English page (updated May 16, 2024) and Spanish page (May 2024) both opened; es.md links the Spanish page.\n- [3] NIMH 'Autism Spectrum Disorder' (revised 2025, 25-MH-8084) and the Spanish 'Trastornos del espectro autista' (revised 2025) both opened.\n- [4] Zwaigenbaum et al.: full PDF on eScholarship (UC). Pediatrics 2015;136 Suppl 1:S10-S40, DOI 10.1542/peds.2014-3667c. PMID not checked, so null.\n- [5] Robins et al.: Drexel Research Discovery record (title, authors, Pediatrics 133(1):37-45, DOI, PMID 24366990, abstract). PubMed itself showed a CAPTCHA.\n- [6] Wieckowski et al.: full text on PMC (PMC9941975), JAMA Pediatr 2023;177(4):373-383, DOI and PMID confirmed.\n- [7] USPSTF final recommendation (Feb 16, 2016), grade I, opened on uspreventiveservicestaskforce.org.\n- [8] CDC 'Concerned About Your Child's Development?' (updated Feb 16, 2026) and Spanish '¿Le preocupa el desarrollo de su hijo?' (Feb 2026) both opened: talk to the doctor, don't wait, AAP screening ages, free state evaluation, no need for diagnosis or doctor's referral, under 3 = early intervention, 3+ = local public elementary school.\n- [9] CDC 'Indicadores del desarrollo' (Spanish, updated June 1, 2026): checklists by age, free app 'Sigamos el Desarrollo', don't wait if a child misses milestones or 'ha perdido destrezas que antes tenía'. The English twin (cdc.gov/act-early/milestones/) could not be opened (permission timeout), so the Spanish URL is the cited one.\n- [10] Florida Department of Health in Clay County Early Steps page: 'Florida's early intervention program for infants and toddlers (birth to 36 months)'; eligibility includes signs of delay and concerns raised by parents, caregivers or providers. It does not state cost or whether parents can self-refer; the 'free evaluation, no referral needed' claim is cited to CDC [8] only. The statewide floridahealth.gov Early Steps page now redirects to floridaearlysteps.com, which could not be opened (permission timeout). A person may want to swap [10] for the statewide page and add the local Miami-Dade Early Steps contact.\n\nSOURCES CONSIDERED AND REJECTED\n- PubMed pages (24366990 and others): CAPTCHA; verified on Drexel/PMC instead.\n- floridaearlysteps.com and cdc.gov/autism/es/signs-symptoms/index.html (alternate URL): permission timeout; not used.\n- University of Miami Mailman Center 'Early STEPS' page (one of 15 Florida Early Steps programs, birth-36 months, phone 305-243-6660): opened, but it does not state who can refer or cost; not cited, mentioned here only so a person can decide whether to add the local contact.\n- Miami-Dade County Public Schools Pre-K ESE page (prekese.dadeschools.net): did not render; the article therefore does not name the local Child Find office.\n- CDC LTSAE Child Find Spanish PDF: opened; it is a resource packet for programs and does not describe the parent process, so not cited.\n- FL statute 391.308 (flhouse.gov): redirect, not opened.\n- Blogs and content sites in results (special-ed-ega.pages.dev, autodoctor.neocities, scribd, thetransmitter journal-club commentary, press releases from Drexel/EurekAlert): rejected by policy.",
+  "generated_by": "claude auto-post 2026-11-15"
+}

@@ -41,7 +41,7 @@ New posts are written **and published automatically** by the scheduled task on t
 | Date | Article id | Spanish keyword (main) | English keyword | Cluster | Supports | Risk |
 |---|---|---|---|---|---|---|
 | Nov 1, 2026 | `what-is-aba-therapy` (published 2026-11-01) | qué es la terapia ABA | what is ABA therapy | autism-aba | aba | standard |
-| Nov 15, 2026 | `early-signs-of-autism` | señales tempranas de autismo | early signs of autism in toddlers | autism-aba | aba | standard |
+| Nov 15, 2026 | `early-signs-of-autism` (published 2026-11-15) | señales tempranas de autismo | early signs of autism in toddlers | autism-aba | aba | standard |
 | Dec 1, 2026 | `toddler-tantrums-when-to-worry` | berrinches en niños pequeños | toddler tantrums when to worry | behavior-parenting | parent-workshops | standard |
 | Dec 15, 2026 | `co-parenting-holidays` | crianza compartida en las fiestas | co-parenting during the holidays | couples-family | psychotherapy | standard |
 | Jan 1, 2027 | `school-refusal` | mi hijo no quiere ir a la escuela | child refuses to go to school | anxiety | psychotherapy | standard |
