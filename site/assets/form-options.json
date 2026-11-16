@@ -1,0 +1,48 @@
+{
+ "for": [
+  "Mi adolescente",
+  "Mi hijo o hija",
+  "My child",
+  "My teen",
+  "Myself",
+  "Our whole family",
+  "Para mí",
+  "Para nosotros como pareja",
+  "Para toda la familia",
+  "Us as a couple"
+ ],
+ "service": [
+  "ABA therapy",
+  "Coaching",
+  "Evaluaciones",
+  "Evaluations",
+  "Hipnoterapia",
+  "Hypnotherapy",
+  "I’m not sure yet",
+  "Neurofeedback",
+  "No estoy seguro todavía",
+  "Parent workshops",
+  "Psicoterapia",
+  "Psychotherapy",
+  "Reflective yoga",
+  "Talleres para padres",
+  "Terapia ABA",
+  "Yoga reflexivo"
+ ],
+ "language": [
+  "English",
+  "Español",
+  "Inglés",
+  "Portuguese",
+  "Portugués",
+  "Spanish"
+ ],
+ "contact_by": [
+  "Correo",
+  "Email",
+  "Mensaje de texto",
+  "Phone",
+  "Teléfono",
+  "Text message"
+ ]
+}

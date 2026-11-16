@@ -1076,7 +1076,17 @@ def build_person(lang, p):
     ld = [breadcrumb_ld(items), person]
     write(cur, page(lang, cur, "staff", alt, title, desc, body, ld, og_image=BASE + MEDIA["staff"][p["id"]]["jpg"]))
 
+def write_form_options():
+    """The contact form's allowed answers (both languages), so the server can tell real submissions from bots
+    (wordpress/theme/inc/spam.php). Plain text, exactly as the browser sends them."""
+    keys = {"for": "f_for_opts", "service": "f_service_opts", "language": "f_lang_opts", "contact_by": "f_contact_opts"}
+    data = {k: sorted({html.unescape(strip(o)) for lg in C for o in C[lg].CONTACT[v]}) for k, v in keys.items()}
+    os.makedirs(os.path.join(OUT, "assets"), exist_ok=True)
+    with open(os.path.join(OUT, "assets", "form-options.json"), "w") as fh:
+        json.dump(data, fh, ensure_ascii=False, indent=1)
+
 def build_contact(lang):
+    write_form_options()
     M = C[lang]; U = M.UI; K = M.CONTACT; E = EXTRA[lang]
     cur = path_for("contact", lang); alt = alt_of("contact", lang)
     items = [home_crumb(lang), (U["nav_contact"], cur)]

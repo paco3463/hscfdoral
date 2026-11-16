@@ -445,6 +445,7 @@
     var status = $(".form-status", form);
     var msgs = JSON.parse(form.getAttribute("data-msgs"));
     var submitBtn = $("button[type=submit]", form);
+    var openedAt = Date.now(); // the server treats sends under 3 seconds as bots
     // Where the lead came from: QR codes and campaigns link to /contacto/?src=qr-sala-de-espera
     var srcField = $("[data-lead-source]", form);
     try {
@@ -456,6 +457,7 @@
       e.preventDefault();
       if ($(".hp input", form).value) return; // spam trap
       var fd = new FormData(form);
+      fd.set("_t", String(Date.now() - openedAt));
       var name = (fd.get("name") || "").trim(), email = (fd.get("email") || "").trim(), phone = (fd.get("phone") || "").trim();
       if (!name || (!email && !phone)) { show(msgs.required, false); return; }
       var endpoint = form.getAttribute("action");

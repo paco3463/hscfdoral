@@ -767,7 +767,7 @@ CONTACT = {
     "f_service": "Servicio de interés",
     "f_service_opts": ["No estoy seguro todavía", "Psicoterapia", "Terapia ABA", "Evaluaciones", "Talleres para padres", "Neurofeedback", "Yoga reflexivo", "Coaching", "Hipnoterapia"],
     "f_lang": "Idioma preferido",
-    "f_lang_opts": ["Español", "Inglés"],
+    "f_lang_opts": ["Español", "Inglés", "Portugués"],
     "f_contact": "Prefiero que me contacten por",
     "f_contact_opts": ["Teléfono", "Correo", "Mensaje de texto"],
     "f_msg": "Cuéntanos un poco (opcional)",

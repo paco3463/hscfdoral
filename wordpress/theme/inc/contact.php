@@ -5,6 +5,7 @@
  * Sends one email to the practice (option hscf_contact_to, default info@hscfdoral.com) with the visitor's
  * address as Reply-To, and saves the inquiry (including the message) to the private Contactos list
  * (inc/leads.php), which only administrators can see. Delivery needs WP Mail SMTP (see INSTALL.md).
+ * Requests that look like spam (inc/spam.php) are saved with status "spam" and no email is sent.
  */
 if ( ! defined( 'ABSPATH' ) ) exit;
 
@@ -60,11 +61,17 @@ function hscf_contact_submit( WP_REST_Request $req ) {
 	if ( $source !== '' ) $body .= ( $lang === 'en' ? 'Source: ' : 'Origen: ' ) . $source . "\n";
 
 	set_transient( $ip_key, $count + 1, HOUR_IN_SECONDS );
+	$t       = $req->get_param( '_t' );
+	$elapsed = is_numeric( $t ) ? (int) $t : -1;   // ms the visitor spent on the page; -1 = not sent by the page's script
+	$spam    = function_exists( 'hscf_spam_reason' ) ? hscf_spam_reason( array( 'for' => $f( 'for' ), 'service' => $f( 'service' ),
+		'language' => $f( 'language' ), 'contact_by' => $f( 'contact_by' ), 'name' => $name, 'message' => $f( 'message', 3000 ) ), $elapsed ) : '';
 	if ( function_exists( 'hscf_lead_store' ) ) {
 		hscf_lead_store( array( 'name' => $name, 'email' => $email, 'phone' => $phone, 'for' => $f( 'for' ), 'service' => $f( 'service' ),
 			'language' => $f( 'language' ), 'contact_by' => $f( 'contact_by' ), 'message' => $f( 'message', 3000 ),
-			'page_language' => $lang, 'source' => $source, 'consent' => $consent ) );
+			'page_language' => $lang, 'source' => $source, 'consent' => $consent,
+			'status' => $spam ? 'spam' : 'new', 'notes' => $spam ? 'Spam automático: ' . $spam : '' ) );
 	}
+	if ( $spam ) return new WP_REST_Response( array( 'ok' => true ), 200 );   // saved for review, no email; the bot sees success
 	$sent = wp_mail( $to, $subject, $body, $headers );
 	return new WP_REST_Response( array( 'ok' => (bool) $sent ), $sent ? 200 : 502 );
 }

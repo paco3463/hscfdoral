@@ -17,7 +17,7 @@ const HSCF_LEADS_DB_VERSION = '2';  // 2: message column
 function hscf_leads_table() { global $wpdb; return $wpdb->prefix . 'hscf_leads'; }
 
 function hscf_leads_statuses() {
-	return array( 'new' => 'Nuevo', 'contacted' => 'Contactado', 'client' => 'Ya es cliente', 'not_fit' => 'No aplica' );
+	return array( 'new' => 'Nuevo', 'contacted' => 'Contactado', 'client' => 'Ya es cliente', 'not_fit' => 'No aplica', 'spam' => 'Spam / publicidad' );
 }
 
 /* ---------- table ---------- */
@@ -73,7 +73,8 @@ function hscf_lead_store( array $d ) {
 		'source'            => $src !== '' ? mb_substr( $src, 0, 60 ) : 'web',
 		'consent_marketing' => ! empty( $d['consent'] ) ? 1 : 0,
 		'consent_at'        => ! empty( $d['consent'] ) ? $now : null,
-		'status'            => 'new',
+		'status'            => ( ( $d['status'] ?? '' ) === 'spam' ) ? 'spam' : 'new',
+		'notes'             => mb_substr( (string) ( $d['notes'] ?? '' ), 0, 500 ),
 	);
 	return $wpdb->insert( hscf_leads_table(), $row ) ? (int) $wpdb->insert_id : 0;
 }
@@ -83,6 +84,7 @@ function hscf_leads_query( $args = array() ) {
 	global $wpdb; $t = hscf_leads_table();
 	$where = array( '1=1' ); $vals = array();
 	if ( ! empty( $args['status'] ) && isset( hscf_leads_statuses()[ $args['status'] ] ) ) { $where[] = 'status = %s'; $vals[] = $args['status']; }
+	else $where[] = "status <> 'spam'";   // spam only shows when asked for
 	if ( isset( $args['consent'] ) && $args['consent'] !== '' ) { $where[] = 'consent_marketing = %d'; $vals[] = (int) $args['consent']; }
 	if ( ! empty( $args['source'] ) ) { $where[] = 'source = %s'; $vals[] = $args['source']; }
 	if ( ! empty( $args['q'] ) ) { $like = '%' . $wpdb->esc_like( $args['q'] ) . '%'; $where[] = '(name LIKE %s OR email LIKE %s OR phone LIKE %s)'; array_push( $vals, $like, $like, $like ); }
@@ -97,7 +99,7 @@ function hscf_leads_query( $args = array() ) {
 }
 function hscf_leads_count_since( $days ) {
 	global $wpdb;
-	return (int) $wpdb->get_var( $wpdb->prepare( 'SELECT COUNT(*) FROM ' . hscf_leads_table() . ' WHERE created_at >= %s', gmdate( 'Y-m-d H:i:s', time() - $days * DAY_IN_SECONDS ) ) );
+	return (int) $wpdb->get_var( $wpdb->prepare( 'SELECT COUNT(*) FROM ' . hscf_leads_table() . " WHERE status <> 'spam' AND created_at >= %s", gmdate( 'Y-m-d H:i:s', time() - $days * DAY_IN_SECONDS ) ) );
 }
 function hscf_leads_group( $col, $days = 90 ) {
 	global $wpdb;
@@ -211,6 +213,7 @@ function hscf_leads_page() {
 			<div class="kpi"><b><?php echo (int) hscf_leads_count_since( 30 ); ?></b><span>Últimos 30 días</span></div>
 			<div class="kpi"><b><?php echo (int) hscf_leads_query( array( 'status' => 'new', 'limit' => 1 ) )[1]; ?></b><span>Por contactar</span></div>
 			<div class="kpi"><b><?php echo (int) hscf_leads_query( array( 'status' => 'client', 'limit' => 1 ) )[1]; ?></b><span>Ya son clientes</span></div>
+			<a class="kpi" style="text-decoration:none;color:inherit" href="<?php echo esc_url( add_query_arg( array( 'page' => 'hscf-leads', 'status' => 'spam' ), admin_url( 'admin.php' ) ) ); ?>"><b><?php echo (int) hscf_leads_query( array( 'status' => 'spam', 'limit' => 1 ) )[1]; ?></b><span>Spam (revisar)</span></a>
 		</div>
 		<form method="get" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:6px 0 12px">
 			<input type="hidden" name="page" value="hscf-leads">
