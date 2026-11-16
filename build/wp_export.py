@@ -89,8 +89,9 @@ def finalize(b):
     redirects += [[t["old"], "#testimonios"] for t in b.C["es"].TESTIMONIALS]
     manifest = {"format": FORMAT, "generated": b.TODAY, "site": b.BASE, "theme": THEME_NAME,
                 "settings": {"blogname": "Healthy Solutions for Children and Families",
-                             "blogdescription": "Centro bilingüe de salud mental en Doral, FL", "timezone_string": "America/New_York",
-                             "contact_to": "info@hscfdoral.com", "permalink_structure": "/%year%/%monthnum%/%postname%/"},
+                             "blogdescription": "Centro trilingüe de salud mental en Doral, FL", "timezone_string": "America/New_York",
+                             # the form recipient (option hscf_contact_to) is set in WordPress only, never from here
+                             "permalink_structure": "/%year%/%monthnum%/%postname%/"},
                 "partials": partials, "static": static, "redirects": redirects, "notfound": notfound, "items": items}
     dist = os.path.join(root, "wordpress", "dist")
     os.makedirs(dist, exist_ok=True)
